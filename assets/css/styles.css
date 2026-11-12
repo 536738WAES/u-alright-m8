@@ -18,3 +18,30 @@ h2 {
     white-space: nowrap;
 }
 
+/* Music player: dark read-out strip above the browser's own audio controls */
+.player {
+    border: 3px double #1a1a1a;
+    background-color: #f2f2f2;
+    padding: 0.75rem;
+}
+
+.player-display {
+    background-color: #0b0b0b;
+    color: #7cfc00;
+    font-family: "Courier New", Courier, monospace;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.player-display p {
+    margin: 0;
+}
+
+.player-track {
+    font-weight: 700;
+}
+
+.player-audio {
+    display: block;
+    width: 100%;
+}
