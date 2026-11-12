@@ -5,3 +5,16 @@ h2 {
     text-transform: lowercase;
     color: #c2185b;
 }
+
+.profile-name {
+    font-family: "UnifrakturMaguntia", Georgia, serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    text-align: center;
+}
+
+.profile-name span {
+    font-family: Georgia, serif;
+    font-size: 0.6em;
+    white-space: nowrap;
+}
+
