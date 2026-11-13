@@ -67,7 +67,7 @@
                 <li class="col"><button type="button" class="btn btn-link p-0" data-bs-toggle="modal"
                         data-bs-target="#block-modal"><i class="bi bi-slash-circle" aria-hidden="true"></i> Block
                         User</button></li>
-                <li class="col"><a href="https://github.com/MOGIKLABS/"><i class="bi bi-people" aria-hidden="true"></i>
+                <li class="col"><a href="https://github.com/536738WAES/"><i class="bi bi-people" aria-hidden="true"></i>
                         Add to Group</a></li>
                 <li class="col"><button type="button" class="btn btn-link p-0" data-bs-toggle="modal"
                         data-bs-target="#rank-modal"><i class="bi bi-trophy" aria-hidden="true"></i> Rank
@@ -120,7 +120,41 @@
     <footer>
         <p>u alright m8? Built by PT Cheung, 2026.</p>
     </footer>
+    <!-- Block User pop-up -->
+    <div class="modal fade" id="block-modal" tabindex="-1" aria-labelledby="block-modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="block-modal-title">Block User</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>You cannot block PT.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Rank User pop-up -->
+    <div class="modal fade" id="rank-modal" tabindex="-1" aria-labelledby="rank-modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="rank-modal-title">Rank User</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Rankings coming soon.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
