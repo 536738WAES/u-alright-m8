@@ -1,9 +1,32 @@
+/* Colours */
+:root {
+    --ink: #0b0b0b;
+    --paper: #ffffff;
+
+    /* Tell Bootstrap to use the same black for links */
+    --bs-link-color: #0b0b0b;
+    --bs-link-color-rgb: 11, 11, 11;
+    --bs-link-hover-color: #0b0b0b;
+    --bs-link-hover-color-rgb: 11, 11, 11;
+}
+
+body {
+    background-color: var(--paper);
+    color: var(--ink);
+}
+
+a,
+.nav-link,
+.btn-link {
+    text-decoration: underline;
+}
+
 h2 {
     font-family: "Abril Fatface", Georgia, serif;
     font-size: 1.5rem;
     letter-spacing: -0.06em;
     text-transform: lowercase;
-    color: #c2185b;
+    color: var(--ink);
 }
 
 .profile-name {
@@ -22,26 +45,4 @@ h2 {
 .player {
     border: 3px double #1a1a1a;
     background-color: #f2f2f2;
-    padding: 0.75rem;
-}
-
-.player-display {
-    background-color: #0b0b0b;
-    color: #7cfc00;
-    font-family: "Courier New", Courier, monospace;
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 0.5rem;
-}
-
-.player-display p {
-    margin: 0;
-}
-
-.player-track {
-    font-weight: 700;
-}
-
-.player-audio {
-    display: block;
-    width: 100%;
-}
+    padding:
