@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="u alright m8? A Y2K-era social profile page.">
+    <title>Pics | u alright m8?</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=UnifrakturMaguntia&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container page">
+
+        <!-- Header: logo, search box and main navigation -->
+        <header>
+            <div class="row g-2 align-items-center">
+                <div class="col-12 col-md-6">
+                    <h1 class="site-logo">u alright m8?</h1>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form class="d-flex gap-2" role="search" action="https://www.google.com/search" method="get">
+                        <label for="search-box" class="visually-hidden">Search the web</label>
+                        <input type="search" class="form-control" id="search-box" name="q" required>
+                        <button type="submit" class="btn btn-outline-dark">Search</button>
+                    </form>
+                </div>
+            </div>
+            <nav aria-label="Main">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link px-2" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="mail.html">Mail</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="index.html#friends">Friends</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="index.html#music">Music</a></li>
+                    <li class="nav-item"><button type="button" class="nav-link px-2" data-bs-toggle="modal"
+                            data-bs-target="#signout-modal">Sign Out</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section aria-labelledby="pics-heading">
+                <h2 id="pics-heading">PT's pics</h2>
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+                    <figure class="col">
+                        <img src="assets/images/pic-1.jpg" class="img-fluid" width="300" height="300"
+                            alt="Describe photo one here">
+                        <figcaption class="small">Caption one</figcaption>
+                    </figure>
+                    <figure class="col">
+                        <img src="assets/images/pic-2.jpg" class="img-fluid" width="300" height="300"
+                            alt="Describe photo two here">
+                        <figcaption class="small">Caption two</figcaption>
+                    </figure>
+                    <figure class="col">
+                        <img src="assets/images/pic-3.jpg" class="img-fluid" width="300" height="300"
+                            alt="Describe photo three here">
+                        <figcaption class="small">Caption three</figcaption>
+                    </figure>
+                    <figure class="col">
+                        <img src="assets/images/pic-4.jpg" class="img-fluid" width="300" height="300"
+                            alt="Describe photo four here" loading="lazy">
+                        <figcaption class="small">Caption four</figcaption>
+                    </figure>
+                    <figure class="col">
+                        <img src="assets/images/pic-5.jpg" class="img-fluid" width="300" height="300"
+                            alt="Describe photo five here" loading="lazy">
+                        <figcaption class="small">Caption five</figcaption>
+                    </figure>
+                    <figure class="col">
+                        <img src="assets/images/pic-6.jpg" class="img-fluid" width="300" height="300"
+                            alt="Describe photo six here" loading="lazy">
+                        <figcaption class="small">Caption six</figcaption>
+                    </figure>
+                </div>
+                <p><a href="index.html">Back to profile</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>u alright m8? Built by PT Cheung, 2026.</p>
+        </footer>
+
+    </div>
+
+    <!-- Sign Out pop-up -->
+    <div class="modal fade" id="signout-modal" tabindex="-1" aria-labelledby="signout-modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="signout-modal-title">Sign Out</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>You cannot sign out.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

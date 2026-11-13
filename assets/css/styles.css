@@ -21,6 +21,21 @@ a,
     text-decoration: underline;
 }
 
+/* Page width: the fixed width profile pages of the early 2000s used */
+.page {
+    max-width: 800px;
+}
+
+/* Space between the boxes */
+main section {
+    margin-bottom: 1rem;
+}
+
+.site-logo {
+    font-family: "UnifrakturMaguntia", Georgia, serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
 h2 {
     font-family: "Abril Fatface", Georgia, serif;
     font-size: 1.5rem;
@@ -29,20 +44,49 @@ h2 {
     color: var(--ink);
 }
 
-.profile-name {
-    font-family: "UnifrakturMaguntia", Georgia, serif;
-    font-size: clamp(1.5rem, 5vw, 3rem);
-    text-align: center;
-}
-
-.profile-name span {
-    font-family: Georgia, serif;
-    font-size: 0.6em;
-    white-space: nowrap;
+h3 {
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 /* Music player: dark read-out strip above the browser's own audio controls */
 .player {
     border: 3px double #1a1a1a;
     background-color: #f2f2f2;
-    padding:
+    padding: 0.75rem;
+}
+
+.player-display {
+    background-color: #0b0b0b;
+    color: #7cfc00;
+    font-family: "Courier New", Courier, monospace;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.player-display p {
+    margin: 0;
+}
+
+.player-track {
+    font-weight: 700;
+}
+
+.player-audio {
+    display: block;
+    width: 100%;
+}
+
+/* Playlist: keep Bootstrap's accordion black, white and grey */
+.player .accordion {
+    --bs-accordion-active-bg: #f2f2f2;
+    --bs-accordion-active-color: #0b0b0b;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(11, 11, 11, 0.25);
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-inner-border-radius: 0;
+}
+
+/* Pics page */
+figure {
+    margin-bottom: 0;
+}
