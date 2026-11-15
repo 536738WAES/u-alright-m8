@@ -98,3 +98,7 @@ figure {
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
+/* Friend space: bigger names under the pictures */
+#friends li p {
+    font-size: 1.1rem;
+}
