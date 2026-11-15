@@ -243,3 +243,19 @@ figure {
 #friends li p {
     font-size: 1.1rem;
 }
+
+/* Pics page: every photo the same square tile, whatever shape it was taken */
+main figure img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* Pics page: photo thumbnails are buttons, so remove the default button look */
+.pic-thumb {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: zoom-in;
+}
