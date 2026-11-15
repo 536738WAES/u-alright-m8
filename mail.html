@@ -58,21 +58,55 @@
             <div class="row g-3">
                 <div class="col-12 col-lg-8">
                     <section class="card border border-3 border-dark rounded-0" aria-labelledby="mail-heading">
-                        <h2 id="mail-heading" class="card-header bg-dark text-white rounded-0">Leave PT a comment</h2>
+                        <h2 id="mail-heading" class="card-header bg-dark text-white rounded-0">PT's message centre</h2>
                         <div class="card-body">
-                            <form action="https://github.com/536738WAES/u-alright-m8/issues/new" method="get">
-                                <div class="mb-3">
-                                    <label for="comment-name" class="form-label fw-bold">Your name</label>
-                                    <input type="text" class="form-control border-dark rounded-0" id="comment-name"
-                                        name="title" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="comment-text" class="form-label fw-bold">Your comment</label>
-                                    <textarea class="form-control border-dark rounded-0" id="comment-text" name="body"
-                                        rows="5" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-dark rounded-0">Post comment</button>
-                            </form>
+                    <form action="https://formspree.io/f/mdegezoe" method="post">
+                        <fieldset class="mb-3">
+                            <legend class="fs-6 fw-bold">Your mood</legend>
+                            <div class="mood-strip">
+                                <input type="radio" class="btn-check" name="mood" id="mail-mood-happy" value="Happy" checked>
+                                <label class="btn mood-btn" for="mail-mood-happy" title="Happy"><i class="bi bi-emoji-smile"
+                                        aria-hidden="true"></i><span class="visually-hidden">Happy</span></label>
+                                <input type="radio" class="btn-check" name="mood" id="mail-mood-loved-up" value="Loved up">
+                                <label class="btn mood-btn" for="mail-mood-loved-up" title="Loved up"><i class="bi bi-emoji-heart-eyes"
+                                        aria-hidden="true"></i><span class="visually-hidden">Loved up</span></label>
+                                <input type="radio" class="btn-check" name="mood" id="mail-mood-cool" value="Cool">
+                                <label class="btn mood-btn" for="mail-mood-cool" title="Cool"><i class="bi bi-emoji-sunglasses"
+                                        aria-hidden="true"></i><span class="visually-hidden">Cool</span></label>
+                                <input type="radio" class="btn-check" name="mood" id="mail-mood-cheeky" value="Cheeky">
+                                <label class="btn mood-btn" for="mail-mood-cheeky" title="Cheeky"><i class="bi bi-emoji-wink"
+                                        aria-hidden="true"></i><span class="visually-hidden">Cheeky</span></label>
+                                <input type="radio" class="btn-check" name="mood" id="mail-mood-confused" value="Confused">
+                                <label class="btn mood-btn" for="mail-mood-confused" title="Confused"><i class="bi bi-emoji-dizzy"
+                                        aria-hidden="true"></i><span class="visually-hidden">Confused</span></label>
+                                <input type="radio" class="btn-check" name="mood" id="mail-mood-angry" value="Angry">
+                                <label class="btn mood-btn" for="mail-mood-angry" title="Angry"><i class="bi bi-emoji-angry"
+                                        aria-hidden="true"></i><span class="visually-hidden">Angry</span></label>
+                            </div>
+                        </fieldset>
+                        <p class="mb-3"><span class="fw-bold">To:</span> PT</p>
+                        <div class="mb-3">
+                            <label for="mail-name" class="form-label fw-bold">Your name</label>
+                            <input type="text" class="form-control border-dark rounded-0" id="mail-name"
+                                name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mail-email" class="form-label fw-bold">Your email</label>
+                            <input type="email" class="form-control border-dark rounded-0" id="mail-email"
+                                name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mail-subject" class="form-label fw-bold">Subject</label>
+                            <input type="text" class="form-control border-dark rounded-0" id="mail-subject"
+                                name="_subject" value="u alright m8?" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mail-text" class="form-label fw-bold">Message</label>
+                            <textarea class="form-control border-dark rounded-0" id="mail-text" name="message"
+                                rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark rounded-0">Send</button>
+                    </form>
                         </div>
                     </section>
                 </div>
@@ -80,12 +114,7 @@
                     <section class="card border border-3 border-dark rounded-0" aria-labelledby="how-heading">
                         <h2 id="how-heading" class="card-header bg-dark text-white rounded-0">How it works</h2>
                         <div class="card-body">
-                            <ol class="mb-3">
-                                <li>Write your name and comment.</li>
-                                <li>Press Post comment. GitHub opens with your comment filled in.</li>
-                                <li>Press Submit new issue on GitHub. You need a GitHub account.</li>
-                            </ol>
-                            <p class="small">Comments are public on GitHub. PT adds them to the profile by hand.</p>
+                            <p>Your message goes privately to PT. Only PT reads it.</p>
                             <p class="mb-0"><a href="index.html">Back to profile</a></p>
                         </div>
                     </section>

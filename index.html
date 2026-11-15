@@ -85,8 +85,9 @@
                         <h2 id="contact-heading" class="card-header bg-dark text-white rounded-0">Contacting PT</h2>
                         <div class="card-body">
                             <ul class="row row-cols-2 g-2 list-unstyled mb-0">
-                                <li class="col"><a href="mailto:536738@waes.ac.uk"><i class="bi bi-envelope"
-                                            aria-hidden="true"></i> Send Message</a></li>
+                                <li class="col"><button type="button" class="btn btn-link p-0 text-start"
+                                        data-bs-toggle="modal" data-bs-target="#message-modal"><i
+                                            class="bi bi-envelope" aria-hidden="true"></i> Send Message</button></li>
                                 <li class="col"><a
                                         href="mailto:?subject=u%20alright%20m8%3F&amp;body=https%3A%2F%2F536738waes.github.io%2Fu-alright-m8%2F"><i
                                             class="bi bi-forward" aria-hidden="true"></i> Forward to Friend</a></li>
@@ -264,7 +265,8 @@
                                     <p class="mb-0">Comment text goes here.</p>
                                 </div>
                             </article>
-                            <p class="mb-0"><a href="mail.html">Add a comment</a></p>
+                            <p class="mb-0"><button type="button" class="btn btn-link p-0" data-bs-toggle="modal"
+                                    data-bs-target="#message-modal">Send PT a message</button></p>
                         </div>
                     </section>
 
@@ -277,6 +279,72 @@
             <p class="mb-0">Built by PT Cheung in 2026 paying homage to 2003.</p>
         </footer>
 
+    </div>
+
+    <!-- Send Message pop-up: private message to PT, sent through Formspree -->
+    <div class="modal fade" id="message-modal" tabindex="-1" aria-labelledby="message-modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border border-3 border-dark rounded-0">
+                <div class="modal-header bg-dark rounded-0 messenger-header">
+                    <h2 class="modal-title messenger-title text-white" id="message-modal-title">
+                        <img src="assets/public/logos/u-alright-m8-logo-white.svg" class="messenger-logo" width="2070"
+                            height="395" alt="u alright m8">
+                        <span>messenger</span>
+                    </h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formspree.io/f/mdegezoe" method="post">
+                        <fieldset class="mb-3">
+                            <legend class="fs-6 fw-bold">Your mood</legend>
+                            <div class="mood-strip">
+                                <input type="radio" class="btn-check" name="mood" id="msg-mood-happy" value="Happy" checked>
+                                <label class="btn mood-btn" for="msg-mood-happy" title="Happy"><i class="bi bi-emoji-smile"
+                                        aria-hidden="true"></i><span class="visually-hidden">Happy</span></label>
+                                <input type="radio" class="btn-check" name="mood" id="msg-mood-loved-up" value="Loved up">
+                                <label class="btn mood-btn" for="msg-mood-loved-up" title="Loved up"><i class="bi bi-emoji-heart-eyes"
+                                        aria-hidden="true"></i><span class="visually-hidden">Loved up</span></label>
+                                <input type="radio" class="btn-check" name="mood" id="msg-mood-cool" value="Cool">
+                                <label class="btn mood-btn" for="msg-mood-cool" title="Cool"><i class="bi bi-emoji-sunglasses"
+                                        aria-hidden="true"></i><span class="visually-hidden">Cool</span></label>
+                                <input type="radio" class="btn-check" name="mood" id="msg-mood-cheeky" value="Cheeky">
+                                <label class="btn mood-btn" for="msg-mood-cheeky" title="Cheeky"><i class="bi bi-emoji-wink"
+                                        aria-hidden="true"></i><span class="visually-hidden">Cheeky</span></label>
+                                <input type="radio" class="btn-check" name="mood" id="msg-mood-confused" value="Confused">
+                                <label class="btn mood-btn" for="msg-mood-confused" title="Confused"><i class="bi bi-emoji-dizzy"
+                                        aria-hidden="true"></i><span class="visually-hidden">Confused</span></label>
+                                <input type="radio" class="btn-check" name="mood" id="msg-mood-angry" value="Angry">
+                                <label class="btn mood-btn" for="msg-mood-angry" title="Angry"><i class="bi bi-emoji-angry"
+                                        aria-hidden="true"></i><span class="visually-hidden">Angry</span></label>
+                            </div>
+                        </fieldset>
+                        <p class="mb-3"><span class="fw-bold">To:</span> PT</p>
+                        <div class="mb-3">
+                            <label for="msg-name" class="form-label fw-bold">Your name</label>
+                            <input type="text" class="form-control border-dark rounded-0" id="msg-name"
+                                name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="msg-email" class="form-label fw-bold">Your email</label>
+                            <input type="email" class="form-control border-dark rounded-0" id="msg-email"
+                                name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="msg-subject" class="form-label fw-bold">Subject</label>
+                            <input type="text" class="form-control border-dark rounded-0" id="msg-subject"
+                                name="_subject" value="u alright m8?" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="msg-text" class="form-label fw-bold">Message</label>
+                            <textarea class="form-control border-dark rounded-0" id="msg-text" name="message"
+                                rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark rounded-0">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Block User pop-up -->
