@@ -51,8 +51,8 @@ h3 {
     font-weight: 700;
 }
 
-/* Music player: a 2000s-style shell wrapped around the browser's own audio controls.
-   Visual skin ported from PT's own prototype (CSS only). */
+/* Music player: silver 2000s-style casing.
+   Visual skin ported from PT's own Stitch prototype and rewritten as plain CSS. */
 .player {
     border: 1px solid #7d7d89;
     border-radius: 18px;
@@ -78,7 +78,7 @@ h3 {
     gap: 0.6rem;
 }
 
-/* Metallic round play disc: decoration only, the real controls are underneath */
+/* Metallic round play button */
 .player-disc {
     flex: 0 0 3.5rem;
     height: 3.5rem;
@@ -227,10 +227,6 @@ button.player-push[aria-expanded="true"] {
     }
 }
 
-.player-audio {
-    display: block;
-    width: 100%;
-}
 
 
 /* Pics page */
