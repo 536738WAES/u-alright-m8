@@ -92,3 +92,9 @@ h3 {
 figure {
     margin-bottom: 0;
 }
+
+/* Friend space: every picture the same square tile, whatever shape it was made */
+#friends img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
