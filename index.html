@@ -26,8 +26,12 @@
         <header class="mb-3">
             <div class="row g-3 align-items-center mb-3">
                 <div class="col-12 col-md-6 col-xl-5">
-                    <h1 class="mb-0"><img src="assets/public/logos/u-alright-m8-logo-black.svg"
-                            class="img-fluid site-logo" width="2070" height="395" alt="u alright m8"></h1>
+                    <h1 class="mb-0">
+                        <a href="index.html" class="d-inline-block">
+                            <img src="assets/public/logos/u-alright-m8-logo-black.svg" class="img-fluid site-logo"
+                                width="2070" height="395" alt="u alright m8, back to profile">
+                        </a>
+                    </h1>
                 </div>
                 <div class="col-12 col-md-6 col-xl-5 ms-xl-auto">
                     <form class="d-flex gap-2" role="search" action="https://www.google.com/search" method="get">
@@ -65,6 +69,7 @@
                                         width="200" height="300" alt="Portrait of PT Cheung">
                                 </div>
                                 <div class="col-6">
+                                    <p class="fw-bold mb-0">x͓̽x͓̽x͓̽_͓̽i͓̽d͓̽o͓̽n͓̽'͓̽t͓̽c͓̽@͓̽R͓̽3͓̽A͓̽b͓̽0͓̽u͓̽T͓̽u͓̽_͓̽x͓̽x͓̽x͓̽</p>
                                     <p class="mb-0">F</p>
                                     <p class="mb-0">18</p>
                                     <p class="mb-0">London</p>
@@ -113,10 +118,20 @@
 
                     <section id="music" class="player" aria-labelledby="music-heading">
                         <h2 id="music-heading">u alright m8 media player</h2>
-                        <div class="player-display">
-                            <p class="player-track">"<span lang="de">Komm, süßer Tod</span>" (Come, Sweet Death), BWV
-                                478 (Re-imagined as a 2000 hard rock version)</p>
-                            <p class="player-artist">Johann Sebastian Bach (1736) by PTC</p>
+                        <!-- Shell: decorative play disc and scrolling read-out around the real audio controls -->
+                        <div class="player-shell">
+                            <div class="player-disc" aria-hidden="true"><i class="bi bi-play-fill"></i></div>
+                            <div class="player-display">
+                                <p class="player-marquee"><span>"<span lang="de">Komm, süßer Tod</span>" (Come,
+                                        Sweet Death), BWV 478, re-imagined as a 2000 hard rock version. Johann
+                                        Sebastian Bach (1736) by PTC</span></p>
+                            </div>
+                            <!-- Push buttons: decoration for now, not yet decided -->
+                            <div class="player-buttons" aria-hidden="true">
+                                <span class="player-push"><i class="bi bi-plus-lg"></i></span>
+                                <span class="player-push"><i class="bi bi-list"></i></span>
+                                <span class="player-push"><i class="bi bi-music-note"></i></span>
+                            </div>
                         </div>
                         <div class="accordion" id="playlist">
                                 <div class="accordion-item">
@@ -220,13 +235,13 @@
                                         <img src="assets/images/friend-1.jpg" class="img-fluid w-100 border border-dark"
                                             width="200" height="200" alt="official profile picture of JET"
                                             loading="lazy">
-                                        <p class="small fw-bold mb-0">††† 𝐉𝐄𝐓 †††</p>
+                                        <p class="small fw-bold mb-0">†† 𝐉𝐄𝐓 ††</p>
                                     </li>
                                     <li class="col text-center">
                                         <img src="assets/images/friend-2.jpg" class="img-fluid w-100 border border-dark"
                                             width="200" height="200" alt="glitter jelly princess profile picture"
                                             loading="lazy">
-                                        <p class="small fw-bold mb-0">ꗃ﹅ഒᯅᯅ⋆ǂ୨୧⋆﹅𝚐𝚕𝚒𝚝𝚝𝚎𝚛𝚓𝚎𝚕𝚕𝚢𝚙𝚛𝚒𝚗𝚌𝚎𝚜𝚜﹅๑ꔛǂഒଘ✧⋆𓍼𓍼</p>
+                                        <p class="small fw-bold mb-0">ꗃ﹅⋆ǂ୨୧⋆﹅𝚐𝚕𝚒𝚝𝚝𝚎𝚛𝚓𝚎𝚕𝚕𝚢𝚙𝚛𝚒𝚗𝚌𝚎𝚜𝚜﹅✧⋆𓍼𓍼</p>
                                     </li>
                                     <li class="col text-center">
                                         <img src="assets/images/friend-3.jpg" class="img-fluid w-100 border border-dark"
@@ -238,19 +253,19 @@
                                         <img src="assets/images/friend-4.jpg" class="img-fluid w-100 border border-dark"
                                             width="200" height="200" alt="DJ meowmixx profile picture"
                                             loading="lazy">
-                                        <p class="small fw-bold mb-0">ｄｊ ｍｅｏｗｍｉｘｘ</p>
+                                        <p class="small fw-bold mb-0">𝖝𝖝_𝕴𝕯𝖚𝖓𝖂@𝖓𝕬𝖇𝖒3333_𝖝𝖝</p>
                                     </li>
                                     <li class="col text-center">
                                         <img src="assets/images/friend-5.jpg" class="img-fluid w-100 border border-dark"
                                             width="200" height="200" alt="super scene emo crow"
                                             loading="lazy">
-                                        <p class="small fw-bold mb-0">𝖝𝖝_𝕴𝕯𝖚𝖓𝖂@𝖓𝕬𝖇𝖒3333_𝖝𝖝</p>
+                                        <p class="small fw-bold mb-0">ｄｊ ｍｅｏｗｍｉｘｘ</p>
                                     </li>
                                     <li class="col text-center">
                                         <img src="assets/images/friend-6.jpg" class="img-fluid w-100 border border-dark"
-                                            width="200" height="200" alt="The Velvet Kettles logo"
+                                            width="200" height="200" alt="skate punk emo scene unicorn profile picture"
                                             loading="lazy">
-                                        <p class="small fw-bold mb-0">- The Velvet Kettles -</p>
+                                        <p class="small fw-bold mb-0">ι'м נυѕт α gιяℓ χ υηι¢σяη</p>
                                     </li>
                                     <li class="col text-center">
                                         <img src="assets/images/friend-7.jpg" class="img-fluid w-100 border border-dark"
@@ -260,9 +275,9 @@
                                     </li>
                                     <li class="col text-center">
                                         <img src="assets/images/friend-8.jpg" class="img-fluid w-100 border border-dark"
-                                            width="200" height="200" alt="emo unicorn girl"
+                                            width="200" height="200" alt="official The Velvet Kettles profile logo"
                                             loading="lazy">
-                                        <p class="small fw-bold mb-0">𝕚'𝕞 𝕛𝕦𝕤𝕥 𝕒 𝕘𝕚𝕣𝕝 𝕩 𝕦𝕟𝕚𝕔𝕠𝕣𝕟</p>
+                                        <p class="small fw-bold mb-0">- The Velvet Kettles -</p>
                                     </li>
                             </ul>
                         </div>
@@ -299,7 +314,7 @@
         </main>
 
         <footer class="border-top border-3 border-dark pt-3">
-            <p class="mb-0">u alright m8? Built by PT Cheung, 2026.</p>
+            <p class="mb-0">Built by PT Cheung in 2026 paying homage to 2003.</p>
         </footer>
 
     </div>
@@ -313,7 +328,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>You cannot block PT.</p>
+                    <p>You cannot block PT loser, go home luv.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-dark rounded-0" data-bs-dismiss="modal">Close</button>
@@ -349,7 +364,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>You cannot sign out.</p>
+                    <p>You can't sign out, you're stuck here 4eva!</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-dark rounded-0" data-bs-dismiss="modal">Close</button>

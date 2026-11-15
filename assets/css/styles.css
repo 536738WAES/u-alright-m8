@@ -51,27 +51,132 @@ h3 {
     font-weight: 700;
 }
 
-/* Music player: dark read-out strip above the browser's own audio controls */
+/* Music player: a 2000s-style shell wrapped around the browser's own audio controls.
+   Visual skin ported from PT's own prototype (CSS only). */
 .player {
-    border: 3px double #1a1a1a;
-    background-color: #f2f2f2;
+    border: 1px solid #7d7d89;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #ececec 15%, #d4d4d8 50%, #bfbfca 70%, #9e9ea7 100%);
     padding: 0.75rem;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.45),
+        0 4px 14px rgba(0, 0, 0, 0.35),
+        0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+.player h2 {
+    font-size: 1.1rem;
+}
+
+.player-shell {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+/* Metallic round play disc: decoration only, the real controls are underneath */
+.player-disc {
+    flex: 0 0 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 1.5px solid #6b6b75;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e2e8 40%, #b8b8c2 70%, #8c8c98 100%);
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.4),
+        inset 0 1px 1px rgba(255, 255, 255, 0.9),
+        inset 0 -2px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: #2b2b2b;
+}
+
+/* Inset LCD read-out */
 .player-display {
-    background-color: #0b0b0b;
-    color: #7cfc00;
-    font-family: "Courier New", Courier, monospace;
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 0.5rem;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #18181c;
+    border: 1px solid #2d2d35;
+    border-radius: 12px;
+    padding: 0 0.75rem;
+    box-shadow:
+        inset 0 2px 5px rgba(0, 0, 0, 0.9),
+        inset 0 0 3px rgba(0, 0, 0, 0.8),
+        0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
-.player-display p {
+.player-marquee {
     margin: 0;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #f1f1f1;
 }
 
-.player-track {
-    font-weight: 700;
+/* Squircle push buttons on the right */
+.player-buttons {
+    display: flex;
+    gap: 0.3rem;
+    flex: 0 0 auto;
+}
+
+.player-push {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 7px;
+    border: 1px solid #72727e;
+    background: linear-gradient(180deg, #ffffff 0%, #f0f0f4 45%, #d1d1db 80%, #b3b3bf 100%);
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3a3a3a;
+}
+
+/* On narrow phones, hide the push buttons so the read-out keeps its room */
+@media (max-width: 400px) {
+    .player-buttons {
+        display: none;
+    }
+}
+
+/* Track name scrolls right to left, like the old players */
+.player-marquee > span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: player-scroll 18s linear infinite;
+}
+
+@keyframes player-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Stop the scrolling for visitors who ask for less motion */
+@media (prefers-reduced-motion: reduce) {
+    .player-marquee {
+        white-space: normal;
+    }
+
+    .player-marquee > span {
+        animation: none;
+        padding-left: 0;
+    }
 }
 
 .player-audio {
