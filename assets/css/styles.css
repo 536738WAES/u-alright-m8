@@ -21,19 +21,21 @@ a,
     text-decoration: underline;
 }
 
-/* Page width: the fixed width profile pages of the early 2000s used */
-.page {
-    max-width: 800px;
+/* Logo: never taller than the search box row */
+.site-logo {
+    width: auto;
+    max-height: 3.5rem;
+}
+
+/* Main menu: white links on the black bar */
+.main-nav .nav {
+    --bs-nav-link-color: var(--paper);
+    --bs-nav-link-hover-color: var(--paper);
 }
 
 /* Space between the boxes */
 main section {
     margin-bottom: 1rem;
-}
-
-.site-logo {
-    font-family: "UnifrakturMaguntia", Georgia, serif;
-    font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 h2 {

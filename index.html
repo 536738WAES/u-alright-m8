@@ -9,8 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=UnifrakturMaguntia&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -21,30 +20,31 @@
 </head>
 
 <body>
-    <div class="container page">
+    <div class="container-fluid py-3">
 
         <!-- Header: logo, search box and main navigation -->
-        <header>
-            <div class="row g-2 align-items-center">
-                <div class="col-12 col-md-6">
-                    <h1 class="site-logo">u alright m8?</h1>
+        <header class="mb-3">
+            <div class="row g-3 align-items-center mb-3">
+                <div class="col-12 col-md-6 col-xl-5">
+                    <h1 class="mb-0"><img src="assets/public/logos/u-alright-m8-logo-black.svg"
+                            class="img-fluid site-logo" width="2070" height="395" alt="u alright m8"></h1>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 col-xl-5 ms-xl-auto">
                     <form class="d-flex gap-2" role="search" action="https://www.google.com/search" method="get">
                         <label for="search-box" class="visually-hidden">Search the web</label>
-                        <input type="search" class="form-control" id="search-box" name="q" required>
-                        <button type="submit" class="btn btn-outline-dark">Search</button>
+                        <input type="search" class="form-control border-dark border-3 rounded-0" id="search-box"
+                            name="q" required>
+                        <button type="submit" class="btn btn-dark rounded-0">Search</button>
                     </form>
                 </div>
             </div>
-            <nav aria-label="Main">
+            <nav class="main-nav bg-dark" aria-label="Main">
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link px-2 active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link px-2" href="mail.html">Mail</a></li>
-                    <li class="nav-item"><a class="nav-link px-2" href="index.html#friends">Friends</a></li>
-                    <li class="nav-item"><a class="nav-link px-2" href="index.html#music">Music</a></li>
-                    <li class="nav-item"><button type="button" class="nav-link px-2" data-bs-toggle="modal"
+                    <li class="nav-item"><a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mail.html">Mail</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#friends">Friends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#music">Music</a></li>
+                    <li class="nav-item"><button type="button" class="nav-link" data-bs-toggle="modal"
                             data-bs-target="#signout-modal">Sign Out</button></li>
                 </ul>
             </nav>
@@ -54,53 +54,61 @@
             <div class="row g-3">
 
                 <!-- Left column -->
-                <div class="col-md-5">
+                <div class="col-12 col-md-5 col-xl-4">
 
-                    <section id="profile" aria-labelledby="profile-heading">
+                    <section id="profile" class="card border border-3 border-dark rounded-0" aria-labelledby="profile-heading">
                         <h2 id="profile-heading" class="visually-hidden">Profile</h2>
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <img src="assets/images/profile.jpeg" class="img-fluid" width="200" height="300"
-                                    alt="Portrait of PT Cheung">
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <img src="assets/images/profile.jpg" class="img-fluid w-100 border border-dark"
+                                        width="200" height="300" alt="Portrait of PT Cheung">
+                                </div>
+                                <div class="col-6">
+                                    <p class="mb-0">F</p>
+                                    <p class="mb-0">38</p>
+                                    <p class="mb-0">London</p>
+                                    <p>UK</p>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <p class="mb-0">F</p>
-                                <p class="mb-0">38</p>
-                                <p class="mb-0">London</p>
-                                <p>UK</p>
-                            </div>
+                            <p class="mt-3 mb-0">View my: <a href="pics.html">Pics</a> | <a href="#music">Playlists</a>
+                            </p>
                         </div>
-                        <p class="mb-0">View my: <a href="pics.html">Pics</a> | <a href="#music">Playlists</a></p>
                     </section>
 
-                    <section id="contact" aria-labelledby="contact-heading">
-                        <h2 id="contact-heading">Contacting PT</h2>
-                        <ul class="row row-cols-2 g-2 list-unstyled">
-                            <li class="col"><a href="mailto:536738@waes.ac.uk"><i class="bi bi-envelope"
-                                        aria-hidden="true"></i> Send Message</a></li>
-                            <li class="col"><a
-                                    href="mailto:?subject=u%20alright%20m8%3F&amp;body=https%3A%2F%2F536738waes.github.io%2Fu-alright-m8%2F"><i
-                                        class="bi bi-forward" aria-hidden="true"></i> Forward to Friend</a></li>
-                            <li class="col"><a href="https://www.linkedin.com/in/peucheung/"><i
-                                        class="bi bi-person-plus" aria-hidden="true"></i> Add to Friends</a></li>
-                            <li class="col"><a href="https://github.com/536738WAES/u-alright-m8"><i class="bi bi-star"
-                                        aria-hidden="true"></i> Add to Favourites</a></li>
-                            <li class="col"><a href="#comments"><i class="bi bi-chat-dots" aria-hidden="true"></i>
-                                    Instant Message</a></li>
-                            <li class="col"><button type="button" class="btn btn-link p-0" data-bs-toggle="modal"
-                                    data-bs-target="#block-modal"><i class="bi bi-slash-circle" aria-hidden="true"></i>
-                                    Block User</button></li>
-                            <li class="col"><a href="https://github.com/536738WAES/"><i class="bi bi-people"
-                                        aria-hidden="true"></i> Add to Group</a></li>
-                            <li class="col"><button type="button" class="btn btn-link p-0" data-bs-toggle="modal"
-                                    data-bs-target="#rank-modal"><i class="bi bi-trophy" aria-hidden="true"></i>
-                                    Rank User</button></li>
-                        </ul>
+                    <section id="contact" class="card border border-3 border-dark rounded-0" aria-labelledby="contact-heading">
+                        <h2 id="contact-heading" class="card-header bg-dark text-white rounded-0">Contacting PT</h2>
+                        <div class="card-body">
+                            <ul class="row row-cols-2 g-2 list-unstyled mb-0">
+                                <li class="col"><a href="mailto:536738@waes.ac.uk"><i class="bi bi-envelope"
+                                            aria-hidden="true"></i> Send Message</a></li>
+                                <li class="col"><a
+                                        href="mailto:?subject=u%20alright%20m8%3F&amp;body=https%3A%2F%2F536738waes.github.io%2Fu-alright-m8%2F"><i
+                                            class="bi bi-forward" aria-hidden="true"></i> Forward to Friend</a></li>
+                                <li class="col"><a href="https://www.linkedin.com/in/peucheung/"><i
+                                            class="bi bi-person-plus" aria-hidden="true"></i> Add to Friends</a></li>
+                                <li class="col"><a href="https://github.com/536738WAES/u-alright-m8"><i
+                                            class="bi bi-star" aria-hidden="true"></i> Add to Favourites</a></li>
+                                <li class="col"><a href="#comments"><i class="bi bi-chat-dots"
+                                            aria-hidden="true"></i> Instant Message</a></li>
+                                <li class="col"><button type="button" class="btn btn-link p-0 text-start"
+                                        data-bs-toggle="modal" data-bs-target="#block-modal"><i
+                                            class="bi bi-slash-circle" aria-hidden="true"></i> Block User</button>
+                                </li>
+                                <li class="col"><a href="https://github.com/536738WAES/"><i class="bi bi-people"
+                                            aria-hidden="true"></i> Add to Group</a></li>
+                                <li class="col"><button type="button" class="btn btn-link p-0 text-start"
+                                        data-bs-toggle="modal" data-bs-target="#rank-modal"><i class="bi bi-trophy"
+                                            aria-hidden="true"></i> Rank User</button></li>
+                            </ul>
+                        </div>
                     </section>
 
-                    <section id="url" aria-labelledby="url-heading">
-                        <h2 id="url-heading">u alright m8 URL</h2>
-                        <p class="mb-0">https://536738waes.github.io/u-alright-m8/</p>
+                    <section id="url" class="card border border-3 border-dark rounded-0" aria-labelledby="url-heading">
+                        <h2 id="url-heading" class="card-header bg-dark text-white rounded-0">u alright m8 URL</h2>
+                        <div class="card-body">
+                            <p class="mb-0 text-break">https://536738waes.github.io/u-alright-m8/</p>
+                        </div>
                     </section>
 
                     <section id="music" class="player" aria-labelledby="music-heading">
@@ -111,160 +119,178 @@
                             <p class="player-artist">Johann Sebastian Bach (1736) by PTC</p>
                         </div>
                         <div class="accordion" id="playlist">
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#track-1" aria-expanded="true" aria-controls="track-1">Variation
-                                        1</button>
-                                </h3>
-                                <div id="track-1" class="accordion-collapse collapse show" data-bs-parent="#playlist">
-                                    <div class="accordion-body">
-                                        <audio class="player-audio" controls preload="metadata">
-                                            <source src="assets/audio/variation1.mp3" type="audio/mpeg">
-                                        </audio>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#track-1" aria-expanded="true"
+                                            aria-controls="track-1">Variation 1</button>
+                                    </h3>
+                                    <div id="track-1" class="accordion-collapse collapse show" data-bs-parent="#playlist">
+                                        <div class="accordion-body">
+                                            <audio class="player-audio" controls preload="metadata">
+                                                <source src="assets/audio/variation1.mp3" type="audio/mpeg">
+                                            </audio>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#track-2" aria-expanded="false"
-                                        aria-controls="track-2">Variation 2</button>
-                                </h3>
-                                <div id="track-2" class="accordion-collapse collapse" data-bs-parent="#playlist">
-                                    <div class="accordion-body">
-                                        <audio class="player-audio" controls preload="metadata">
-                                            <source src="assets/audio/variation2.mp3" type="audio/mpeg">
-                                        </audio>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#track-2" aria-expanded="false"
+                                            aria-controls="track-2">Variation 2</button>
+                                    </h3>
+                                    <div id="track-2" class="accordion-collapse collapse" data-bs-parent="#playlist">
+                                        <div class="accordion-body">
+                                            <audio class="player-audio" controls preload="metadata">
+                                                <source src="assets/audio/variation2.mp3" type="audio/mpeg">
+                                            </audio>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#track-3" aria-expanded="false"
-                                        aria-controls="track-3">Variation 3</button>
-                                </h3>
-                                <div id="track-3" class="accordion-collapse collapse" data-bs-parent="#playlist">
-                                    <div class="accordion-body">
-                                        <audio class="player-audio" controls preload="metadata">
-                                            <source src="assets/audio/variation3.mp3" type="audio/mpeg">
-                                        </audio>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#track-3" aria-expanded="false"
+                                            aria-controls="track-3">Variation 3</button>
+                                    </h3>
+                                    <div id="track-3" class="accordion-collapse collapse" data-bs-parent="#playlist">
+                                        <div class="accordion-body">
+                                            <audio class="player-audio" controls preload="metadata">
+                                                <source src="assets/audio/variation3.mp3" type="audio/mpeg">
+                                            </audio>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#track-4" aria-expanded="false"
-                                        aria-controls="track-4">Variation 4</button>
-                                </h3>
-                                <div id="track-4" class="accordion-collapse collapse" data-bs-parent="#playlist">
-                                    <div class="accordion-body">
-                                        <audio class="player-audio" controls preload="metadata">
-                                            <source src="assets/audio/variation4.mp3" type="audio/mpeg">
-                                        </audio>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#track-4" aria-expanded="false"
+                                            aria-controls="track-4">Variation 4</button>
+                                    </h3>
+                                    <div id="track-4" class="accordion-collapse collapse" data-bs-parent="#playlist">
+                                        <div class="accordion-body">
+                                            <audio class="player-audio" controls preload="metadata">
+                                                <source src="assets/audio/variation4.mp3" type="audio/mpeg">
+                                            </audio>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </section>
 
-                    <section id="interests" aria-labelledby="interests-heading">
-                        <h2 id="interests-heading">PT's interests</h2>
-                        <dl class="row mb-0">
-                            <dt class="col-4">General</dt>
-                            <dd class="col-8">Your general interests go here.</dd>
-                            <dt class="col-4">Music</dt>
-                            <dd class="col-8">Your music interests go here.</dd>
-                        </dl>
+                    <section id="interests" class="card border border-3 border-dark rounded-0" aria-labelledby="interests-heading">
+                        <h2 id="interests-heading" class="card-header bg-dark text-white rounded-0">PT's interests</h2>
+                        <div class="card-body">
+                            <dl class="row g-2 mb-0">
+                                <dt class="col-4">General</dt>
+                                <dd class="col-8 mb-0">Your general interests go here.</dd>
+                                <dt class="col-4">Music</dt>
+                                <dd class="col-8 mb-0">Your music interests go here.</dd>
+                            </dl>
+                        </div>
                     </section>
 
                 </div>
 
                 <!-- Right column -->
-                <div class="col-md-7">
+                <div class="col-12 col-md-7 col-xl-8">
 
-                    <section id="network" aria-labelledby="network-heading">
+                    <section id="network" class="card border border-3 border-dark rounded-0" aria-labelledby="network-heading">
                         <h2 id="network-heading" class="visually-hidden">Network</h2>
-                        <p class="fw-bold text-center mb-0">PT is in your extended network</p>
-                        <p class="text-center mb-0"><a href="#blurbs">view more</a></p>
+                        <div class="card-body text-center">
+                            <p class="fw-bold mb-0">PT is in your extended network</p>
+                            <p class="mb-0"><a href="#blurbs">view more</a></p>
+                        </div>
                     </section>
 
-                    <section id="blurbs" aria-labelledby="blurbs-heading">
-                        <h2 id="blurbs-heading">PT's blurbs</h2>
-                        <h3>About me</h3>
-                        <p class="mb-0">Your about me text goes here.</p>
+                    <section id="blurbs" class="card border border-3 border-dark rounded-0" aria-labelledby="blurbs-heading">
+                        <h2 id="blurbs-heading" class="card-header bg-dark text-white rounded-0">PT's blurbs</h2>
+                        <div class="card-body">
+                            <h3>About me</h3>
+                            <p class="mb-0">Your about me text goes here.</p>
+                        </div>
                     </section>
 
-                    <section id="friends" aria-labelledby="friends-heading">
-                        <h2 id="friends-heading">PT's friend space (top 8)</h2>
-                        <p>PT has 8 friends.</p>
-                        <ul class="row row-cols-2 row-cols-md-4 g-2 list-unstyled mb-0">
-                            <li class="col text-center">
-                                <img src="assets/images/friend-1.jpg" class="img-fluid" width="100" height="100"
-                                    alt="Profile picture of Friend one" loading="lazy">
-                                <p class="small mb-0">Friend one</p>
-                            </li>
-                            <li class="col text-center">
-                                <img src="assets/images/friend-2.jpg" class="img-fluid" width="100" height="100"
-                                    alt="Profile picture of Friend two" loading="lazy">
-                                <p class="small mb-0">Friend two</p>
-                            </li>
-                            <li class="col text-center">
-                                <img src="assets/images/friend-3.jpg" class="img-fluid" width="100" height="100"
-                                    alt="Profile picture of Friend three" loading="lazy">
-                                <p class="small mb-0">Friend three</p>
-                            </li>
-                            <li class="col text-center">
-                                <img src="assets/images/friend-4.jpg" class="img-fluid" width="100" height="100"
-                                    alt="Profile picture of Friend four" loading="lazy">
-                                <p class="small mb-0">Friend four</p>
-                            </li>
-                            <li class="col text-center">
-                                <img src="assets/images/friend-5.jpg" class="img-fluid" width="100" height="100"
-                                    alt="Profile picture of Friend five" loading="lazy">
-                                <p class="small mb-0">Friend five</p>
-                            </li>
-                            <li class="col text-center">
-                                <img src="assets/images/friend-6.jpg" class="img-fluid" width="100" height="100"
-                                    alt="Profile picture of Friend six" loading="lazy">
-                                <p class="small mb-0">Friend six</p>
-                            </li>
-                            <li class="col text-center">
-                                <img src="assets/images/friend-7.jpg" class="img-fluid" width="100" height="100"
-                                    alt="Profile picture of Friend seven" loading="lazy">
-                                <p class="small mb-0">Friend seven</p>
-                            </li>
-                            <li class="col text-center">
-                                <img src="assets/images/friend-8.jpg" class="img-fluid" width="100" height="100"
-                                    alt="Profile picture of Friend eight" loading="lazy">
-                                <p class="small mb-0">Friend eight</p>
-                            </li>
-                        </ul>
+                    <section id="friends" class="card border border-3 border-dark rounded-0" aria-labelledby="friends-heading">
+                        <h2 id="friends-heading" class="card-header bg-dark text-white rounded-0">PT's friend space (top 8)</h2>
+                        <div class="card-body">
+                            <p class="fw-bold">PT has 8 friends.</p>
+                            <ul class="row row-cols-2 row-cols-sm-4 g-3 list-unstyled mb-0">
+                                    <li class="col text-center">
+                                        <img src="assets/images/friend-1.jpg" class="img-fluid w-100 border border-dark"
+                                            width="200" height="200" alt="Profile picture of Friend one"
+                                            loading="lazy">
+                                        <p class="small fw-bold mb-0">Friend one</p>
+                                    </li>
+                                    <li class="col text-center">
+                                        <img src="assets/images/friend-2.jpg" class="img-fluid w-100 border border-dark"
+                                            width="200" height="200" alt="Profile picture of Friend two"
+                                            loading="lazy">
+                                        <p class="small fw-bold mb-0">Friend two</p>
+                                    </li>
+                                    <li class="col text-center">
+                                        <img src="assets/images/friend-3.jpg" class="img-fluid w-100 border border-dark"
+                                            width="200" height="200" alt="Profile picture of Friend three"
+                                            loading="lazy">
+                                        <p class="small fw-bold mb-0">Friend three</p>
+                                    </li>
+                                    <li class="col text-center">
+                                        <img src="assets/images/friend-4.jpg" class="img-fluid w-100 border border-dark"
+                                            width="200" height="200" alt="Profile picture of Friend four"
+                                            loading="lazy">
+                                        <p class="small fw-bold mb-0">Friend four</p>
+                                    </li>
+                                    <li class="col text-center">
+                                        <img src="assets/images/friend-5.jpg" class="img-fluid w-100 border border-dark"
+                                            width="200" height="200" alt="Profile picture of Friend five"
+                                            loading="lazy">
+                                        <p class="small fw-bold mb-0">Friend five</p>
+                                    </li>
+                                    <li class="col text-center">
+                                        <img src="assets/images/friend-6.jpg" class="img-fluid w-100 border border-dark"
+                                            width="200" height="200" alt="Profile picture of Friend six"
+                                            loading="lazy">
+                                        <p class="small fw-bold mb-0">Friend six</p>
+                                    </li>
+                                    <li class="col text-center">
+                                        <img src="assets/images/friend-7.jpg" class="img-fluid w-100 border border-dark"
+                                            width="200" height="200" alt="Profile picture of Friend seven"
+                                            loading="lazy">
+                                        <p class="small fw-bold mb-0">Friend seven</p>
+                                    </li>
+                                    <li class="col text-center">
+                                        <img src="assets/images/friend-8.jpg" class="img-fluid w-100 border border-dark"
+                                            width="200" height="200" alt="Profile picture of Friend eight"
+                                            loading="lazy">
+                                        <p class="small fw-bold mb-0">Friend eight</p>
+                                    </li>
+                            </ul>
+                        </div>
                     </section>
 
-                    <section id="comments" aria-labelledby="comments-heading">
-                        <h2 id="comments-heading">PT's friends comments</h2>
-                        <article class="row g-2">
-                            <div class="col-12 col-md-3">
-                                <p class="fw-bold mb-0">Friend one</p>
-                            </div>
-                            <div class="col-12 col-md-9">
-                                <p class="small mb-0">13/11/2026</p>
-                                <p>Comment text goes here.</p>
-                            </div>
-                        </article>
-                        <article class="row g-2">
-                            <div class="col-12 col-md-3">
-                                <p class="fw-bold mb-0">Friend two</p>
-                            </div>
-                            <div class="col-12 col-md-9">
-                                <p class="small mb-0">13/11/2026</p>
-                                <p>Comment text goes here.</p>
-                            </div>
-                        </article>
-                        <p class="mb-0"><a href="mail.html">Add a comment</a></p>
+                    <section id="comments" class="card border border-3 border-dark rounded-0" aria-labelledby="comments-heading">
+                        <h2 id="comments-heading" class="card-header bg-dark text-white rounded-0">PT's friends comments</h2>
+                        <div class="card-body">
+                            <article class="row g-2 border-bottom border-dark pb-2 mb-2">
+                                <div class="col-12 col-sm-3">
+                                    <p class="fw-bold mb-0">Friend one</p>
+                                </div>
+                                <div class="col-12 col-sm-9">
+                                    <p class="small mb-0">13/11/2026</p>
+                                    <p class="mb-0">Comment text goes here.</p>
+                                </div>
+                            </article>
+                            <article class="row g-2 border-bottom border-dark pb-2 mb-2">
+                                <div class="col-12 col-sm-3">
+                                    <p class="fw-bold mb-0">Friend two</p>
+                                </div>
+                                <div class="col-12 col-sm-9">
+                                    <p class="small mb-0">13/11/2026</p>
+                                    <p class="mb-0">Comment text goes here.</p>
+                                </div>
+                            </article>
+                            <p class="mb-0"><a href="mail.html">Add a comment</a></p>
+                        </div>
                     </section>
 
                 </div>
@@ -272,8 +298,8 @@
             </div>
         </main>
 
-        <footer>
-            <p>u alright m8? Built by PT Cheung, 2026.</p>
+        <footer class="border-top border-3 border-dark pt-3">
+            <p class="mb-0">u alright m8? Built by PT Cheung, 2026.</p>
         </footer>
 
     </div>
@@ -281,7 +307,7 @@
     <!-- Block User pop-up -->
     <div class="modal fade" id="block-modal" tabindex="-1" aria-labelledby="block-modal-title" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content border border-3 border-dark rounded-0">
                 <div class="modal-header">
                     <h2 class="modal-title" id="block-modal-title">Block User</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -290,7 +316,7 @@
                     <p>You cannot block PT.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark rounded-0" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -299,7 +325,7 @@
     <!-- Rank User pop-up -->
     <div class="modal fade" id="rank-modal" tabindex="-1" aria-labelledby="rank-modal-title" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content border border-3 border-dark rounded-0">
                 <div class="modal-header">
                     <h2 class="modal-title" id="rank-modal-title">Rank User</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -308,7 +334,7 @@
                     <p>Rankings coming soon.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark rounded-0" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -317,7 +343,7 @@
     <!-- Sign Out pop-up -->
     <div class="modal fade" id="signout-modal" tabindex="-1" aria-labelledby="signout-modal-title" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content border border-3 border-dark rounded-0">
                 <div class="modal-header">
                     <h2 class="modal-title" id="signout-modal-title">Sign Out</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -326,7 +352,7 @@
                     <p>You cannot sign out.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark rounded-0" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
