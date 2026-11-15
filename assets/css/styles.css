@@ -259,3 +259,10 @@ main figure img {
     background: none;
     cursor: zoom-in;
 }
+
+/* Pics page: keep tall photos inside the screen when opened */
+.modal-body img {
+    max-height: 80vh;
+    object-fit: contain;
+    background-color: var(--ink);
+}

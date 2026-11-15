@@ -58,37 +58,39 @@
             <section class="card border border-3 border-dark rounded-0" aria-labelledby="pics-heading">
                 <h2 id="pics-heading" class="card-header bg-dark text-white rounded-0">PT's pics</h2>
                 <div class="card-body">
-                    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-6 g-3">
-                            <figure class="col">
-                                <img src="assets/images/pic-1.jpg" class="img-fluid w-100 border border-dark" width="300"
-                                    height="300" alt="Describe photo one here">
-                                <figcaption class="small">secondary school scrap book of all my m8s</figcaption>
-                            </figure>
-                            <figure class="col">
-                                <img src="assets/images/pic-2.jpg" class="img-fluid w-100 border border-dark" width="300"
-                                    height="300" alt="Describe photo two here">
-                                <figcaption class="small">London School of Lucha Libre class photo</figcaption>
-                            </figure>
-                            <figure class="col">
+                    <div class="row row-cols-2 row-cols-lg-4 g-3">
+                        <figure class="col">
+                            <button type="button" class="pic-thumb" data-bs-toggle="modal"
+                                data-bs-target="#pic-3-modal" aria-label="Open photo: PT with long blonde and brown hair and a white skull bandana, taking a selfie in a skull pendant and dark top">
                                 <img src="assets/images/pic-3.jpeg" class="img-fluid w-100 border border-dark" width="300"
-                                    height="300" alt="Describe photo three here">
-                                <figcaption class="small">an absolute donut with blonde hair and obsessed with Linkin Park</figcaption>
-                            </figure>
-                            <figure class="col">
+                                    height="300" alt="">
+                            </button>
+                            <figcaption class="small">an absolute donut with blonde hair and obsessed with Linkin Park</figcaption>
+                        </figure>
+                        <figure class="col">
+                            <button type="button" class="pic-thumb" data-bs-toggle="modal"
+                                data-bs-target="#pic-4-modal" aria-label="Open photo: PT winking at the camera in a leopard-print hat, with green and black hair and bright pink lipstick">
                                 <img src="assets/images/pic-4.jpeg" class="img-fluid w-100 border border-dark" width="300"
-                                    height="300" alt="Describe photo four here" loading="lazy">
-                                <figcaption class="small">donut with green hair. Iron Maiden fan</figcaption>
-                            </figure>
-                            <figure class="col">
+                                    height="300" alt="">
+                            </button>
+                            <figcaption class="small">donut with green hair. Iron Maiden fan</figcaption>
+                        </figure>
+                        <figure class="col">
+                            <button type="button" class="pic-thumb" data-bs-toggle="modal"
+                                data-bs-target="#pic-5-modal" aria-label="Open photo: PT on a train in a skull bandana, holding a pink flip phone">
                                 <img src="assets/images/pic-5.jpeg" class="img-fluid w-100 border border-dark" width="300"
-                                    height="300" alt="Describe photo five here" loading="lazy">
-                                <figcaption class="small">probably on my way to a gig, with my pink £29.99 state of the art, Siemens mobile phone</figcaption>
-                            </figure>
-                            <figure class="col">
+                                    height="300" alt="">
+                            </button>
+                            <figcaption class="small">probably on my way to a gig, with my pink £29.99 state of the art, Siemens mobile phone</figcaption>
+                        </figure>
+                        <figure class="col">
+                            <button type="button" class="pic-thumb" data-bs-toggle="modal"
+                                data-bs-target="#pic-6-modal" aria-label="Open photo: PT pulling a face next to a musician with spiky bleached hair at a gig">
                                 <img src="assets/images/pic-6.jpeg" class="img-fluid w-100 border border-dark" width="300"
-                                    height="300" alt="Describe photo six here" loading="lazy">
-                                <figcaption class="small">my very first standing gig at The Garage watching Zebrahead and met Lars Friedriksen from punk band Rancid</figcaption>
-                            </figure>
+                                    height="300" alt="">
+                            </button>
+                            <figcaption class="small">my very first standing gig at The Garage watching Zebrahead and met Lars Friedriksen from punk band Rancid</figcaption>
+                        </figure>
                     </div>
                     <p class="mt-3 mb-0"><a href="index.html">Back to profile</a></p>
                 </div>
@@ -99,6 +101,70 @@
             <p class="mb-0">u alright m8? Built by PT Cheung, 2026.</p>
         </footer>
 
+    </div>
+
+    <!-- Photo 3 pop-up -->
+    <div class="modal fade" id="pic-3-modal" tabindex="-1" aria-labelledby="pic-3-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border border-3 border-dark rounded-0">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-6" id="pic-3-title">an absolute donut with blonde hair and obsessed with Linkin Park</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="assets/images/pic-3.jpeg" class="img-fluid w-100" width="768" height="1024"
+                        alt="PT with long blonde and brown hair and a white skull bandana, taking a selfie in a skull pendant and dark top">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo 4 pop-up -->
+    <div class="modal fade" id="pic-4-modal" tabindex="-1" aria-labelledby="pic-4-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border border-3 border-dark rounded-0">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-6" id="pic-4-title">donut with green hair. Iron Maiden fan</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="assets/images/pic-4.jpeg" class="img-fluid w-100" width="1536" height="2048"
+                        alt="PT winking at the camera in a leopard-print hat, with green and black hair and bright pink lipstick">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo 5 pop-up -->
+    <div class="modal fade" id="pic-5-modal" tabindex="-1" aria-labelledby="pic-5-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border border-3 border-dark rounded-0">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-6" id="pic-5-title">probably on my way to a gig, with my pink £29.99 state of the art, Siemens mobile phone</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="assets/images/pic-5.jpeg" class="img-fluid w-100" width="2048" height="1536"
+                        alt="PT on a train in a skull bandana, holding a pink flip phone">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo 6 pop-up -->
+    <div class="modal fade" id="pic-6-modal" tabindex="-1" aria-labelledby="pic-6-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border border-3 border-dark rounded-0">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-6" id="pic-6-title">my very first standing gig at The Garage watching Zebrahead and met Lars Friedriksen from punk band Rancid</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="assets/images/pic-6.jpeg" class="img-fluid w-100" width="640" height="480"
+                        alt="PT pulling a face next to a musician with spiky bleached hair at a gig">
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Sign Out pop-up -->
