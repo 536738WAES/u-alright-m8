@@ -94,24 +94,22 @@
                                 <li class="col"><button type="button" class="btn btn-link p-0 text-start"
                                         data-bs-toggle="modal" data-bs-target="#message-modal"><i class="bi bi-envelope"
                                             aria-hidden="true"></i> Send Message</button></li>
-                                <li class="col"><a
-                                        href="mailto:?subject=u%20alright%20m8%3F&amp;body=https%3A%2F%2F536738waes.github.io%2Fu-alright-m8%2F"><i
-                                            class="bi bi-forward" aria-hidden="true"></i> Forward to Friend</a></li>
+                                <li class="col"><button type="button" class="btn btn-link p-0 text-start"
+                                        data-bs-toggle="modal" data-bs-target="#forward-modal"><i class="bi bi-forward"
+                                            aria-hidden="true"></i> Forward to Friend</button></li>
                                 <li class="col"><a href="https://www.linkedin.com/in/peucheung/"><i
                                             class="bi bi-person-plus" aria-hidden="true"></i> Add to Friends</a></li>
-                                <li class="col"><a href="https://github.com/536738WAES/u-alright-m8"><i
-                                            class="bi bi-star" aria-hidden="true"></i> Add to Favourites</a></li>
-                                <li class="col"><a href="#comments"><i class="bi bi-chat-dots" aria-hidden="true"></i>
-                                        Instant Message</a></li>
+                                <li class="col"><input type="checkbox" class="btn-check" id="fave-toggle" autocomplete="off">
+                                    <label class="btn btn-link p-0 text-start fave-btn" for="fave-toggle"><i
+                                            class="bi bi-star fave-off" aria-hidden="true"></i><i
+                                            class="bi bi-star-fill fave-on" aria-hidden="true"></i> Add to Favourites</label></li>
+                                <li class="col"><button type="button" class="btn btn-link p-0 text-start"
+                                        data-bs-toggle="modal" data-bs-target="#message-modal"><i class="bi bi-chat-dots"
+                                            aria-hidden="true"></i> Instant Message</button></li>
                                 <li class="col"><button type="button" class="btn btn-link p-0 text-start"
                                         data-bs-toggle="modal" data-bs-target="#block-modal"><i
                                             class="bi bi-slash-circle" aria-hidden="true"></i> Block User</button>
                                 </li>
-                                <li class="col"><a href="https://github.com/536738WAES/"><i class="bi bi-people"
-                                            aria-hidden="true"></i> Add to Group</a></li>
-                                <li class="col"><button type="button" class="btn btn-link p-0 text-start"
-                                        data-bs-toggle="modal" data-bs-target="#rank-modal"><i class="bi bi-trophy"
-                                            aria-hidden="true"></i> Rank User</button></li>
                             </ul>
                         </div>
                     </section>
@@ -514,6 +512,24 @@
         </div>
     </div>
 
+    <!-- Forward to Friend pop-up -->
+    <div class="modal fade" id="forward-modal" tabindex="-1" aria-labelledby="forward-modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content border border-3 border-dark rounded-0">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="forward-modal-title">Forward to Friend</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-0">Forwarded!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark rounded-0" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Block User pop-up -->
     <div class="modal fade" id="block-modal" tabindex="-1" aria-labelledby="block-modal-title" aria-hidden="true">
         <div class="modal-dialog">
@@ -523,26 +539,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>You cannot block PT loser, go home luv.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-dark rounded-0" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Rank User pop-up -->
-    <div class="modal fade" id="rank-modal" tabindex="-1" aria-labelledby="rank-modal-title" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content border border-3 border-dark rounded-0">
-                <div class="modal-header">
-                    <h2 class="modal-title" id="rank-modal-title">Rank User</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Rankings coming soon.</p>
-                </div>
+                    <p>You can't block me loser, go back 2 whence u came from, luv.</p>
+implify contact box, add favourites star toggle                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-dark rounded-0" data-bs-dismiss="modal">Close</button>
                 </div>

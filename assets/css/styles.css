@@ -341,3 +341,8 @@ main figure img {
 
 /* Big numbers in "Displaying 10 of 6066 comments" */
 .comment-count { font-size: 1.4em; font-weight: 400; }
+
+/* Add to Favourites: plain star, black filled star when ticked */
+.fave-on { display: none; }
+.btn-check:checked + .fave-btn .fave-off { display: none; }
+.btn-check:checked + .fave-btn .fave-on { display: inline; }
