@@ -311,3 +311,33 @@ main figure img {
     outline: 3px solid var(--ink);
     outline-offset: 2px;
 }
+
+/* Friends comments: grey name-and-picture cell on the left, message on the right */
+.comment {
+    border: 1px solid var(--ink);
+    margin-bottom: 0.5rem;
+}
+
+.comment-from {
+    background-color: #e9e9e9;
+    padding: 0.25rem 0.5rem;
+    border-right: 1px solid var(--ink);
+    width: 120px;
+}
+
+.comment-body {
+    padding: 0.25rem 0.5rem;
+}
+
+.comment-pic {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100px;
+}
+
+/* Gifts and stickers inside a comment */
+.comment-gift { display: block; max-width: 150px; height: auto; margin-top: 0.5rem; }
+
+/* Big numbers in "Displaying 10 of 6066 comments" */
+.comment-count { font-size: 1.4em; font-weight: 400; }
