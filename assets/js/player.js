@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 /* u alright m8 media player
    Connects the big play button, the time read-out and the track list
    to the page's <audio> element. */
