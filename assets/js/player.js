@@ -9,6 +9,7 @@ const playIcon = playButton.querySelector("i");
 const titleText = document.getElementById("player-title");
 const currentTime = document.getElementById("player-current");
 const totalTime = document.getElementById("player-total");
+const seekBar = document.getElementById("player-seek");
 const trackButtons = document.querySelectorAll(".player-track-btn");
 
 /* Turn a number of seconds into mm:ss */
@@ -61,7 +62,20 @@ audio.addEventListener("ended", function () {
 });
 audio.addEventListener("loadedmetadata", function () {
     totalTime.textContent = formatTime(audio.duration);
+    seekBar.max = isFinite(audio.duration) ? audio.duration : 0;
 });
 audio.addEventListener("timeupdate", function () {
     currentTime.textContent = formatTime(audio.currentTime);
+    seekBar.value = audio.currentTime;
 });
+
+/* Progress bar: drag or click to jump to any point in the track */
+seekBar.addEventListener("input", function () {
+    audio.currentTime = seekBar.value;
+});
+
+/* If the track details loaded before this script ran, set the bar length now */
+if (audio.readyState > 0) {
+    totalTime.textContent = formatTime(audio.duration);
+    seekBar.max = audio.duration;
+}

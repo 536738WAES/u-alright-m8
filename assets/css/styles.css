@@ -140,7 +140,7 @@ main section {
 .player-display {
     flex: 1 1 auto;
     min-width: 0;
-    height: 3.5rem;
+    height: 4.25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -453,3 +453,6 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 .friend-link { display: block; text-decoration: none; color: var(--ink); }
 .friend-link:hover p, .friend-link:focus p { text-decoration: underline; }
 .profile-square, .friend-back-pic { aspect-ratio: 1 / 1; object-fit: cover; }
+
+/* Media player progress bar */
+.player-seek { width: 100%; height: 0.6rem; margin: 0.15rem 0; accent-color: var(--grey-6); cursor: url("../images/cursor-pointer.png") 16 14, pointer; }

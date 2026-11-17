@@ -93,6 +93,7 @@ All checks were run on the live site on 17 November 2026.
 | HTML, pics.html and mail.html | W3C Nu HTML Checker | To do |
 | CSS | [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) | No errors |
 | JavaScript, player.js | [JSHint](https://jshint.com/) | No warnings |
+| Messenger form | Test message sent to PT | Received by email with mood, name, email and message |
 | Accessibility, index.html | [WAVE](https://wave.webaim.org/) | 0 errors, 0 contrast errors, AIM score 9.6 out of 10 |
 | Lighthouse, all pages, desktop and mobile | [Lighthouse](https://developer.chrome.com/docs/lighthouse/) | 98 to 100 Performance, 100 Accessibility, 96 Best Practices, 100 SEO (see below) |
 
@@ -136,6 +137,9 @@ Best Practices was 96 on every page because of a missing favicon and two sticker
 ![Lighthouse scores for mail.html on desktop](docs/lighthouse-mail-desktop.png)
 
 ![Lighthouse scores for mail.html on mobile](docs/lighthouse-mail-mobile.png)
+
+### Messenger
+![Formspree email showing a test message with the mood, name, email and message fields](docs/test-formspree.png)
 
 ## Bugs and fixes
 
