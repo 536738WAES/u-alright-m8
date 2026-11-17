@@ -94,6 +94,7 @@ All checks were run on the live site on 17 November 2026.
 | CSS | [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) | No errors |
 | JavaScript, player.js | [JSHint](https://jshint.com/) | No warnings |
 | Accessibility, index.html | [WAVE](https://wave.webaim.org/) | 0 errors, 0 contrast errors, AIM score 9.6 out of 10 |
+| Lighthouse, all pages, desktop and mobile | [Lighthouse](https://developer.chrome.com/docs/lighthouse/) | 98 to 100 Performance, 100 Accessibility, 96 Best Practices, 100 SEO (see below) |
 
 ### HTML
 ![W3C HTML checker: no errors or warnings on index.html](docs/test-html-clean.png)
@@ -111,6 +112,31 @@ The CSS validator also lists warnings. These come from the CSS variables and fro
 
 WAVE also lists 23 alerts. These are prompts to check by hand, not failures: for example, bold lines it thinks might be headings, and the long description on the profile photo, which is kept on purpose.
 
+### Lighthouse
+
+| Page | View | Performance | Accessibility | Best Practices | SEO |
+|---|---|---|---|---|---|
+| index.html | Desktop | 98 | 100 | 96 | 100 |
+| index.html | Mobile | 98 | 100 | 96 | 100 |
+| pics.html | Desktop | 98 | 100 | 96 | 100 |
+| pics.html | Mobile | 99 | 100 | 96 | 100 |
+| mail.html | Desktop | 100 | 100 | 96 | 100 |
+| mail.html | Mobile | 100 | 100 | 96 | 100 |
+
+Best Practices was 96 on every page because of a missing favicon and two stickers without a set size (see Bugs and fixes).
+
+![Lighthouse scores for index.html on desktop](docs/lighthouse-index-desktop.png)
+
+![Lighthouse scores for index.html on mobile](docs/lighthouse-index-mobile.png)
+
+![Lighthouse scores for pics.html on desktop](docs/lighthouse-pics-desktop.png)
+
+![Lighthouse scores for pics.html on mobile](docs/lighthouse-pics-mobile.png)
+
+![Lighthouse scores for mail.html on desktop](docs/lighthouse-mail-desktop.png)
+
+![Lighthouse scores for mail.html on mobile](docs/lighthouse-mail-mobile.png)
+
 ## Bugs and fixes
 
 | Bug | Cause | Fix |
@@ -119,6 +145,7 @@ WAVE also lists 23 alerts. These are prompts to check by hand, not failures: for
 | JSHint showed 9 warnings on player.js | JSHint checks against old JavaScript by default | Added `/* jshint esversion: 6 */` to the top of the file |
 | Logo and footer unreadable on the background tile | Black text on a black-and-silver tile | White panels behind the header and footer |
 | Custom cursors not showing | Cursor images were 128px, too big for most browsers | Resized to 32px |
+| Lighthouse Best Practices 96: a 404 error and two unsized images | No favicon, and the heart and skull stickers had no width and height | Added a heart favicon to every page, and width and height to both stickers |
 
 HTML checker before the fixes:
 
