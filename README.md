@@ -83,14 +83,22 @@ Due to:<br>
 - ElevenLabs Music: producing PT's Bach arrangements for the media player
 - Sweezy Cursors: the heart cursors
 
-### Testing
+### Screenshots
+
+| Page | Desktop | Mobile |
+|---|---|---|
+| index.html | To add | To add |
+| pics.html | <img src="docs/screen-pics-desktop.png" width="400" alt="Pics page on desktop"> | <img src="docs/screen-pics-mobile.png" width="180" alt="Pics page on mobile"> |
+| mail.html | <img src="docs/screen-mail-desktop.png" width="400" alt="Mail page on desktop"> | <img src="docs/screen-mail-mobile.png" width="180" alt="Mail page on mobile"> |
+
+## Testing
 
 All checks were run on the live site on 17 November 2026.
 
 | Test | Tool | Result |
 |---|---|---|
 | HTML, index.html | [W3C Nu HTML Checker](https://validator.w3.org/nu/) | No errors or warnings |
-| HTML, pics.html and mail.html | W3C Nu HTML Checker | To do |
+| HTML, pics.html and mail.html | W3C Nu HTML Checker | No errors or warnings |
 | CSS | [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) | No errors |
 | JavaScript, player.js | [JSHint](https://jshint.com/) | No warnings |
 | Messenger form | Test message sent to PT | Received by email with mood, name, email and message |
@@ -99,6 +107,10 @@ All checks were run on the live site on 17 November 2026.
 
 ### HTML
 ![W3C HTML checker: no errors or warnings on index.html](docs/test-html-clean.png)
+
+![W3C HTML checker: no errors or warnings on pics.html](docs/test-html-pics.png)
+
+![W3C HTML checker: no errors or warnings on mail.html](docs/test-html-mail.png)
 
 ### CSS
 ![W3C CSS validator: no errors found](docs/test-css-clean.png)
