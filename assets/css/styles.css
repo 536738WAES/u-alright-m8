@@ -346,3 +346,22 @@ main figure img {
 .fave-on { display: none; }
 .btn-check:checked + .fave-btn .fave-off { display: none; }
 .btn-check:checked + .fave-btn .fave-on { display: inline; }
+
+/* Page background tile */
+body { background: url("../images/tile.jpg") repeat; background-size: 400px auto; }
+
+/* White panels so the logo and footer stay readable on the tile */
+body > .container-fluid > header, body > .container-fluid > footer { background-color: var(--paper); padding: 0.75rem; }
+
+/* Bigger gaps between boxes so the background shows through */
+main section + section { margin-top: 2rem; }
+
+/* Whole page narrower and centred, like the 2000s fixed-width layout */
+.page-wrap { max-width: 1200px; }
+
+/* Interests box ends level with the last comment; the long band list scrolls inside it */
+@media (min-width: 768px) {
+    .left-col { display: flex; flex-direction: column; }
+    #interests { flex: 1 1 0; min-height: 12rem; overflow: hidden; }
+    #interests .card-body { overflow-y: auto; }
+}
