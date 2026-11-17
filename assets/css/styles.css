@@ -8,6 +8,38 @@
     --bs-link-color-rgb: 11, 11, 11;
     --bs-link-hover-color: #0b0b0b;
     --bs-link-hover-color-rgb: 11, 11, 11;
+    /* Greys (light to dark), highlights and shadows, mostly for the media player */
+    --grey-1: #f1f1f1;
+    --grey-2: #f0f0f4;
+    --grey-3: #ececec;
+    --grey-4: #e9e9e9;
+    --grey-5: #e2e2e8;
+    --grey-6: #d4d4d8;
+    --grey-7: #d1d1db;
+    --grey-8: #bfbfca;
+    --grey-9: #bdbdbd;
+    --grey-10: #b8b8c2;
+    --grey-11: #b3b3bf;
+    --grey-12: #9e9ea7;
+    --grey-13: #8c8c98;
+    --grey-14: #7d7d89;
+    --grey-15: #72727e;
+    --grey-16: #6b6b75;
+    --grey-17: #3a3a3a;
+    --grey-18: #3a3a44;
+    --grey-19: #2d2d35;
+    --grey-20: #2b2b2b;
+    --grey-21: #18181c;
+    --shadow-1: rgba(0, 0, 0, 0.2);
+    --shadow-2: rgba(0, 0, 0, 0.3);
+    --shadow-3: rgba(0, 0, 0, 0.35);
+    --shadow-4: rgba(0, 0, 0, 0.4);
+    --shadow-5: rgba(0, 0, 0, 0.45);
+    --shadow-6: rgba(0, 0, 0, 0.5);
+    --shadow-7: rgba(0, 0, 0, 0.8);
+    --shadow-8: rgba(0, 0, 0, 0.9);
+    --shine-1: rgba(255, 255, 255, 0.6);
+    --shine-2: rgba(255, 255, 255, 0.9);
 }
 
 body {
@@ -51,18 +83,26 @@ h3 {
     font-weight: 700;
 }
 
+/* Panels */
+main section {
+    border: 3px double var(--ink);
+    background-color: var(--paper);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
 /* Music player: silver 2000s-style casing.
    Visual skin ported from PT's own Stitch prototype and rewritten as plain CSS. */
 .player {
-    border: 1px solid #7d7d89;
+    border: 1px solid var(--grey-14);
     border-radius: 18px;
-    background: linear-gradient(180deg, #ffffff 0%, #ececec 15%, #d4d4d8 50%, #bfbfca 70%, #9e9ea7 100%);
+    background: linear-gradient(180deg, var(--paper) 0%, var(--grey-3) 15%, var(--grey-6) 50%, var(--grey-8) 70%, var(--grey-12) 100%);
     padding: 0.75rem;
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.9),
-        inset 0 -1px 2px rgba(0, 0, 0, 0.45),
-        0 4px 14px rgba(0, 0, 0, 0.35),
-        0 1px 3px rgba(0, 0, 0, 0.2);
+        inset 0 1px 0 var(--shine-2),
+        inset 0 -1px 2px var(--shadow-5),
+        0 4px 14px var(--shadow-3),
+        0 1px 3px var(--shadow-1);
 }
 
 .player-heading {
@@ -83,17 +123,17 @@ h3 {
     flex: 0 0 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
-    border: 1.5px solid #6b6b75;
-    background: linear-gradient(135deg, #ffffff 0%, #e2e2e8 40%, #b8b8c2 70%, #8c8c98 100%);
+    border: 1.5px solid var(--grey-16);
+    background: linear-gradient(135deg, var(--paper) 0%, var(--grey-5) 40%, var(--grey-10) 70%, var(--grey-13) 100%);
     box-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.4),
-        inset 0 1px 1px rgba(255, 255, 255, 0.9),
-        inset 0 -2px 3px rgba(0, 0, 0, 0.5);
+        0 2px 4px var(--shadow-4),
+        inset 0 1px 1px var(--shine-2),
+        inset 0 -2px 3px var(--shadow-6);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.75rem;
-    color: #2b2b2b;
+    color: var(--grey-20);
 }
 
 /* Inset LCD read-out */
@@ -105,14 +145,14 @@ h3 {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    background: #18181c;
-    border: 1px solid #2d2d35;
+    background: var(--grey-21);
+    border: 1px solid var(--grey-19);
     border-radius: 12px;
     padding: 0 0.75rem;
     box-shadow:
-        inset 0 2px 5px rgba(0, 0, 0, 0.9),
-        inset 0 0 3px rgba(0, 0, 0, 0.8),
-        0 1px 0 rgba(255, 255, 255, 0.6);
+        inset 0 2px 5px var(--shadow-8),
+        inset 0 0 3px var(--shadow-7),
+        0 1px 0 var(--shine-1);
 }
 
 .player-marquee {
@@ -120,7 +160,7 @@ h3 {
     white-space: nowrap;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #f1f1f1;
+    color: var(--grey-1);
 }
 
 /* Squircle push buttons on the right */
@@ -134,16 +174,16 @@ h3 {
     width: 2rem;
     height: 2rem;
     border-radius: 7px;
-    border: 1px solid #72727e;
-    background: linear-gradient(180deg, #ffffff 0%, #f0f0f4 45%, #d1d1db 80%, #b3b3bf 100%);
+    border: 1px solid var(--grey-15);
+    background: linear-gradient(180deg, var(--paper) 0%, var(--grey-2) 45%, var(--grey-7) 80%, var(--grey-11) 100%);
     box-shadow:
-        0 1px 2px rgba(0, 0, 0, 0.35),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9),
-        inset 0 -1px 2px rgba(0, 0, 0, 0.3);
+        0 1px 2px var(--shadow-3),
+        inset 0 1px 0 var(--shine-2),
+        inset 0 -1px 2px var(--shadow-2);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3a3a3a;
+    color: var(--grey-17);
 }
 
 /* Real buttons inside the player: reset the browser's button look */
@@ -157,20 +197,20 @@ button.player-disc:active,
 button.player-push:active,
 button.player-push[aria-expanded="true"] {
     transform: translateY(1px);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 2px 4px var(--shadow-6);
 }
 
 .player-time {
     margin: 0;
     font-family: "Courier New", Courier, monospace;
     font-size: 0.8rem;
-    color: #bdbdbd;
+    color: var(--grey-9);
 }
 
 /* Track list that folds out from the list button */
 .player-list {
     margin-top: 0.6rem;
-    background: #18181c;
+    background: var(--grey-21);
     border-radius: 10px;
     padding: 0.4rem;
 }
@@ -182,13 +222,13 @@ button.player-push[aria-expanded="true"] {
     background: none;
     border: 0;
     border-radius: 6px;
-    color: #f1f1f1;
+    color: var(--grey-1);
     padding: 0.35rem 0.6rem;
 }
 
 .player-track-btn:hover,
 .player-track-btn[aria-current="true"] {
-    background: #3a3a44;
+    background: var(--grey-18);
 }
 
 /* On narrow phones, hide the push buttons so the read-out keeps its room */
@@ -199,7 +239,7 @@ button.player-push[aria-expanded="true"] {
 }
 
 /* Track name scrolls right to left, like the old players */
-.player-marquee > span {
+.player-marquee>span {
     display: inline-block;
     padding-left: 100%;
     animation: player-scroll 18s linear infinite;
@@ -221,7 +261,7 @@ button.player-push[aria-expanded="true"] {
         white-space: normal;
     }
 
-    .player-marquee > span {
+    .player-marquee>span {
         animation: none;
         padding-left: 0;
     }
@@ -239,6 +279,7 @@ figure {
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
+
 /* Friend space: bigger names under the pictures */
 #friends li p {
     font-size: 1.1rem;
@@ -302,12 +343,12 @@ main figure img {
     color: var(--ink);
 }
 
-.btn-check:checked + .mood-btn {
+.btn-check:checked+.mood-btn {
     background-color: var(--ink);
     color: var(--paper);
 }
 
-.btn-check:focus-visible + .mood-btn {
+.btn-check:focus-visible+.mood-btn {
     outline: 3px solid var(--ink);
     outline-offset: 2px;
 }
@@ -319,7 +360,7 @@ main figure img {
 }
 
 .comment-from {
-    background-color: #e9e9e9;
+    background-color: var(--grey-4);
     padding: 0.25rem 0.5rem;
     border-right: 1px solid var(--ink);
     width: 120px;
@@ -337,31 +378,69 @@ main figure img {
 }
 
 /* Gifts and stickers inside a comment */
-.comment-gift { display: block; max-width: 150px; height: auto; margin-top: 0.5rem; }
+.comment-gift {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin-top: 0.5rem;
+}
 
 /* Big numbers in "Displaying 10 of 6066 comments" */
-.comment-count { font-size: 1.4em; font-weight: 400; }
+.comment-count {
+    font-size: 1.4em;
+    font-weight: 400;
+}
 
 /* Add to Favourites: plain star, black filled star when ticked */
-.fave-on { display: none; }
-.btn-check:checked + .fave-btn .fave-off { display: none; }
-.btn-check:checked + .fave-btn .fave-on { display: inline; }
+.fave-on {
+    display: none;
+}
+
+.btn-check:checked+.fave-btn .fave-off {
+    display: none;
+}
+
+.btn-check:checked+.fave-btn .fave-on {
+    display: inline;
+}
 
 /* Page background tile */
-body { background: url("../images/tile.jpg") repeat; background-size: 400px auto; }
+body {
+    background: url("../images/tile.jpg") repeat;
+    background-size: 400px auto;
+}
 
 /* White panels so the logo and footer stay readable on the tile */
-body > .container-fluid > header, body > .container-fluid > footer { background-color: var(--paper); padding: 0.75rem; }
+body>.container-fluid>header,
+body>.container-fluid>footer {
+    background-color: var(--paper);
+    padding: 0.75rem;
+}
 
 /* Bigger gaps between boxes so the background shows through */
-main section + section { margin-top: 2rem; }
+main section+section {
+    margin-top: 2rem;
+}
 
 /* Whole page narrower and centred, like the 2000s fixed-width layout */
-.page-wrap { max-width: 1200px; }
+.page-wrap {
+    max-width: 1200px;
+}
 
 /* Interests box ends level with the last comment; the long band list scrolls inside it */
 @media (min-width: 768px) {
-    .left-col { display: flex; flex-direction: column; }
-    #interests { flex: 1 1 0; min-height: 12rem; overflow: hidden; }
-    #interests .card-body { overflow-y: auto; }
+    .left-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #interests {
+        flex: 1 1 0;
+        min-height: 12rem;
+        overflow: hidden;
+    }
+
+    #interests .card-body {
+        overflow-y: auto;
+    }
 }
