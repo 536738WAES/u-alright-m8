@@ -67,6 +67,10 @@ Due to:<br>
 
 ### Look and layout
 - **Y2K styling:** black-and-white boxes with heavy borders, Abril Fatface headings and a tiled background behind a fixed-width, centred page.
+- **Colour palette:** black and white with silver greys for the media player. Every colour is a CSS variable in `styles.css`.
+
+  ![Colour palette: ink black, paper white and four greys](docs/palette.png)
+
 - **Responsive:** two columns on laptops, stacking into one column on phones. The media player's side buttons hide on very small screens.
 - **Custom cursors:** a Y2K heart-and-arrow cursor, with a winged heart over links and buttons, like the cursor sites everyone used in the 2000s. The normal typing cursor stays in text boxes.
 
