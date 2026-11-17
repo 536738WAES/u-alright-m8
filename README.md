@@ -35,6 +35,14 @@ For me to recreate my MySpace page from 2003 I guess in 2026, but if this works 
 
 ## Credits
 
+### Media player
+
+- Reference: the original early-2000s profile screenshot from [Digital Native](https://www.digitalnative.tech/p/myspace-tumblr-and-the-long-lost), used as the visual brief for the player.
+- Made with: Google Stitch, which generated the player's Bootstrap HTML, CSS and play controls from that reference.
+- Merged by: PT Cheung, who brought the Stitch code into this site and fitted it to the layout, with the play controls in `player.js`.
+
+![Google Stitch prototype of the media player next to the reference image](docs/media-player-google-stitch.png)
+
 ### Asset log
 
 Every image, sound and logo file in the site.
