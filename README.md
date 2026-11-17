@@ -1,4 +1,5 @@
 # u alright m8
+Live site: https://536738waes.github.io/u-alright-m8/
 
 A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+3% sneaky JavaScript for the media player ONLY due to there being no ActionScript/Flash widget equivalent in 2026.)
 
@@ -87,7 +88,7 @@ Due to:<br>
 
 | Page | Desktop | Mobile |
 |---|---|---|
-| index.html | To add | To add |
+| index.html | <img src="docs/screen-index-desktop.png" width="400" alt="Profile page on desktop"> | <img src="docs/screen-index-mobile.png" width="180" alt="Profile page on mobile"> |
 | pics.html | <img src="docs/screen-pics-desktop.png" width="400" alt="Pics page on desktop"> | <img src="docs/screen-pics-mobile.png" width="180" alt="Pics page on mobile"> |
 | mail.html | <img src="docs/screen-mail-desktop.png" width="400" alt="Mail page on desktop"> | <img src="docs/screen-mail-mobile.png" width="180" alt="Mail page on mobile"> |
 
