@@ -1,4 +1,9 @@
-# u alright m8
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/public/logos/u-alright-m8-logo-white.svg">
+    <img src="assets/public/logos/u-alright-m8-logo-black.svg" alt="u alright m8" width="420">
+  </picture>
+</h1>
 Live site: https://536738waes.github.io/u-alright-m8/
 
 A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+1.5% sneaky JavaScript for the media player ONLY due to there being no ActionScript/Flash widget equivalent in 2026.)
