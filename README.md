@@ -83,12 +83,40 @@ Due to:<br>
 - ElevenLabs Music: producing PT's Bach arrangements for the media player
 - Sweezy Cursors: the heart cursors
 
-### Testing tools
-- W3C HTML validator, Jigsaw CSS validator, JSHint, WAVE and Lighthouse (results in Testing)
+### Testing
 
-## Wireframes
+All checks were run on the live site on 17 November 2026.
 
-## Testing
+| Test | Tool | Result |
+|---|---|---|
+| HTML, index.html | [W3C Nu HTML Checker](https://validator.w3.org/nu/) | No errors or warnings |
+| HTML, pics.html and mail.html | W3C Nu HTML Checker | To do |
+| CSS | [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) | No errors |
+| JavaScript, player.js | [JSHint](https://jshint.com/) | No warnings |
+
+### HTML
+![W3C HTML checker: no errors or warnings on index.html](docs/test-html-clean.png)
+
+### CSS
+![W3C CSS validator: no errors found](docs/test-css-clean.png)
+
+The CSS validator also lists warnings. These come from the CSS variables and from Bootstrap's own stylesheet, which the validator cannot check; they are not errors in the site's CSS.
+
+### JavaScript
+![JSHint: player.js with no warnings](docs/test-jshint-clean.png)
+
+## Bugs and fixes
+
+| Bug | Cause | Fix |
+|---|---|---|
+| HTML checker showed 9 errors and 8 warnings on index.html | `<3` hearts read as tags, an `autocomplete` setting on the favourites tick box, pop-ups labelled without saying they were dialogs, unnormalised fancy text, comments without headings | `<3` written as `&lt;3`, setting removed, `role="dialog"` added to every pop-up, text normalised, friend names made into small headings |
+| JSHint showed 9 warnings on player.js | JSHint checks against old JavaScript by default | Added `/* jshint esversion: 6 */` to the top of the file |
+| Logo and footer unreadable on the background tile | Black text on a black-and-silver tile | White panels behind the header and footer |
+| Custom cursors not showing | Cursor images were 128px, too big for most browsers | Resized to 32px |
+
+HTML checker before the fixes:
+
+![W3C HTML checker showing the errors before the fixes](docs/test-html-before.png)
 
 ## Deployment
 
