@@ -17,6 +17,38 @@ For me to recreate my MySpace page from 2003 I guess in 2026, but if this works 
 
 ## Features
 
+### Header (all pages)
+- **Logo:** clicks back to the profile from any page.
+- **Search box:** sends what you type to a Google search, like the original site's search bar.
+- **Navigation bar:** Home, Mail, Friends, Music and Sign Out. Sign Out opens a joke pop-up instead of logging anyone out.
+
+### Profile page (index.html)
+- **Profile box:** PT's photo, fancy-text display name (with a plain version for screen readers), gender, age, city and country, plus View my: Pics | Playlists links.
+- **Contacting PT:** six links, all clickable:
+  - Send Message and Instant Message open the messenger pop-up.
+  - Add to Friends goes to PT's LinkedIn.
+  - Add to Favourites is a star that fills in black when clicked and empties when clicked again (Bootstrap toggle, no JavaScript).
+  - Forward to Friend and Block User open in-character pop-ups.
+- **u alright m8 URL:** the site's own address as a clickable link.
+- **Media player:** a retro silver player with a play button, scrolling track title, running time and a fold-out list of four tracks (Demo 1 to 4). The one script on the site, `player.js`, runs it.
+- **Interests:** General and Music lists. The long band list scrolls inside its box so the left column ends level with the comments.
+- **Extended network box:** "PT is in your extended network".
+- **Blurbs:** an About me section.
+- **Friend space (Top 8):** eight original characters with fancy-text names, each with a plain name for screen readers.
+- **Friends comments:** "Displaying 7 of 6066 comments", seven comments from the Top 8 with 2006 timestamps, room for stickers, and a View all comments link. Add Comment opens a "only PT's friends can comment" pop-up that offers the messenger instead.
+
+### Messenger (pop-up on index.html, full page on mail.html)
+- **Mood strip:** six emoji moods (Happy, Loved up, Cool, Cheeky, Confused, Angry) to pick before writing.
+- **Message form:** name, email and message, all required. Messages are sent through Formspree; after sending, the visitor sees Formspree's confirmation page.
+
+### Pics page (pics.html)
+- Four portraits in a square grid. Click any one to open it full size in a pop-up with a caption.
+
+### Look and layout
+- **Y2K styling:** black-and-white boxes with heavy borders, Abril Fatface headings and a tiled background behind a fixed-width, centred page.
+- **Responsive:** two columns on laptops, stacking into one column on phones. The media player's side buttons hide on very small screens.
+- **Accessibility:** alt text on every image, plain-text versions of all fancy-text names, keyboard-usable pop-ups and a reduced-motion setting for the scrolling track title.
+
 ## Wireframes
 
 ## Testing
