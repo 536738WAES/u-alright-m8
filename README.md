@@ -1,19 +1,29 @@
 # u alright m8
 
-A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap.
+A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+3% sneaky JavaScript for the media player ONLY due to there being no ActionScript/Flash widget equivalent in 2026.)
 
 ## Purpose
 
-Ahh.. lovely lovely MySpace. 
-Before influencer culture, dance challenges and the age of AI generated slop. 
-Remember when it wasn't worrying about how many friends you got but who deserved the top 8 friends in your grid?
-Or you discovered a great band you've never heard of on there because you saw/heard from someone's profile?
-With zero shred of icky gen-Z/alpha Y2K nostalgia : from someone who lived and breathed this scene in my youth, here is my recreation in 2026; and a tribute to more innocent times of when we used social media the right way.
-Also: SpaceHey is restricted to US only so I'm building the nostalgia for the UK folks.
+Ahh.. lovely lovely MySpace.<br>
+Before influencer culture, dance challenges and the age of AI generated slop.<br>
+Remember when it wasn't worrying about how many friends you got but who deserved the top 8 friends in your grid?<br>
+Or you discovered a great band you've never heard of on there because you saw/heard from someone's profile?<br>
+With zero shred of icky gen-Z/alpha Y2K nostalgia you've seen on TikTok:<br> 
+made by someone who lived and breathed this scene in my youth, here is my recreation of my MySpace page in 2000s using 2026 code;<br> 
+a tribute to more innocent times of when we used social media the right way.<br>
+Deliberately bare-bones HTML5 to reflect the era of social media during this time<br>
+Also: SpaceHey is restricted to US only so I'm building this for the UK folks.<br>
+
 
 ## User value
 
-For me to recreate my MySpace page from 2003 I guess in 2026, but if this works it could be quite a nice way to use this for music marketing campaign(s) (e.g. a band/artist create their u alright m8 page as an addition to their marketing campaign.)
+The "Y2K" trend has always been a popular aesthetic / social media trend.<br>
+It's a verstile light-weight site to repurpose for creative music marketing campaign(s) (e.g. a band/artist create their u alright m8 page as an addition to their marketing campaign.):<br>
+Due to:<br>
+- it's wholly customisable
+- the music player is interactive and mp3 files can be directly uploaded in
+- it's as close to an authentic MySpace page as a 2026 code offering can muster
+- I'm sure there are many artists you can think of who has used the y2k trend in their music, social media - this will be a welcome addition to their marketing campaign; shared across modern social networks (like their Instagram, TikTok, YouTube)
 
 ## Features
 
