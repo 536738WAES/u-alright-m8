@@ -57,7 +57,34 @@ Due to:<br>
 ### Look and layout
 - **Y2K styling:** black-and-white boxes with heavy borders, Abril Fatface headings and a tiled background behind a fixed-width, centred page.
 - **Responsive:** two columns on laptops, stacking into one column on phones. The media player's side buttons hide on very small screens.
+- **Custom cursors:** a Y2K heart-and-arrow cursor, with a winged heart over links and buttons, like the cursor sites everyone used in the 2000s. The normal typing cursor stays in text boxes.
+
+  <img src="docs/cursor-heart-arrow.png" width="64" alt="Cursor: pink heart with a yellow arrow through it"> <img src="docs/cursor-heart-wings.png" width="64" alt="Link pointer: pink heart with white wings">
 - **Accessibility:** alt text on every image, plain-text versions of all fancy-text names, keyboard-usable pop-ups and a reduced-motion setting for the scrolling track title.
+
+## Tools and technologies
+
+### Languages and frameworks
+- HTML5 and CSS3
+- [Bootstrap 5.3.8](https://getbootstrap.com/): grid, cards, pop-ups (modals), the fold-out track list and the favourites toggle
+- [Bootstrap Icons 1.11.3](https://icons.getbootstrap.com/): the icons in Contacting PT and the messenger mood strip
+- JavaScript: one small script, `player.js`, for the media player only
+- [Google Fonts](https://fonts.google.com/): Abril Fatface and UnifrakturMaguntia
+
+### Services
+- [Formspree](https://formspree.io/): sends messages from the messenger to PT's inbox
+- [GitHub](https://github.com/) and GitHub Pages: version control and hosting
+
+### Build and design tools
+- Visual Studio Code with Live Server: writing and previewing the code
+- Google Stitch: generated the media player prototype
+- Claude Opus 5.5: build partner for code, debugging, prompt writing and the logo
+- Google Flow Studio (Nano Banana Pro): the Top 8 friend pictures
+- ElevenLabs Music: producing PT's Bach arrangements for the media player
+- Sweezy Cursors: the heart cursors
+
+### Testing tools
+- W3C HTML validator, Jigsaw CSS validator, JSHint, WAVE and Lighthouse (results in Testing)
 
 ## Wireframes
 
