@@ -190,7 +190,7 @@ main section {
 button.player-disc,
 button.player-push {
     padding: 0;
-    cursor: pointer;
+    cursor: url("../images/cursor-pointer.png") 16 14, pointer;
 }
 
 button.player-disc:active,
@@ -444,3 +444,7 @@ main section+section {
         overflow-y: auto;
     }
 }
+/* 2000s custom cursors: Cute Y2K Heart by Sweezy Cursors */
+html, body { cursor: url("../images/cursor.png") 0 0, auto; }
+a, button, label, .btn, [role="button"] { cursor: url("../images/cursor-pointer.png") 16 14, pointer; }
+input[type="text"], input[type="email"], input[type="search"], textarea { cursor: text; }
