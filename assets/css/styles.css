@@ -448,3 +448,8 @@ main section+section {
 html, body { cursor: url("../images/cursor.png") 0 0, auto; }
 a, button, label, .btn, [role="button"] { cursor: url("../images/cursor-pointer.png") 16 14, pointer; }
 input[type="text"], input[type="email"], input[type="search"], textarea { cursor: text; }
+
+/* Top 8: each friend links to their own profile page */
+.friend-link { display: block; text-decoration: none; color: var(--ink); }
+.friend-link:hover p, .friend-link:focus p { text-decoration: underline; }
+.profile-square, .friend-back-pic { aspect-ratio: 1 / 1; object-fit: cover; }

@@ -93,6 +93,7 @@ All checks were run on the live site on 17 November 2026.
 | HTML, pics.html and mail.html | W3C Nu HTML Checker | To do |
 | CSS | [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) | No errors |
 | JavaScript, player.js | [JSHint](https://jshint.com/) | No warnings |
+| Accessibility, index.html | [WAVE](https://wave.webaim.org/) | 0 errors, 0 contrast errors, AIM score 9.6 out of 10 |
 
 ### HTML
 ![W3C HTML checker: no errors or warnings on index.html](docs/test-html-clean.png)
@@ -104,6 +105,11 @@ The CSS validator also lists warnings. These come from the CSS variables and fro
 
 ### JavaScript
 ![JSHint: player.js with no warnings](docs/test-jshint-clean.png)
+
+### Accessibility
+![WAVE report: 0 errors and 0 contrast errors, AIM score 9.6 out of 10](docs/test-wave.png)
+
+WAVE also lists 23 alerts. These are prompts to check by hand, not failures: for example, bold lines it thinks might be headings, and the long description on the profile photo, which is kept on purpose.
 
 ## Bugs and fixes
 
