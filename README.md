@@ -80,6 +80,8 @@ Due to:<br>
 
 ## Wireframes
 
+### Wireframe 1: initial plan
+
 Hand-drawn by PT before the build ([full PDF](assets/docs/wireframe.pdf)). Page 1 is the profile layout; page 2 is the friends comments box.
 
 <img src="docs/wireframe-1.jpg" width="350" alt="Hand-drawn wireframe page 1: profile box, media player, contact links, URL, interests, blurbs and friend space"> <img src="docs/wireframe-2.jpg" width="300" alt="Hand-drawn wireframe page 2: the friends comments box">
@@ -90,6 +92,14 @@ Changes from the wireframe during the build:
 - General Info became the Interests box (General and Music).
 - The media player moved to the left column, under the URL box.
 - Add to Group and Rank User were removed from Contacting PT.
+
+### Wireframe 2: final layout
+
+Redrawn by PT to match the finished site, one sketch per page. Green boxes are sections, pink boxes are headings and content. Full PDFs: [profile](assets/docs/wireframe-2-index.pdf), [pics](assets/docs/wireframe-2-pics.pdf), [mail](assets/docs/wireframe-2-mail.pdf).
+
+<img src="docs/wireframe2-index-1.jpg" width="300" alt="Wireframe 2, profile page part 1: header, navigation, profile box, contact links, URL, extended network, blurbs and Top 8"> <img src="docs/wireframe2-index-2.jpg" width="300" alt="Wireframe 2, profile page part 2: media player, interests and friends comments">
+
+<img src="docs/wireframe2-pics.jpg" width="250" alt="Wireframe 2, pics page: header, four photos, back to profile link"> <img src="docs/wireframe2-mail.jpg" width="250" alt="Wireframe 2, mail page: message centre with mood strip and form, plus how it works box">
 
 ## Tools and technologies
 
@@ -215,6 +225,7 @@ Kept out of this version on purpose, so the project stays focused on HTML, CSS a
 - **Friend profile pages:** a page for each of the Top 8, each with its own arrangement of the Bach piece in the media player. Templates are already drafted.
 - **Real comments:** letting visitors post to the friends comments wall, which would need a server or database.
 - **Staying on the page after sending a message:** would need more JavaScript or a paid Formspree plan.
+- **Add to playlist:** the media player's **+** button would open an "add to playlist" menu, so visitors could build their own playlists while browsing profiles, like the original site's 2010 music player ([reference](https://www.jblogg.com/2010how-to-make-playlists-on-myspace-music/)). This needs more JavaScript than this project allows, so the **+** button is cosmetic for now.
 
 ## Credits
 
