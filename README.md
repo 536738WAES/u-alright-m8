@@ -7,6 +7,7 @@ A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+3% 
 
 - [Purpose](#purpose)
 - [Features](#features)
+- [Wireframes](#wireframes)
 - [Testing](#testing)
 - [Bugs](#bugs)
 - [Deployment](#deployment)
@@ -76,6 +77,19 @@ Due to:<br>
 
   <img src="docs/cursor-heart-arrow.png" width="64" alt="Cursor: pink heart with a yellow arrow through it"> <img src="docs/cursor-heart-wings.png" width="64" alt="Link pointer: pink heart with white wings">
 - **Accessibility:** alt text on every image, plain-text versions of all fancy-text names, keyboard-usable pop-ups and a reduced-motion setting for the scrolling track title.
+
+## Wireframes
+
+Hand-drawn by PT before the build ([full PDF](assets/docs/wireframe.pdf)). Page 1 is the profile layout; page 2 is the friends comments box.
+
+<img src="docs/wireframe-1.jpg" width="350" alt="Hand-drawn wireframe page 1: profile box, media player, contact links, URL, interests, blurbs and friend space"> <img src="docs/wireframe-2.jpg" width="300" alt="Hand-drawn wireframe page 2: the friends comments box">
+
+Changes from the wireframe during the build:
+
+- Upcoming Shows and Blog Entry were dropped to keep the scope tight.
+- General Info became the Interests box (General and Music).
+- The media player moved to the left column, under the URL box.
+- Add to Group and Rank User were removed from Contacting PT.
 
 ## Tools and technologies
 
