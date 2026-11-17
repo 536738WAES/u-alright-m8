@@ -167,6 +167,14 @@ HTML checker before the fixes:
 
 ### Workflow
 
+## Planned future updates
+
+Kept out of this version on purpose, so the project stays focused on HTML, CSS and Bootstrap:
+
+- **Friend profile pages:** a page for each of the Top 8, each with its own arrangement of the Bach piece in the media player. Templates are already drafted.
+- **Real comments:** letting visitors post to the friends comments wall, which would need a server or database.
+- **Staying on the page after sending a message:** would need more JavaScript or a paid Formspree plan.
+
 ## Credits
 
 ### Media player
