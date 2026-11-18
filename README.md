@@ -44,7 +44,7 @@ Due to:<br>
 - I'm sure there are many artists you can think of who has used the y2k trend in their music, social media - this will be a welcome addition to their marketing campaign; shared across modern social networks (like their Instagram, TikTok, YouTube)
 
 ## User stories
-Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/projects/), prioritised with MoSCoW (must-have, should-have, could-have, won't-have)., prioritised with MoSCoW (must-have, should-have, could-have, won't-have).
+Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/projects/), prioritised with MoSCoW (must-have, should-have, could-have, won't-have).
 
 | # | User story | Priority | Status |
 |---|---|---|---|
