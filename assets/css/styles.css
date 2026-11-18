@@ -461,3 +461,6 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 @media (max-width: 991.98px) {
     #interests .card-body { max-height: 22rem; overflow-y: auto; }
 }
+
+/* The Top 8 album: long track list scrolls inside the player */
+.player-list { max-height: 14rem; overflow-y: auto; }
