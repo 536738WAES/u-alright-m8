@@ -11,6 +11,7 @@ A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+1.5
 ## Contents
 
 - [Purpose](#purpose)
+- [User stories](#user-stories)
 - [Features](#features)
 - [Wireframes](#wireframes)
 - [Testing](#testing)
@@ -41,6 +42,24 @@ Due to:<br>
 - the music player is interactive and mp3 files can be directly uploaded in
 - it's as close to an authentic MySpace page as a 2026 code offering can muster
 - I'm sure there are many artists you can think of who has used the y2k trend in their music, social media - this will be a welcome addition to their marketing campaign; shared across modern social networks (like their Instagram, TikTok, YouTube)
+
+## User stories
+
+Tracked on the GitHub Projects board for this repository, prioritised with MoSCoW (must-have, should-have, could-have, won't-have).
+
+| # | User story | Priority | Status |
+|---|---|---|---|
+| 1 | As a **visitor**, I want to see who PT is at a glance (photo, name, age, location) so that I know whose profile I'm on. | Must-have | Done |
+| 2 | As a **visitor**, I want a clear navigation bar on every page so that I can move between the profile, pics and mail pages. | Must-have | Done |
+| 3 | As a **mobile visitor**, I want the layout to fit my screen so that I can use the site on my phone. | Must-have | Done |
+| 4 | As a **visitor**, I want to send PT a private message with a mood so that I can say hello like I would have in 2005. | Must-have | Done |
+| 5 | As a **music fan**, I want to play, pause, skip through and switch tracks so that I can hear PT's music. | Must-have | Done |
+| 6 | As a **visitor**, I want to see PT's Top 8 and friends' comments so that the profile feels lived-in and social. | Should-have | Done |
+| 7 | As a **visitor**, I want to open PT's photos full size so that I can see them properly. | Should-have | Done |
+| 8 | As a **screen reader user**, I want fancy-text names read out as plain text and every control usable by keyboard so that I can use the site too. | Should-have | Done |
+| 9 | As a **nostalgic visitor**, I want little 2000s touches (custom cursor, favourites star, joke pop-ups) so that it feels like the real thing. | Could-have | Done |
+| 10 | As a **visitor**, I want to click a Top 8 friend and visit their profile so that I can explore their world. | Could-have | Parked (future update) |
+| 11 | As a **visitor**, I want to post a public comment so that everyone can see it. | Won't-have (needs a server) | Not planned |
 
 ## Features
 
@@ -206,6 +225,12 @@ Best Practices was 96 on every page because of a missing favicon and two sticker
 | Logo and footer unreadable on the background tile | Black text on a black-and-silver tile | White panels behind the header and footer |
 | Custom cursors not showing | Cursor images were 128px, too big for most browsers | Resized to 32px |
 | Lighthouse Best Practices 96: a 404 error and two unsized images | No favicon, and the heart and skull stickers had no width and height | Added a heart favicon to every page, and width and height to both stickers |
+| Navigation links stayed blue instead of white | Bootstrap's link colour variable overrode the custom colour | A direct `.main-nav .nav-link` colour rule in styles.css |
+| Pop-up headings were invisible | The global black `h2` colour beat the white header background | Added Bootstrap's `text-white` class to each pop-up heading |
+| Add Comment opened the private messenger, which made visitors think their comment would appear publicly | No server to store public comments | Add Comment now opens a "only PT's friends can comment" pop-up that offers the messenger instead |
+| New features missing from the live site after pushing | Later changes had been saved but not committed | Committed the remaining files, pushed, and hard-refreshed the live page |
+| Interests box made the page far longer than the comments column | Long band list | The box now ends level with the comments and the list scrolls inside it (CSS only) |
+| Media player could not be skipped through | No progress bar | Added a range slider wired into player.js |
 
 HTML checker before the fixes:
 
