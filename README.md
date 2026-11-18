@@ -230,6 +230,9 @@ Best Practices was 96 on every page because of a missing favicon and two sticker
 | New features missing from the live site after pushing | Later changes had been saved but not committed | Committed the remaining files, pushed, and hard-refreshed the live page |
 | Interests box made the page far longer than the comments column | Long band list | The box now ends level with the comments and the list scrolls inside it (CSS only) |
 | Media player could not be skipped through | No progress bar | Added a range slider wired into player.js |
+| Page scrolled sideways on phones (13px) | The wide column gap (`gx-5`) was bigger than the page edge on small screens | Gap is now small on phones and wide only on laptops (`gx-3 gx-lg-5`) |
+| Tablets (768px) squeezed two columns, so the media player display was only 69px wide and the Top 8 pictures 74px | The two-column layout started at Bootstrap's `md` breakpoint | Two columns now start at `lg` (992px); tablets get one full-width column |
+| Profile page was 7,700px long on phones | The full band list showed at full height | On phones and tablets the interests list is capped and scrolls inside its box, cutting the page to 4,700px |
 
 HTML checker before the fixes:
 

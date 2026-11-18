@@ -428,7 +428,7 @@ main section+section {
 }
 
 /* Interests box ends level with the last comment; the long band list scrolls inside it */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .left-col {
         display: flex;
         flex-direction: column;
@@ -456,3 +456,8 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 
 /* Media player progress bar */
 .player-seek { width: 100%; height: 0.6rem; margin: 0.15rem 0; accent-color: var(--grey-6); cursor: url("../images/cursor-pointer.png") 16 14, pointer; }
+
+/* Phones and tablets: one column, so cap the long interests list and let it scroll */
+@media (max-width: 991.98px) {
+    #interests .card-body { max-height: 22rem; overflow-y: auto; }
+}
