@@ -237,6 +237,19 @@ HTML checker before the fixes:
 
 ## Deployment
 
+The site is deployed with GitHub Pages:
+
+1. The code is stored in the GitHub repository [536738WAES/u-alright-m8](https://github.com/536738WAES/u-alright-m8).
+2. In the repository, go to **Settings**, then **Pages**.
+3. Under **Build and deployment**, set Source to **Deploy from a branch**.
+4. Set Branch to **main** and the folder to **/ (root)**, then click **Save**.
+5. GitHub builds the site and publishes it at https://536738waes.github.io/u-alright-m8/
+6. Every push to the main branch updates the live site automatically, usually within a minute or two.
+
+The live site matches the main branch: every check in Testing was run on the deployed version.
+
+To run it locally: clone the repository, open the folder in VS Code and open `index.html` with the Live Server extension.
+
 ## AI reflection
 
 ### Code creation
