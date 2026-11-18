@@ -95,7 +95,12 @@ Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/proje
 
   ![Colour palette: ink black, paper white and four greys](docs/palette.png)
 
-- **Responsive:** two columns on laptops, stacking into one column on phones. The media player's side buttons hide on very small screens.
+- **Responsive layout:**
+  - One centred container (`container-fluid`, max-width 1200px), like the fixed-width profiles of the 2000s, with the tiled background showing either side.
+  - One row, two columns: left (`col-lg-5`) holds the profile, contact links, URL, media player and interests; right (`col-lg-7`) holds the network box, blurbs, Top 8 and comments.
+  - Below 992px (`lg`) both columns become full width and stack, left column first. The breakpoint was moved up from `md` (768px) because tablets squashed the media player.
+  - Top 8 grid: `row-cols-2 row-cols-sm-4`, 2 across on phones and 4 across from 576px.
+  - Custom media query: the media player's side buttons hide under 400px.
 - **Custom cursors:** a Y2K heart-and-arrow cursor, with a winged heart over links and buttons, like the cursor sites everyone used in the 2000s. The normal typing cursor stays in text boxes.
 
   <img src="docs/cursor-heart-arrow.png" width="64" alt="Cursor: pink heart with a yellow arrow through it"> <img src="docs/cursor-heart-wings.png" width="64" alt="Link pointer: pink heart with white wings">
@@ -294,7 +299,8 @@ Every image, sound and logo file in the site.
 | heart.gif | Sticker in the friends comments | Sourced from [Pinterest](https://in.pinterest.com/pin/993606736530510096/) | Nov 2026 | No: third-party Pinterest pin, original creator unknown |
 | skull.gif | Sticker in the friends comments | Sourced from [Pinterest](https://uk.pinterest.com/ideas/gothic-myspace-layouts/893841263308/) | Nov 2026 | No: third-party Pinterest pin, original creator unknown |
 | tile.jpg | Page background tile | Sourced from [Pinterest](https://in.pinterest.com/pin/684899055808782604/) | Nov 2026 | No: third-party Pinterest pin, original creator unknown |
-| variation1.mp3 to variation4.mp3 | Demo 1 to 4 in the media player: PT Cheung's arrangements of J. S. Bach, BWV 478, from the public domain [IMSLP](https://clara.imslp.org/work/265053) edition | PT Cheung, produced with ElevenLabs Music | 12 Nov 2026 | Partly |
+| pt/variation1.mp3 to pt/variation4.mp3 | Demo 1 to 4 in the media player: PT Cheung's arrangements of J. S. Bach, BWV 478, from the public domain [IMSLP](https://clara.imslp.org/work/265053) edition | PT Cheung, produced with ElevenLabs Music | 12 Nov 2026 | Partly |
+| [friend folder]/track-1.mp3 (JET, glitter jelly princess, Peppy, I Don't Wanna Be Me, DJ Meowmixx, I'm Just A Girl x Unicorn) | One reimagining of Bach's BWV 478 per Top 8 friend, each in that friend's style | PT Cheung, produced with ElevenLabs Music | 18 Nov 2026 | Partly |
 | artwork.jpg | Media player artwork | Sourced from [Digital Native](https://www.digitalnative.tech/p/myspace-tumblr-and-the-long-lost) | Nov 2026 | No: third-party image from an article |
 | u-alright-m8-logo (black, white, primary) | Site logo, text only so it does not copy any existing logo | Made with Claude Opus 5.5 | 14 Nov 2026 | Partly |
 | cursor.png, cursor-pointer.png | Custom 2000s-style cursor and link pointer | [Cute Y2K Heart, Sweezy Cursors](https://sweezy-cursors.com/cursor/cute-y2k-heart/) | 17 Nov 2026 | ? |
