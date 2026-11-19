@@ -23,14 +23,21 @@ A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+1.5
 ## Purpose
 
 Ahh.. lovely lovely MySpace.<br>
-Before influencer culture, dance challenges and the age of AI generated slop.<br>
-Remember when it wasn't worrying about how many friends you got but who deserved the top 8 friends in your grid?<br>
-Or you discovered a great band you've never heard of on there because you saw/heard from someone's profile?<br>
-With zero shred of icky gen-Z/alpha Y2K nostalgia you've seen on TikTok:<br> 
-made by someone who lived and breathed this scene in my youth, here is my recreation of my MySpace page in 2000s using 2026 code;<br> 
-a tribute to more innocent times of when we used social media the right way.<br>
-Deliberately bare-bones HTML5 to reflect the era of social media during this time<br>
+Before influencer culture, dance challenges and AI generated slop.<br>
+Your friend count didn't matter but who were the top 8 friends in your grid was priority<br>
+Discovering a great band you've never heard of on someone's profile<br>
+Exploring the newtro trend x Y2K nostalgia trends on TikTok:<br> 
+I made this because it made me nostalgic:<br> 
+MySpace was the pillar of my youth: music was my life (still is), emo girl profiles' shaped how I did my hair, dressed, listened to<br>
+All the things that we loved and loved together were laid out on a simple page alongside music as a common vein alongside it<br>
+Music on social media was never supposed to be background music to a post;<br>
+Music is integral to your self identity just as your profile photo shows your face.<br> 
+This is my sincere tribute in 2026; a 2000 me built with 2026 code and AI tooling<br>
+Deliberate bare-bones HTML5 to reflect the era of social media during this time<br>
+Giving it genuine charm; relatable to those who was part of the MySpace days<br>
+I give you u alright m8 - because I can't use MySpace legally, Justin Timberlake has the rights I believe<br>
 Also: SpaceHey is restricted to US only so I'm building this for the UK folks.<br>
+Here's your hit of nostalgia during a time where we're sick of Meta and TikTok sometimes.<br>
 
 
 ## User value
