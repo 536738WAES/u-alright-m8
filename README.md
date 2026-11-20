@@ -310,6 +310,7 @@ Every image, sound and logo file in the site.
 | One mp3 in each friend's folder in assets/audio (all eight Top 8 friends) | The Top 8 album: one reimagining of Bach's BWV 478 per friend, each in that friend's style, played on each friend's page and as a playlist on PT's profile | PT Cheung, produced with ElevenLabs Music | 18 Nov 2026 | Partly |
 | artwork.jpg | Media player artwork | Sourced from [Digital Native](https://www.digitalnative.tech/p/myspace-tumblr-and-the-long-lost) | Nov 2026 | No: third-party image from an article |
 | u-alright-m8-logo (black, white, primary) | Site logo, text only so it does not copy any existing logo | Made with Claude Opus 5.5 | 14 Nov 2026 | Partly |
+| m8-mark (black, white, silver), m8-favicon (SVG, 32px, 180px), u-alright-m8-social-preview.png | The m8 brand mark used as the favicon on every page, plus the GitHub social preview image | Cut from the u alright m8 wordmark with Claude Opus 5.5; preview built on tile.jpg | 20 Nov 2026 | Yes |
 | cursor.png, cursor-pointer.png | Custom 2000s-style cursor and link pointer | [Cute Y2K Heart, Sweezy Cursors](https://sweezy-cursors.com/cursor/cute-y2k-heart/) | 17 Nov 2026 | ? |
 
 Friend pictures being generated in Google Flow Studio, 15 November 2026:
