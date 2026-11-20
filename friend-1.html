@@ -73,12 +73,31 @@
                                 <div class="col-6">
                                     <h1 class="fs-6 fw-bold mb-0"><span aria-hidden="true">†† 𝐉𝐄𝐓 ††</span><span
                                             class="visually-hidden">JET</span></h1>
-                                    <p class="mb-0">Gender goes here</p>
-                                    <p class="mb-0">Age goes here</p>
-                                    <p class="mb-0">Town goes here</p>
-                                    <p>Country goes here</p>
+                                    <p class="fst-italic mb-2">Axeman for NOSFERA2</p>
+                                    <p class="mb-0">M</p>
+                                    <p class="mb-0">23</p>
+                                    <p class="mb-0">London / Tokyo</p>
                                 </div>
                             </div>
+                            <p class="mt-3 mb-0">View my: Pics | <a href="#music">Playlists</a></p>
+                        </div>
+                    </section>
+
+                    <section id="contact" class="card border border-3 border-dark rounded-0"
+                        aria-labelledby="contact-heading">
+                        <h2 id="contact-heading" class="card-header bg-dark text-white rounded-0">Contacting JET</h2>
+                        <div class="card-body">
+                            <ul class="row row-cols-2 g-2 list-unstyled mb-0">
+                                <li class="col"><a href="mail.html"><i class="bi bi-envelope" aria-hidden="true"></i> Send Message</a></li>
+                                <li class="col"><a href="index.html"><i class="bi bi-person-plus" aria-hidden="true"></i> Back to PT's profile</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="url" class="card border border-3 border-dark rounded-0" aria-labelledby="url-heading">
+                        <h2 id="url-heading" class="card-header bg-dark text-white rounded-0">u alright m8 URL</h2>
+                        <div class="card-body">
+                            <p class="mb-0 text-break">ualrightm8.com/JET</p>
                         </div>
                     </section>
 
@@ -90,6 +109,8 @@
                             </button>
                             <div class="player-display">
                                 <p class="player-marquee"><span id="player-title">JET - "<span lang="de">Komm, süßer Tod</span>" (Bach Reimagined - 1959 Holy Grail)</span></p>
+                                <label for="player-seek" class="visually-hidden">Track position</label>
+                                <input type="range" id="player-seek" class="player-seek" min="0" max="100" step="0.1" value="0">
                                 <p class="player-time"><span id="player-current">00:00</span> / <span
                                         id="player-total">00:00</span></p>
                             </div>
@@ -104,30 +125,101 @@
                         </audio>
                     </section>
 
+                    <section id="interests" class="card border border-3 border-dark rounded-0"
+                        aria-labelledby="interests-heading">
+                        <h2 id="interests-heading" class="card-header bg-dark text-white rounded-0">JET's interests</h2>
+                        <div class="card-body">
+                            <dl class="row g-2 mb-0">
+                                <dt class="col-4">General</dt>
+                                <dd class="col-8 mb-0">i’m jet. i play lead guitar in NOSFERA2. half my records are in london, half are in tokyo &amp; whichever one i want to listen to is always in the other flat.<br><br>the black les paul in my default pic is mine. gibson let me do my own take on the ’59 “holy grail” standard. i drew those little bats in the margins of a set list. now they’re in silver all the way up the neck and there are 666 people who can look down halfway through a song and see them too. been trying to write something cool about that for ten minutes. look at the fucking bats. &lt;3<br><br>if you were at any of the london or tokyo shows and got a recording of everyone singing the AFI intro before we came on, msg me. all you can hear on mine is me going “listen to that” and then, helpfully, saying it again.<br><br>jet x</dd>
+                                <dt class="col-4">Music</dt>
+                                <dd class="col-8 mb-0">† NOSFERA2 †<br>...&amp; Maiden, obvs</dd>
+                            </dl>
+                        </div>
+                    </section>
+
                 </div>
 
                 <!-- Right column -->
                 <div class="col-12 col-lg-7">
+
+                    <section id="network" class="card border border-3 border-dark rounded-0"
+                        aria-labelledby="network-heading">
+                        <h2 id="network-heading" class="visually-hidden">Network</h2>
+                        <div class="card-body text-center">
+                            <p class="fw-bold mb-0">JET is in your extended network</p>
+                        </div>
+                    </section>
 
                     <section id="blurbs" class="card border border-3 border-dark rounded-0"
                         aria-labelledby="blurbs-heading">
                         <h2 id="blurbs-heading" class="card-header bg-dark text-white rounded-0">JET's blurbs</h2>
                         <div class="card-body">
                             <h3 class="fs-6 fw-bold">About me</h3>
-                            <p class="mb-0">About me goes here.</p>
+                            <p>† sleep when i'm dead</p>
+                            <h3 class="fs-6 fw-bold mt-3">Who I'd like to meet</h3>
+                            <p class="mb-0">† (met them) Slash</p>
                         </div>
                     </section>
 
                     <section id="friends" class="card border border-3 border-dark rounded-0"
                         aria-labelledby="friends-heading">
-                        <h2 id="friends-heading" class="card-header bg-dark text-white rounded-0">JET's friend space</h2>
+                        <h2 id="friends-heading" class="card-header bg-dark text-white rounded-0">JET's friend space (Top 8)</h2>
                         <div class="card-body">
-                            <p class="fw-bold">JET is in PT's Top 8.</p>
-                            <a href="index.html" class="d-inline-block text-center">
-                                <img src="assets/images/profile.jpg" class="border border-dark friend-back-pic" width="110"
-                                    height="110" alt="">
-                                <span class="d-block fw-bold">PT</span>
-                            </a>
+                            <p class="fw-bold">JET has 7 friends.</p>
+                            <ul class="row row-cols-2 row-cols-sm-4 g-3 list-unstyled mb-0">
+                                <li class="col text-center"><a href="index.html" class="friend-link"><img src="assets/images/profile.jpg" class="img-fluid w-100 border border-dark" width="200" height="200" alt="" loading="lazy">
+                                    <p class="small fw-bold mb-0">PT</p></a></li>
+                                <li class="col text-center"><div class="friend-noimg border border-dark" aria-hidden="true"></div>
+                                    <p class="small fw-bold mb-0">NOSFERA2 (band official)</p></li>
+                                <li class="col text-center"><div class="friend-noimg border border-dark" aria-hidden="true"></div>
+                                    <p class="small fw-bold mb-0">Dove (frontman)</p></li>
+                                <li class="col text-center"><div class="friend-noimg border border-dark" aria-hidden="true"></div>
+                                    <p class="small fw-bold mb-0">Tyson (Drums)</p></li>
+                                <li class="col text-center"><div class="friend-noimg border border-dark" aria-hidden="true"></div>
+                                    <p class="small fw-bold mb-0">(mm)Alice (Bass)</p></li>
+                                <li class="col text-center"><a href="friend-3.html" class="friend-link"><img src="assets/images/friend-3.jpg" class="img-fluid w-100 border border-dark" width="200" height="200" alt="" loading="lazy">
+                                    <p class="small fw-bold mb-0">PEPPY</p></a></li>
+                                <li class="col text-center"><a href="friend-4.html" class="friend-link"><img src="assets/images/friend-4.jpg" class="img-fluid w-100 border border-dark" width="200" height="200" alt="" loading="lazy">
+                                    <p class="small fw-bold mb-0">I Don't Wanna Be Me</p></a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="comments" class="card border border-3 border-dark rounded-0"
+                        aria-labelledby="comments-heading">
+                        <h2 id="comments-heading" class="card-header bg-dark text-white rounded-0">JET's friends comments</h2>
+                        <div class="card-body">
+                            <p class="fw-bold">Displaying 3 of 845235 comments</p>
+                            <article class="row g-0 comment">
+                                <div class="col-auto comment-from text-center">
+                                    <h3 class="fs-6 fw-bold mb-1">PT</h3>
+                                    <img src="assets/images/profile.jpg" class="d-block mx-auto border border-dark comment-pic" width="100" height="100" alt="" loading="lazy">
+                                </div>
+                                <div class="col comment-body">
+                                    <p class="fw-bold mb-1">11/16/2006 5:15 PM</p>
+                                    <p class="mb-0">&lt;3</p>
+                                </div>
+                            </article>
+                            <article class="row g-0 comment">
+                                <div class="col-auto comment-from text-center">
+                                    <h3 class="fs-6 fw-bold mb-1">Dove</h3>
+                                </div>
+                                <div class="col comment-body">
+                                    <p class="fw-bold mb-1">11/19/2006 1:34 AM</p>
+                                    <p class="mb-0"><span lang="ja">クソ嫌い</span></p>
+                                </div>
+                            </article>
+                            <article class="row g-0 comment">
+                                <div class="col-auto comment-from text-center">
+                                    <h3 class="fs-6 fw-bold mb-1">PEPPY</h3>
+                                    <img src="assets/images/friend-3.jpg" class="d-block mx-auto border border-dark comment-pic" width="100" height="100" alt="" loading="lazy">
+                                </div>
+                                <div class="col comment-body">
+                                    <p class="fw-bold mb-1">11/18/2006 4:04 AM</p>
+                                    <p class="mb-0">sent u the demos</p>
+                                </div>
+                            </article>
                         </div>
                     </section>
 

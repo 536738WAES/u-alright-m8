@@ -464,3 +464,6 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 
 /* The Top 8 album: long track list scrolls inside the player */
 .player-list { max-height: 14rem; overflow-y: auto; }
+
+/* Friend space: friends without a picture get an empty square */
+.friend-noimg { aspect-ratio: 1 / 1; background-color: var(--grey-4); }
