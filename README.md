@@ -89,6 +89,15 @@ Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/proje
 - **Friend space (Top 8):** eight original characters with fancy-text names, each with a plain name for screen readers.
 - **Friends comments:** "Displaying 7 of 6066 comments", seven comments from the Top 8 with 2006 timestamps, room for stickers, and a View all comments link. Add Comment opens a "only PT's friends can comment" pop-up that offers the messenger instead.
 
+### Friend profile pages (friend-1.html to friend-8.html)
+
+- **One per Top 8 friend:** click any friend in PT's Top 8 to visit their profile.
+- **Same frame, eight colour stories:** the u alright m8 header, navigation and footer stay black and white on every page; each friend's profile area uses their own palette, set with the same five CSS variables (`--f-bg`, `--f-surface`, `--f-text`, `--f-accent`, `--f-on-accent`) on a class for that page.
+- **Their own music:** each friend's media player plays their own reimagining of the Bach piece. PT's player plays all eight as the Top 8 album.
+- **Their own world:** tagline, details, interests, blurbs, their own Top 4 or Top 8, and friends comments, all written in character.
+- **Working Contacting box:** the same six links and pop-ups as PT's profile.
+- **Fictional URLs:** friend profile URLs (for example ualrightm8.com/JET) are fictional vanity addresses for the homage and are plain text, not links.
+
 ### Messenger (pop-up on index.html, full page on mail.html)
 - **Mood strip:** six emoji moods (Happy, Loved up, Cool, Cheeky, Confused, Angry) to pick before writing.
 - **Message form:** name, email and message, all required. Messages are sent through Formspree; after sending, the visitor sees Formspree's confirmation page.

@@ -467,3 +467,29 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 
 /* Friend space: friends without a picture get an empty square */
 .friend-noimg { aspect-ratio: 1 / 1; background-color: var(--grey-4); }
+
+/* ===== Friend pages: one shared frame, eight colour stories =====
+   Every friend page uses the same five colour names.
+   The header, navigation and footer stay black and white on every page. */
+/* JET: obsidian black and silver chrome */
+.friend-1 { --f-bg: #09090b; --f-surface: #27272a; --f-text: #ffffff; --f-accent: #d4d4d8; --f-on-accent: #09090b; }
+/* glitter jelly princess: bubblegum pink, plum and star yellow */
+.friend-2 { --f-bg: #ffb6c1; --f-surface: #ffffff; --f-text: #2d0036; --f-accent: #2d0036; --f-on-accent: #fff3a1; }
+/* PEPPY: toxic grunge black and slime green */
+.friend-3 { --f-bg: #0d140e; --f-surface: #1a2412; --f-text: #ecfccb; --f-accent: #84cc16; --f-on-accent: #0d140e; }
+/* I Don't Wanna Be Me: midnight black and emo lime */
+.friend-4 { --f-bg: #030712; --f-surface: #111827; --f-text: #f8fafc; --f-accent: #22c55e; --f-on-accent: #030712; }
+/* DJ Meowmixx: 16-bit lavender, white and headphone cyan */
+.friend-5 { --f-bg: #8b5cf6; --f-surface: #ffffff; --f-text: #2e1065; --f-accent: #06b6d4; --f-on-accent: #0b0b0b; }
+/* I'm Just A Girl x Unicorn: black and scene-queen cyan */
+.friend-6 { --f-bg: #000000; --f-surface: #0e3a40; --f-text: #ffffff; --f-accent: #00e5ff; --f-on-accent: #000000; }
+/* SakuraRAWR!: stage velvet and shock pink */
+.friend-7 { --f-bg: #120317; --f-surface: #2a0a33; --f-text: #ffffff; --f-accent: #ec4899; --f-on-accent: #120317; }
+/* The Velvet Kettles: vinyl black and tube-amp amber */
+.friend-8 { --f-bg: #121212; --f-surface: #1f1f1f; --f-text: #e5e5e5; --f-accent: #d97706; --f-on-accent: #121212; }
+.friend-page { background: var(--f-bg); }
+.friend-page main .card { --bs-card-bg: var(--f-surface); --bs-card-color: var(--f-text); color: var(--f-text); border-color: var(--f-accent) !important; }
+.friend-page main .card-header.bg-dark { background-color: var(--f-accent) !important; color: var(--f-on-accent) !important; }
+.friend-page main .card h3, .friend-page main .card dt { color: var(--f-text); }
+.friend-page main .card a, .friend-page main .card .btn-link { color: var(--f-text); }
+.friend-page main .comment { border-color: var(--f-accent); }
