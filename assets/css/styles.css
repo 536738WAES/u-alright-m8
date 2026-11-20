@@ -493,3 +493,6 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 .friend-page main .card h3, .friend-page main .card dt { color: var(--f-text); }
 .friend-page main .card a, .friend-page main .card .btn-link { color: var(--f-text); }
 .friend-page main .comment { border-color: var(--f-accent); }
+
+/* JET: plain black page with the NOSFERA2 logo fixed in the centre as he scrolls */
+.friend-page.friend-1 { background: var(--f-bg) url("../images/jet/nosfera2-bg.jpg") no-repeat center center fixed; background-size: min(90vw, 1400px) auto; }
