@@ -528,3 +528,7 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 .friend-page.friend-8 { background: var(--f-bg) url("../images/the-velvet-kettles/background.jpg") repeat; background-size: 400px 400px; }
 .friend-8, .friend-8 * { cursor: url("../images/the-velvet-kettles/cursor.png") 1 1, auto; }
 .friend-8 a, .friend-8 button, .friend-8 label, .friend-8 .btn, .friend-8 .player-seek { cursor: url("../images/the-velvet-kettles/pointer.png") 16 16, pointer; }
+
+/* Pics pages: Bootstrap carousel, whole photo shown on a dark stage */
+.pics-carousel img { height: min(70vh, 520px); object-fit: contain; background-color: var(--ink); }
+.pics-carousel .carousel-control-prev, .pics-carousel .carousel-control-next { width: 12%; }
