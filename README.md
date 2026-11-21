@@ -1,16 +1,22 @@
-<h1>
+<h1 align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/public/logos/u-alright-m8-logo-white.svg">
     <img src="assets/public/logos/u-alright-m8-logo-black.svg" alt="u alright m8" width="420">
   </picture>
 </h1>
-<p align="center"><img src="docs/mockup.jpg" alt="PT's profile shown on desktop, laptop, tablet and phone" width="620"></p>
-<h3 align="center"><i>Remember how you found great music on someone's profile page?</i></h3>
-<table align="center"><tr><td align="center" width="11%"><img src="assets/images/profile.jpg" alt="PT" width="80" height="80"><br><sub>PT</sub></td><td align="center" width="11%"><img src="assets/images/friend-1.jpg" alt="JET" width="80" height="80"><br><sub>JET</sub></td><td align="center" width="11%"><img src="assets/images/friend-2.jpg" alt="glitter jelly princess" width="80" height="80"><br><sub>glitter jelly princess</sub></td><td align="center" width="11%"><img src="assets/images/friend-3.jpg" alt="PEPPY" width="80" height="80"><br><sub>PEPPY</sub></td><td align="center" width="11%"><img src="assets/images/friend-4.jpg" alt="I Don't Wanna Be Me" width="80" height="80"><br><sub>I Don't Wanna Be Me</sub></td><td align="center" width="11%"><img src="assets/images/friend-5.jpg" alt="DJ Meowmixx" width="80" height="80"><br><sub>DJ Meowmixx</sub></td><td align="center" width="11%"><img src="assets/images/friend-6.jpg" alt="I'm Just A Girl x Unicorn" width="80" height="80"><br><sub>I'm Just A Girl x Unicorn</sub></td><td align="center" width="11%"><img src="assets/images/friend-7.jpg" alt="SakuRAWR!" width="80" height="80"><br><sub>SakuRAWR!</sub></td><td align="center" width="11%"><img src="assets/images/friend-8.jpg" alt="The Velvet Kettles" width="80" height="80"><br><sub>The Velvet Kettles</sub></td></tr></table>
-<p align="center"><img src="docs/music/media-player.jpg" alt="The u alright m8 media player with the Top 8 album playlist" width="380"></p>
-https://536738waes.github.io/u-alright-m8/
+<p align="center"><b><a href="https://536738waes.github.io/u-alright-m8/">https://536738waes.github.io/u-alright-m8/</a></b></p>
 
-A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+0.9% sneaky JavaScript for the media player ONLY due to there being no ActionScript/Flash widget equivalent in 2026.)
+<p align="center">A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+0.9% sneaky JavaScript for the media player ONLY due to there being no ActionScript/Flash widget equivalent in 2026.)</p>
+
+<p align="center"><img src="docs/mockup.jpg" alt="PT's profile shown on desktop, laptop, tablet and phone" width="620"></p>
+
+<br>
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/tagline-white.png"><img src="docs/tagline-black.png" alt="Remember how you found great music on someone's profile page?" width="620"></picture></p>
+
+<table align="center"><tr><td align="center" width="160"><img src="docs/top8/pt.jpg" alt="PT" width="140" height="140"><br><b>PT</b></td><td align="center" width="160"><img src="docs/top8/jet.jpg" alt="JET" width="140" height="140"><br><b>JET</b></td><td align="center" width="160"><img src="docs/top8/glitter-jelly-princess.jpg" alt="glitter jelly princess" width="140" height="140"><br><b>glitter jelly princess</b></td></tr><tr><td align="center" width="160"><img src="docs/top8/peppy.jpg" alt="PEPPY" width="140" height="140"><br><b>PEPPY</b></td><td align="center" width="160"><img src="docs/top8/i-dont-wanna-be-me.jpg" alt="I Don't Wanna Be Me" width="140" height="140"><br><b>I Don't Wanna Be Me</b></td><td align="center" width="160"><img src="docs/top8/dj-meowmixx.jpg" alt="DJ Meowmixx" width="140" height="140"><br><b>DJ Meowmixx</b></td></tr><tr><td align="center" width="160"><img src="docs/top8/im-just-a-girl-x-unicorn.jpg" alt="I'm Just A Girl x Unicorn" width="140" height="140"><br><b>I'm Just A Girl x Unicorn</b></td><td align="center" width="160"><img src="docs/top8/sakurawr.jpg" alt="SakuRAWR!" width="140" height="140"><br><b>SakuRAWR!</b></td><td align="center" width="160"><img src="docs/top8/the-velvet-kettles.jpg" alt="The Velvet Kettles" width="140" height="140"><br><b>The Velvet Kettles</b></td></tr></table>
+
+<p align="center"><img src="docs/music/media-player.jpg" alt="The u alright m8 media player with the Top 8 album playlist" width="380"></p>
 
 ## Contents
 
