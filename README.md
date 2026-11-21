@@ -6,7 +6,7 @@
 </h1>
 <p align="center"><b><a href="https://536738waes.github.io/u-alright-m8/">https://536738waes.github.io/u-alright-m8/</a></b></p>
 
-<p align="center">A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap<br>(+0.9% sneaky JavaScript for the media player ONLY due to there being no ActionScript/Flash widget equivalent in 2026.)</p>
+<p align="center">A Y2K-era social profile built with HTML, CSS and Bootstrap<br>(+0.9% sneaky JavaScript for the media player ONLY due to there being no ActionScript/Flash widget equivalent in 2026.)</p>
 
 <p align="center"><img src="docs/mockup.jpg" alt="PT's profile shown on desktop, laptop, tablet and phone" width="620"></p>
 
