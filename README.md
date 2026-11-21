@@ -11,6 +11,7 @@ A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+1.5
 ## Contents
 
 - [Purpose](#purpose)
+- [Colour and UI stories](#colour-and-ui-stories)
 - [User stories](#user-stories)
 - [Features](#features)
 - [Wireframes](#wireframes)
@@ -50,6 +51,84 @@ Due to:<br>
 - the music player is interactive and mp3 files can be directly uploaded in
 - it's as close to an authentic MySpace page as a 2026 code offering can muster
 - I'm sure there are many artists you can think of who has used the y2k trend in their music, social media - this will be a welcome addition to their marketing campaign; shared across modern social networks (like their Instagram, TikTok, YouTube)
+
+## Colour and UI stories
+
+Each friend in PT's Top 8 has their own palette, background, cursor and track, and each style card set out that look before the page was built. PT comes first, with her real photos from 2002 to 2008, then JET and the rest of her Top 8; her friends are fictional, with AI-assisted artwork. Full-size cards are in `docs/cards/`.
+
+<table>
+<tr><th>Style card</th><th>Cursor and pointer</th><th>Background</th><th>Colours</th></tr>
+<tr>
+<td width="260"><img src="docs/cards/web/pt.jpg" alt="PT style card" width="260"></td>
+<td align="center"><img src="assets/images/cursor.png" alt="PT cursor" width="32"> <img src="assets/images/cursor-pointer.png" alt="PT pointer" width="32"></td>
+<td align="center"><img src="docs/cards/tiles/pt.jpg" alt="PT background" width="120"></td>
+<td><b>PT</b><br>`#0b0b0b` `#ffffff` and greys<br><sub>Tiled background</sub></td>
+</tr>
+<tr>
+<td width="200"><img src="docs/cards/web/jet.jpg" alt="JET style card" width="200"></td>
+<td align="center"><img src="assets/images/jet/cursor.png" alt="JET cursor" width="32"> <img src="assets/images/jet/pointer.png" alt="JET pointer" width="32"></td>
+<td align="center"><img src="docs/cards/tiles/jet.jpg" alt="JET background" width="120"></td>
+<td><b>JET</b><br>`#09090b` `#27272a` `#ffffff` `#d4d4d8`<br><sub>Centred NOSFERA2 logo, not tiled</sub></td>
+</tr>
+<tr>
+<td width="200"><img src="docs/cards/web/glitter-jelly-princess.jpg" alt="glitter jelly princess style card" width="200"></td>
+<td align="center"><img src="assets/images/glitter-jelly-princess/cursor.png" alt="glitter jelly princess cursor" width="32"> <img src="assets/images/glitter-jelly-princess/pointer.png" alt="glitter jelly princess pointer" width="32"></td>
+<td align="center"><img src="docs/cards/tiles/glitter-jelly-princess.jpg" alt="glitter jelly princess background" width="120"></td>
+<td><b>glitter jelly princess</b><br>`#cfe8fa` `#ffffff` `#2d0036` `#f9c5dc`</td>
+</tr>
+<tr>
+<td width="200"><img src="docs/cards/web/peppy.jpg" alt="PEPPY style card" width="200"></td>
+<td align="center"><img src="assets/images/peppy/cursor.png" alt="PEPPY cursor" width="32"> <img src="assets/images/peppy/pointer.png" alt="PEPPY pointer" width="32"></td>
+<td align="center"><img src="docs/cards/tiles/peppy.jpg" alt="PEPPY background" width="120"></td>
+<td><b>PEPPY</b><br>`#0d140e` `#1a2412` `#ecfccb` `#84cc16`</td>
+</tr>
+<tr>
+<td width="200"><img src="docs/cards/web/i-dont-wanna-be-me.jpg" alt="I Don't Wanna Be Me style card" width="200"></td>
+<td align="center"><img src="assets/images/i-dont-wanna-be-me/cursor.png" alt="I Don't Wanna Be Me cursor" width="32"> <img src="assets/images/i-dont-wanna-be-me/pointer.png" alt="I Don't Wanna Be Me pointer" width="32"></td>
+<td align="center"><img src="docs/cards/tiles/i-dont-wanna-be-me.jpg" alt="I Don't Wanna Be Me background" width="120"></td>
+<td><b>I Don't Wanna Be Me</b><br>`#030712` `#111827` `#f8fafc` `#22c55e`</td>
+</tr>
+<tr>
+<td width="200"><img src="docs/cards/web/dj-meowmixx.jpg" alt="DJ Meowmixx style card" width="200"></td>
+<td align="center"><img src="assets/images/dj-meowmixx/cursor.png" alt="DJ Meowmixx cursor" width="32"> <img src="assets/images/dj-meowmixx/pointer.png" alt="DJ Meowmixx pointer" width="32"></td>
+<td align="center"><img src="docs/cards/tiles/dj-meowmixx.jpg" alt="DJ Meowmixx background" width="120"></td>
+<td><b>DJ Meowmixx</b><br>`#8b5cf6` `#ffffff` `#2e1065` `#06b6d4`</td>
+</tr>
+<tr>
+<td width="200"><img src="docs/cards/web/im-just-a-girl-x-unicorn.jpg" alt="I'm Just A Girl x Unicorn style card" width="200"></td>
+<td align="center"><img src="assets/images/im-just-a-girl-x-unicorn/cursor.png" alt="I'm Just A Girl x Unicorn cursor" width="32"> <img src="assets/images/im-just-a-girl-x-unicorn/pointer.png" alt="I'm Just A Girl x Unicorn pointer" width="32"></td>
+<td align="center"><img src="docs/cards/tiles/im-just-a-girl-x-unicorn.jpg" alt="I'm Just A Girl x Unicorn background" width="120"></td>
+<td><b>I'm Just A Girl x Unicorn</b><br>`#000000` `#0e3a40` `#ffffff` `#00e5ff`</td>
+</tr>
+<tr>
+<td width="200"><img src="docs/cards/web/sakurawr.jpg" alt="SakuRAWR! style card" width="200"></td>
+<td align="center"><img src="assets/images/sakurawr/cursor.png" alt="SakuRAWR! cursor" width="32"> <img src="assets/images/sakurawr/pointer.png" alt="SakuRAWR! pointer" width="32"></td>
+<td align="center"><img src="docs/cards/tiles/sakurawr.jpg" alt="SakuRAWR! background" width="120"></td>
+<td><b>SakuRAWR!</b><br>`#120317` `#2a0a33` `#ffffff` `#ec4899`</td>
+</tr>
+<tr>
+<td width="200"><img src="docs/cards/web/the-velvet-kettles.jpg" alt="The Velvet Kettles style card" width="200"></td>
+<td align="center"><img src="assets/images/the-velvet-kettles/cursor.png" alt="The Velvet Kettles cursor" width="32"> <img src="assets/images/the-velvet-kettles/pointer.png" alt="The Velvet Kettles pointer" width="32"></td>
+<td align="center"><img src="docs/cards/tiles/the-velvet-kettles.jpg" alt="The Velvet Kettles background" width="120"></td>
+<td><b>The Velvet Kettles</b><br>`#121212` `#1f1f1f` `#e5e5e5` `#d97706`<br><sub>Tile drawn with code by Claude</sub></td>
+</tr>
+</table>
+
+### The band: NOSFERA2
+
+JET's band, and the deepest corner of the universe. NOSFERA2 [OFFICIAL] and the other band members appear in JET's friend space.
+
+<p align="center"><img src="docs/cards/web/nosfera2.jpg" alt="NOSFERA2 band profile card" width="640"></p>
+
+<table>
+<tr>
+<td align="center" width="20%"><img src="assets/images/nosfera2.jpg" alt="NOSFERA2 [OFFICIAL]" width="130"><br><sub>NOSFERA2 [OFFICIAL]</sub></td>
+<td align="center" width="20%"><img src="assets/images/friend-1.jpg" alt="JET" width="130"><br><sub>JET</sub></td>
+<td align="center" width="20%"><img src="assets/images/dove.jpg" alt="Dove" width="130"><br><sub>Dove</sub></td>
+<td align="center" width="20%"><img src="assets/images/tyson.jpg" alt="Tyson" width="130"><br><sub>Tyson</sub></td>
+<td align="center" width="20%"><img src="assets/images/alice.jpg" alt="(mm)Alice" width="130"><br><sub>(mm)Alice</sub></td>
+</tr>
+</table>
 
 ## User stories
 Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/projects/), prioritised with MoSCoW (must-have, should-have, could-have, won't-have).
@@ -130,42 +209,7 @@ Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/proje
   <img src="docs/cursor-heart-arrow.png" width="64" alt="Cursor: pink heart with a yellow arrow through it"> <img src="docs/cursor-heart-wings.png" width="64" alt="Link pointer: pink heart with white wings">
 - **Accessibility:** alt text on every image, plain-text versions of all fancy-text names, keyboard-usable pop-ups and a reduced-motion setting for the scrolling track title.
 
-#### Top 8 colour stories
-
-Each friend in PT's Top 8 has their own palette, background, cursor and track. These cards set out the look of each page before it was built. PT's board comes first, with her real photos from 2002 to 2008; her friends are fictional, with AI-assisted artwork. Full-size cards are in `docs/cards/`.
-
-<p align="center"><img src="docs/cards/web/pt.jpg" alt="PT mood board" width="720"></p>
-
-<table>
-<tr>
-<td align="center" width="25%"><img src="docs/cards/web/jet.jpg" alt="JET profile card" width="200"></td>
-<td align="center" width="25%"><img src="docs/cards/web/glitter-jelly-princess.jpg" alt="glitter jelly princess profile card" width="200"></td>
-<td align="center" width="25%"><img src="docs/cards/web/peppy.jpg" alt="PEPPY profile card" width="200"></td>
-<td align="center" width="25%"><img src="docs/cards/web/i-dont-wanna-be-me.jpg" alt="I Don't Wanna Be Me profile card" width="200"></td>
-</tr>
-<tr>
-<td align="center" width="25%"><img src="docs/cards/web/dj-meowmixx.jpg" alt="DJ Meowmixx profile card" width="200"></td>
-<td align="center" width="25%"><img src="docs/cards/web/im-just-a-girl-x-unicorn.jpg" alt="I'm Just A Girl x Unicorn profile card" width="200"></td>
-<td align="center" width="25%"><img src="docs/cards/web/sakurawr.jpg" alt="SakuRAWR! profile card" width="200"></td>
-<td align="center" width="25%"><img src="docs/cards/web/the-velvet-kettles.jpg" alt="The Velvet Kettles profile card" width="200"></td>
-</tr>
-</table>
-
-#### The band: NOSFERA2
-
-JET's band, and the deepest corner of the universe. NOSFERA2 [OFFICIAL] and the other band members appear in JET's friend space.
-
-<p align="center"><img src="docs/cards/web/nosfera2.jpg" alt="NOSFERA2 band profile card" width="640"></p>
-
-<table>
-<tr>
-<td align="center" width="20%"><img src="assets/images/nosfera2.jpg" alt="NOSFERA2 [OFFICIAL]" width="130"><br><sub>NOSFERA2 [OFFICIAL]</sub></td>
-<td align="center" width="20%"><img src="assets/images/friend-1.jpg" alt="JET" width="130"><br><sub>JET</sub></td>
-<td align="center" width="20%"><img src="assets/images/dove.jpg" alt="Dove" width="130"><br><sub>Dove</sub></td>
-<td align="center" width="20%"><img src="assets/images/tyson.jpg" alt="Tyson" width="130"><br><sub>Tyson</sub></td>
-<td align="center" width="20%"><img src="assets/images/alice.jpg" alt="(mm)Alice" width="130"><br><sub>(mm)Alice</sub></td>
-</tr>
-</table>
+- **Colour and UI stories:** every page's palette, cursor and background is shown in [Colour and UI stories](#colour-and-ui-stories).
 
 ## Wireframes
 
