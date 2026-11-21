@@ -14,10 +14,11 @@ A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+1.5
 - [User stories](#user-stories)
 - [Features](#features)
 - [Wireframes](#wireframes)
+- [Design process](#design-process)
 - [Testing](#testing)
-- [Bugs](#bugs)
+- [Bugs](#bugs-and-fixes)
 - [Deployment](#deployment)
-- [Use of AI](#use-of-ai)
+- [AI reflection](#ai-reflection)
 - [Credits](#credits)
 
 ## Purpose
@@ -154,6 +155,8 @@ Each friend in PT's Top 8 has their own palette, background, cursor and track. T
 
 JET's band, and the deepest corner of the universe. NOSFERA2 [OFFICIAL] and the other band members appear in JET's friend space.
 
+<p align="center"><img src="docs/cards/web/nosfera2.jpg" alt="NOSFERA2 band profile card" width="640"></p>
+
 <table>
 <tr>
 <td align="center" width="20%"><img src="assets/images/nosfera2.jpg" alt="NOSFERA2 [OFFICIAL]" width="130"><br><sub>NOSFERA2 [OFFICIAL]</sub></td>
@@ -186,6 +189,48 @@ Redrawn by PT to match the finished site, one sketch per page. Green boxes are s
 <img src="docs/wireframe2-index-1.jpg" width="300" alt="Wireframe 2, profile page part 1: header, navigation, profile box, contact links, URL, extended network, blurbs and Top 8"> <img src="docs/wireframe2-index-2.jpg" width="300" alt="Wireframe 2, profile page part 2: media player, interests and friends comments">
 
 <img src="docs/wireframe2-pics.jpg" width="250" alt="Wireframe 2, pics page: header, four photos, back to profile link"> <img src="docs/wireframe2-mail.jpg" width="250" alt="Wireframe 2, mail page: message centre with mood strip and form, plus how it works box">
+
+## Design process
+
+The friend universe was planned visually before any of it was coded. This section shows the tools, what they were used for, and where they went wrong.
+
+### References
+
+Real mid-2000s profiles and a present-day revival were the starting point for layout, density and decoration.
+
+<p><img src="docs/process/ref-lily-allen.jpg" alt="A 2006 music profile with polka-dot background" width="180"> <img src="docs/process/ref-pink-profile.jpg" alt="A pink and black 2000s profile layout" width="180"> <img src="docs/process/ref-rock-profile.jpg" alt="A rock collage profile layout" width="260"> <img src="docs/process/ref-spacehey.jpg" alt="A present-day SpaceHey profile" width="200"></p>
+
+### Style tiles in Google Stitch
+
+Each Top 8 friend got a **style tile** made in Google Stitch: a one-page card that pins down a profile's look before it is built. Each tile has the avatar, name, tagline and basic details, a row of **colour swatches**, and a vibe line. The swatches are the page's **design tokens**: the five values each friend page sets as CSS variables (`--f-bg`, `--f-surface`, `--f-text`, `--f-accent`, `--f-on-accent`).
+
+Stitch was used heavily and iteratively. The first pass of every tile was a busier "profile card" with an archetype, user story and design rationale, and Stitch filled the gaps with its own names (Tangerine, Luna, Raven, Roxy, Sakura). Those were drafts: each tile was then redone with PT's real friend names, taglines and details, the swatches labelled with the CSS variable names, and the extra text stripped back. Some went through several rounds; glitter jelly princess moved from bubblegum pink to a pastel lolita palette over three versions.
+
+<table><tr>
+<td><img src="docs/process/stitch-peppy.jpg" alt="PEPPY: first draft and final style tile" width="300"></td>
+<td><img src="docs/process/stitch-glitter-jelly-princess.jpg" alt="glitter jelly princess: three versions of the style tile" width="300"></td>
+<td><img src="docs/process/stitch-velvet-kettles.jpg" alt="The Velvet Kettles: draft and final style tile" width="300"></td>
+</tr><tr>
+<td><img src="docs/process/stitch-djmeowmixx.jpg" alt="DJ Meowmixx: draft and final style tile" width="300"></td>
+<td><img src="docs/process/stitch-unicorn.jpg" alt="I'm Just A Girl x Unicorn: draft and final style tile" width="300"></td>
+<td><img src="docs/process/stitch-sakurawr.jpg" alt="SakuRAWR!: draft and final style tile" width="300"></td>
+</tr></table>
+
+JET and NOSFERA2 went further. JET's Stitch canvas holds his style tile, several editorial layouts and the reference images; the band card was generated from PT's own member facts, then checked line by line.
+
+<p><img src="docs/process/stitch-jet-canvas.jpg" alt="JET's Google Stitch canvas" width="480"> <img src="docs/process/stitch-nosfera2.jpg" alt="NOSFERA2 band card on the Stitch canvas" width="480"></p>
+
+### Images: Google Flow (Nano Banana) and ChatGPT
+
+Band portraits were made in Google Flow with Nano Banana, and JET's logo in ChatGPT, refined over several rounds (bevelled pewter, crosses kept, then chrome in `#27272a`).
+
+<p><img src="docs/process/nano-dove.jpg" alt="Dove, live, in Google Flow" width="360"> <img src="docs/process/nano-alice.jpg" alt="(mm)Alice, backstage, in Google Flow" width="360"> <img src="docs/process/jet-logo-chatgpt.jpg" alt="JET logo refined in ChatGPT" width="300"></p>
+
+### What went wrong: bias in image generation
+
+The image tools did not hold the characters steady. Nano Banana aged the whole band up, when they are 20 to 25 with JET at 23. Asked to separate the band shot into individual profile photos, ChatGPT drifted away from the reference and lightened the members, losing that they are East Asian. Part of that came from the prompt too: an early prompt described the band as Southeast Asian when they are Japanese, and a vague prompt leaves the model to fall back on its defaults. The fixes were to name ethnicity, age and features exactly, attach the reference every time, and compare outputs side by side before accepting any of them.
+
+<p><img src="docs/process/chatgpt-whitewash.jpg" alt="ChatGPT output drifting from the reference" width="300"> <img src="docs/process/dove-nano-vs-chatgpt.jpg" alt="Dove: Nano Banana and ChatGPT compared" width="340"> <img src="docs/process/alice-nano-vs-chatgpt.jpg" alt="(mm)Alice: Nano Banana and ChatGPT compared" width="340"></p>
 
 ## Tools and technologies
 
