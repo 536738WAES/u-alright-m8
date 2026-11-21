@@ -12,6 +12,7 @@ A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+0.9
 
 - [Purpose](#purpose)
 - [Colour and UI stories](#colour-and-ui-stories)
+- [The music](#the-music)
 - [User stories](#user-stories)
 - [Features](#features)
 - [How the code works](#how-the-code-works)
@@ -130,6 +131,40 @@ JET's band, and the deepest corner of the universe. NOSFERA2 [OFFICIAL] and the 
 <td align="center" width="20%"><img src="assets/images/alice.jpg" alt="(mm)Alice" width="130"><br><sub>(mm)Alice</sub></td>
 </tr>
 </table>
+
+## The music
+
+Music is the heart of u alright m8. On the original 2000s profiles, the song on your page said as much about you as your photo did, so every profile here has its own track, and PT's profile plays all eight as **the Top 8 album**.
+
+### One piece, eight worlds
+
+Every track is a reimagining of the same piece: ***Komm, süßer Tod*** ("Come, sweet death"), BWV 478, a sacred song from the 1700s in the J. S. Bach catalogue. PT chose it for two reasons:
+
+- **It's Bach.** Classical music runs through heavy metal more deeply than people expect, and Bach is the clearest thread. For PT it connects to Cliff Burton of Metallica, whose classical influences shaped "Orion" on *Master of Puppets*, her favourite Metallica song. It's a reminder that when a band does it right, its influences, however niche, become part of its DNA.
+- **It's in the public domain.** PT used the public-domain edition published on [IMSLP](https://clara.imslp.org/work/265053), the international library of free sheet music, so the source is free for anyone to use.
+
+### How the tracks were made
+
+PT transformed the IMSLP edition into eight arrangements with **ElevenLabs Music**, writing a style direction for each character: the genre, the instruments, the production and the scene it belongs to. They are credited as PT Cheung's arrangements, produced with ElevenLabs Music. The source, tool and date of every file are recorded in the [asset log](#asset-log).
+
+This matters beyond the project. PT works in music rights and provenance, and the same rule applies here as in her professional work: know where every sound came from, use material you have the right to use, and credit it properly.
+
+### The Top 8 album
+
+| Profile | Version | Length | The sound, and why it fits |
+|---|---|---|---|
+| JET | 1959 Holy Grail | 0:30 | Soaring, melodic guitar solos with varied arpeggios and a clean, dry, bluesy tone, in the line of Slash, Keith Richards, Adrian Smith and Jimmy Page. JET is the character closest to PT, and his guitar heroes are hers. The name is the 1959 Les Paul Standard, the "holy grail" of electric guitars; PT plays a Les Paul Standard almost identical to JET's, minus the widow headstock. |
+| glitter jelly princess | grrl mix | 3:00 | Riot grrl punk, in the spirit of The Distillers. |
+| PEPPY | OMEN REMIX | 0:30 | Big beat and rave energy from Essex, where PT is from, and a nod to The Prodigy, an act she later worked with in her career. |
+| I Don't Wanna Be Me | Industrial Nails | 0:30 | Gothic and industrial: Type O Negative, Skinny Puppy and Nine Inch Nails, built on a single, relentless drum machine beat. |
+| DJ Meowmixx | 124bpm | 0:30 | The left-field one. PT isn't a fan of EDM or house, which is exactly why she wanted to take the piece somewhere unexpected. |
+| I'm Just A Girl x Unicorn | Ska Lovers | 0:30 | Ska punk from PT's skater years, around age 12 to 13: No Doubt, Less Than Jake, Goldfinger, Reel Big Fish and The Mighty Mighty Bosstones, plus Blink-182, a band she later worked on. |
+| SakuRAWR! | heyhey | 0:30 | 2000s Japanese rock of the kind found on anime soundtracks such as *NANA*: Western rock and punk with real bite, sincere rather than performative. |
+| The Velvet Kettles | Hawley Arms | 3:30 | Mid-2000s British indie, the NME era when Camden's Hawley Arms was the place to be: The Libertines, Babyshambles, Razorlight and The Ting Tings. Affectionately tongue in cheek, from PT's college and early uni years. |
+
+### How it plays
+
+Each friend's player plays their own track; PT's player holds the whole album, with a playlist button to switch between tracks. The players were rebuilt because the original 2000s players ran on Adobe Flash, which no browser supports any more. See [The one script: player.js](#7-the-one-script-playerjs) for why a small custom script was needed and how it works.
 
 ## User stories
 Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/projects/), prioritised with MoSCoW (must-have, should-have, could-have, won't-have).
@@ -609,7 +644,6 @@ Every image, sound and logo file in the site.
 | heart.gif | Sticker in the friends comments | Sourced from [Pinterest](https://in.pinterest.com/pin/993606736530510096/) | Nov 2026 | No: third-party Pinterest pin, original creator unknown |
 | skull.gif | Sticker in the friends comments | Sourced from [Pinterest](https://uk.pinterest.com/ideas/gothic-myspace-layouts/893841263308/) | Nov 2026 | No: third-party Pinterest pin, original creator unknown |
 | tile.jpg | Page background tile | Sourced from [Pinterest](https://in.pinterest.com/pin/684899055808782604/) | Nov 2026 | No: third-party Pinterest pin, original creator unknown |
-| pt/variation1.mp3 to pt/variation4.mp3 | Demo 1 to 4 in the media player: PT Cheung's arrangements of J. S. Bach, BWV 478, from the public domain [IMSLP](https://clara.imslp.org/work/265053) edition | PT Cheung, produced with ElevenLabs Music | 12 Nov 2026 | Partly |
 | One mp3 in each friend's folder in assets/audio (all eight Top 8 friends) | The Top 8 album: one reimagining of Bach's BWV 478 per friend, each in that friend's style, played on each friend's page and as a playlist on PT's profile | PT Cheung, produced with ElevenLabs Music | 18 Nov 2026 | Partly |
 | artwork.jpg | Media player artwork | Sourced from [Digital Native](https://www.digitalnative.tech/p/myspace-tumblr-and-the-long-lost) | Nov 2026 | No: third-party image from an article |
 | u-alright-m8-logo (black, white, primary) | Site logo, text only so it does not copy any existing logo | Made with Claude Opus 5.5 | 14 Nov 2026 | Partly |
