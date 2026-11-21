@@ -557,3 +557,10 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 @media (prefers-reduced-motion: reduce) {
     .player-display { height: auto; min-height: 4.25rem; padding-top: 0.4rem; padding-bottom: 0.4rem; }
 }
+
+/* Player read-out colour per profile: PT, PEPPY and I Do not Wanna Be Me keep terminal green */
+.friend-1 .player-marquee, .friend-1 .player-time, .friend-6 .player-marquee, .friend-6 .player-time { color: #ffffff; }
+.friend-2 .player-marquee, .friend-2 .player-time { color: #f9c5dc; }
+.friend-5 .player-marquee, .friend-5 .player-time { color: #06b6d4; }
+.friend-7 .player-marquee, .friend-7 .player-time { color: #ec4899; }
+.friend-8 .player-marquee, .friend-8 .player-time { color: #d97706; }
