@@ -12,7 +12,7 @@ A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+0.9
 
 - [Purpose](#purpose)
 - [Colour and UI stories](#colour-and-ui-stories)
-- [The music](#the-music)
+- [The media player and music](#the-media-player-using-elevenlabs-music-to-make-unique-multi-genre-ai-music)
 - [User stories](#user-stories)
 - [Features](#features)
 - [How the code works](#how-the-code-works)
@@ -132,7 +132,9 @@ JET's band, and the deepest corner of the universe. NOSFERA2 [OFFICIAL] and the 
 </tr>
 </table>
 
-## The music
+## The media player: using ElevenLabs Music to make unique multi-genre AI music
+
+<p align="center"><img src="docs/music/media-player.jpg" alt="PT's media player with the Top 8 album playlist open: eight reimaginings of Komm, süßer Tod, one per friend" width="420"></p>
 
 Music is the heart of u alright m8. On the original 2000s profiles, the song on your page said as much about you as your photo did, so every profile here has its own track, and PT's profile plays all eight as **the Top 8 album**.
 
@@ -170,7 +172,7 @@ Screenshots from the ElevenLabs Music project, and the terms PT worked under:
 
 <p><img src="docs/music/elevenlabs-prompt-jet.jpg" alt="ElevenLabs Music project for Komm, süßer Tod, BWV 478, with section-by-section style tags and the written prompt history" width="440"> <img src="docs/music/elevenlabs-prompt-2.jpg" alt="Prompt history for JET's track, including the 1959 Les Paul Standard direction, with no artist names" width="440"> <img src="docs/music/elevenlabs-history.jpg" alt="ElevenLabs Music generation history from 19 November, showing SakuRAWR! variations" width="440"></p>
 
-- **Prompts describe the sound, not artists.** The project is built on the IMSLP *Komm, süßer Tod*, BWV 478, with each section tagged by tempo, instruments and production (for example "jangly indie rock guitar arpeggios", "tight four-on-the-floor kick pattern"). JET's direction asked for "heavy metal guitars, played on a custom 1959 Les Paul Standard ... bluesy-heavy metal sound": a guitar, not a guitarist.
+- **Prompts describe the sound, not artists.** The project is built on the IMSLP *Komm, süßer Tod*, BWV 478, with each section tagged by tempo, instruments and production (for example "jangly indie rock guitar arpeggios", "tight four-on-the-floor kick pattern"). JET's direction asked for "heavy metal guitars, played on a custom 1959 Les Paul Standard ... bluesy-heavy metal sound".
 - **Iteration.** Each prompt returned four variations, which PT listened to, compared and refined; that is how about 130 generations became eight tracks.
 - **The terms:** [ElevenLabs Music Terms, saved 21 November 2026 (PDF)](docs/music/elevenlabs-music-terms.pdf).
 
