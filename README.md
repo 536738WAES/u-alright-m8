@@ -365,11 +365,19 @@ To run it locally: clone the repository, open the folder in VS Code and open `in
 
 ### Code creation
 
+I used Claude as a build partner throughout. It wrote the page skeletons, the Bootstrap grid and the CSS variable system that themes all nine pages from five colour names. I made the design and scope calls: the three main pages, the friend universe, the original track titles, and a firm stop on JavaScript at around 80 lines so the project stayed an HTML, CSS and Bootstrap build. When Claude's output didn't match my intent, I redirected it rather than accepting it, for example keeping my friends' real track names instead of tidied-up versions.
+
 ### Debugging
+
+Most bugs were found by testing rather than by AI spotting them. The W3C validator, Jigsaw, JSHint, WAVE and Lighthouse showed what was wrong, and Claude helped me understand and fix it. Examples: a sideways scroll on phones caused by Bootstrap's `gx-5` gutter, tablet layouts squashing until I moved to the `lg` breakpoint, an audio player bug fixed with a `readyState` check, and a friend page broken by a generator script that had to be rebuilt. My tutor's feedback on breakpoints pushed me to test far more carefully across devices.
 
 ### Performance and user experience
 
+AI helped me raise the Lighthouse scores, mainly by compressing images, giving GIFs fixed sizes and adding a favicon, which took Best Practices to 96. Accessibility was built in rather than added later: screen-reader labels, proper heading order, alt text and a reduced-motion setting, giving 0 errors in WAVE. After external feedback, I shortened the browser-tab titles and capped the profile photo size so it no longer grows too large on tablets.
+
 ### Workflow
+
+The biggest change was how I managed the project. Claude kept a versioned build checklist that worked as my project manager, and I planned each friend's look as a style tile in Google Stitch before coding it. AI also fell short in ways I had to catch: Stitch invented placeholder names, image tools aged up my band and drifted from my references on ethnicity, and at one point I was working from an out-of-date checklist. The lesson was to give precise prompts, check every output against my own source material, and treat AI as a collaborator I direct rather than an authority I trust.
 
 ## Planned future updates
 
