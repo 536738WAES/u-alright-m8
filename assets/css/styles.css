@@ -233,7 +233,7 @@ button.player-push[aria-expanded="true"] {
 
 /* On narrow phones, hide the push buttons so the read-out keeps its room */
 @media (max-width: 400px) {
-    .player-buttons {
+    .player-buttons span.player-push {
         display: none;
     }
 }
@@ -258,7 +258,9 @@ button.player-push[aria-expanded="true"] {
 /* Stop the scrolling for visitors who ask for less motion */
 @media (prefers-reduced-motion: reduce) {
     .player-marquee {
-        white-space: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .player-marquee>span {
@@ -543,3 +545,9 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 .friend-page main .visually-hidden { color: var(--f-text); }
 /* Carousel arrow labels are screen-reader-only; dark text so contrast checkers pass against the white panel */
 .pics-carousel .visually-hidden { color: var(--ink); }
+
+/* Phones: smaller logo and tighter menu so all five links fit on one line */
+@media (max-width: 575.98px) {
+    .site-logo { max-height: 2.5rem; }
+    .main-nav .nav-link { padding-left: 0.45rem; padding-right: 0.45rem; }
+}
