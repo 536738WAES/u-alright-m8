@@ -470,12 +470,12 @@ After the last features were added (clickable photos, the Pics carousel, friend 
 | Check | Page | Result |
 |---|---|---|
 | W3C HTML | index.html | No errors or warnings |
-| W3C HTML | pics.html, jet-pics.html | 1 error each (carousel label), fixed, see Bugs and fixes |
-| W3C HTML | friend pages | 1 warning each (two `h1` headings), fixed |
+| W3C HTML | pics.html, jet-pics.html | 1 error each (carousel label); fixed, now no errors or warnings |
+| W3C HTML | friend pages | 1 warning each (two `h1` headings); fixed, now no errors or warnings |
 | Jigsaw CSS | styles.css | No errors |
-| WAVE | friend-3.html | 0 errors, 6 contrast errors (comment names), fixed; AIM score 7.7 |
+| WAVE | friend-3.html | First run: 0 errors, 6 contrast errors, AIM 7.7. After the fixes: 0 errors, 0 contrast errors, AIM 9.6 |
 
-<p><img src="docs/test-html-index-final.jpg" alt="HTML checker: no errors or warnings on index.html" width="200"> <img src="docs/test-css-final.jpg" alt="CSS validator: no error found" width="200"> <img src="docs/test-html-pics-before.jpg" alt="HTML checker error on the Pics page before the fix" width="200"> <img src="docs/test-wave-friend-before.jpg" alt="WAVE summary for a friend page before the contrast fix" width="200"></p>
+<p><img src="docs/test-html-index-final.jpg" alt="HTML checker: no errors on index.html" width="200"> <img src="docs/test-html-pics-final.jpg" alt="HTML checker: no errors on pics.html" width="300"> <img src="docs/test-html-jetpics-final.jpg" alt="HTML checker: no errors on jet-pics.html" width="300"> <img src="docs/test-html-friend-final.jpg" alt="HTML checker: no errors on friend-3.html" width="300"> <img src="docs/test-css-final.jpg" alt="CSS validator: no error found" width="200"> <img src="docs/test-wave-friend-final.jpg" alt="WAVE: 0 errors and 0 contrast errors on friend-3.html, AIM score 9.6" width="400"></p>
 
 ### Messenger
 ![Formspree email showing a test message with the mood, name, email and message fields](docs/test-formspree.png)
