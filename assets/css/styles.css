@@ -539,3 +539,5 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 .friend-page:not(.friend-2) main .comment-from { background-color: var(--f-surface); }
 .friend-page main .comment-from h3 { color: var(--f-text); }
 .friend-2 main .comment-from h3 { color: #2d0036; }
+/* Screen-reader-only headings on friend pages: give them the page text colour so contrast checkers pass (they are never shown on screen) */
+.friend-page main .visually-hidden { color: var(--f-text); }

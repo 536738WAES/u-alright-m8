@@ -508,6 +508,7 @@ After the last features were added (clickable photos, the Pics carousel, friend 
 | Pics pages failed the HTML checker after the carousel was added: `aria-label` not allowed on a `div` | A plain `div` has no role, so the checker doesn't allow a label on it | Added `role="region"`, which marks the carousel as a named area of the page, so the label is valid and still read out |
 | Friend pages showed a checker warning: two `h1` headings | The site logo and the friend's name were both `h1`, and screen readers treat every `h1` as the page title | The friend's name is now a paragraph styled the same way, leaving the logo as the only `h1` |
 | WAVE found 6 contrast errors on friend pages | Friends' names in the comments used the general text colour on a cell that didn't match the page palette, so they were almost invisible | Comment name cells now use each friend's own surface and text colours, the same pair already proven readable in their cards |
+| WAVE then found 3 contrast errors that weren't visible on screen | They were screen-reader-only headings ("Profile", "Network"): hidden visually, but still black text on the dark friend palettes, and WAVE checks hidden text too | Screen-reader-only text on friend pages now uses each friend's text colour |
 
 
 ### Why the fixes work
