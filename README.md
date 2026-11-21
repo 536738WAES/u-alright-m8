@@ -14,7 +14,6 @@ A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+1.5
 - [User stories](#user-stories)
 - [Features](#features)
 - [Wireframes](#wireframes)
-- [Top 8 colour stories](#top-8-colour-stories)
 - [Testing](#testing)
 - [Bugs](#bugs)
 - [Deployment](#deployment)
@@ -130,6 +129,41 @@ Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/proje
   <img src="docs/cursor-heart-arrow.png" width="64" alt="Cursor: pink heart with a yellow arrow through it"> <img src="docs/cursor-heart-wings.png" width="64" alt="Link pointer: pink heart with white wings">
 - **Accessibility:** alt text on every image, plain-text versions of all fancy-text names, keyboard-usable pop-ups and a reduced-motion setting for the scrolling track title.
 
+#### Top 8 colour stories
+
+Each friend in PT's Top 8 has their own palette, background, cursor and track. These cards set out the look of each page before it was built. PT's board comes first, with her real photos from 2002 to 2008; her friends are fictional, with AI-assisted artwork. Full-size cards are in `docs/cards/`.
+
+<p align="center"><img src="docs/cards/web/pt.jpg" alt="PT mood board" width="720"></p>
+
+<table>
+<tr>
+<td align="center" width="25%"><img src="docs/cards/web/jet.jpg" alt="JET profile card" width="200"></td>
+<td align="center" width="25%"><img src="docs/cards/web/glitter-jelly-princess.jpg" alt="glitter jelly princess profile card" width="200"></td>
+<td align="center" width="25%"><img src="docs/cards/web/peppy.jpg" alt="PEPPY profile card" width="200"></td>
+<td align="center" width="25%"><img src="docs/cards/web/i-dont-wanna-be-me.jpg" alt="I Don't Wanna Be Me profile card" width="200"></td>
+</tr>
+<tr>
+<td align="center" width="25%"><img src="docs/cards/web/dj-meowmixx.jpg" alt="DJ Meowmixx profile card" width="200"></td>
+<td align="center" width="25%"><img src="docs/cards/web/im-just-a-girl-x-unicorn.jpg" alt="I'm Just A Girl x Unicorn profile card" width="200"></td>
+<td align="center" width="25%"><img src="docs/cards/web/sakurawr.jpg" alt="SakuRAWR! profile card" width="200"></td>
+<td align="center" width="25%"><img src="docs/cards/web/the-velvet-kettles.jpg" alt="The Velvet Kettles profile card" width="200"></td>
+</tr>
+</table>
+
+#### The band: NOSFERA2
+
+JET's band, and the deepest corner of the universe. NOSFERA2 [OFFICIAL] and the other band members appear in JET's friend space.
+
+<table>
+<tr>
+<td align="center" width="20%"><img src="assets/images/nosfera2.jpg" alt="NOSFERA2 [OFFICIAL]" width="130"><br><sub>NOSFERA2 [OFFICIAL]</sub></td>
+<td align="center" width="20%"><img src="assets/images/friend-1.jpg" alt="JET" width="130"><br><sub>JET</sub></td>
+<td align="center" width="20%"><img src="assets/images/dove.jpg" alt="Dove" width="130"><br><sub>Dove</sub></td>
+<td align="center" width="20%"><img src="assets/images/tyson.jpg" alt="Tyson" width="130"><br><sub>Tyson</sub></td>
+<td align="center" width="20%"><img src="assets/images/alice.jpg" alt="(mm)Alice" width="130"><br><sub>(mm)Alice</sub></td>
+</tr>
+</table>
+
 ## Wireframes
 
 ### Wireframe 1: initial plan
@@ -152,43 +186,6 @@ Redrawn by PT to match the finished site, one sketch per page. Green boxes are s
 <img src="docs/wireframe2-index-1.jpg" width="300" alt="Wireframe 2, profile page part 1: header, navigation, profile box, contact links, URL, extended network, blurbs and Top 8"> <img src="docs/wireframe2-index-2.jpg" width="300" alt="Wireframe 2, profile page part 2: media player, interests and friends comments">
 
 <img src="docs/wireframe2-pics.jpg" width="250" alt="Wireframe 2, pics page: header, four photos, back to profile link"> <img src="docs/wireframe2-mail.jpg" width="250" alt="Wireframe 2, mail page: message centre with mood strip and form, plus how it works box">
-
-## Top 8 colour stories
-
-Each friend in PT's Top 8 has their own palette, background, cursor and track. These cards set out the look of each page before it was built. PT sits in the middle, with her real photos from 2002 to 2008; her friends are fictional, with AI-assisted artwork. Full-size cards are in `docs/cards/`.
-
-<table>
-<tr>
-<td align="center" width="33%"><img src="docs/cards/web/jet.jpg" alt="JET profile card" width="240"></td>
-<td align="center" width="33%"><img src="docs/cards/web/glitter-jelly-princess.jpg" alt="glitter jelly princess profile card" width="240"></td>
-<td align="center" width="33%"><img src="docs/cards/web/peppy.jpg" alt="PEPPY profile card" width="240"></td>
-</tr>
-<tr>
-<td align="center" width="33%"><img src="docs/cards/web/i-dont-wanna-be-me.jpg" alt="I Don't Wanna Be Me profile card" width="240"></td>
-<td align="center" width="33%"><img src="docs/cards/web/pt.jpg" alt="PT profile card" width="240"></td>
-<td align="center" width="33%"><img src="docs/cards/web/dj-meowmixx.jpg" alt="DJ Meowmixx profile card" width="240"></td>
-</tr>
-<tr>
-<td align="center" width="33%"><img src="docs/cards/web/im-just-a-girl-x-unicorn.jpg" alt="I'm Just A Girl x Unicorn profile card" width="240"></td>
-<td align="center" width="33%"><img src="docs/cards/web/sakurawr.jpg" alt="SakuRAWR! profile card" width="240"></td>
-<td align="center" width="33%"><img src="docs/cards/web/the-velvet-kettles.jpg" alt="The Velvet Kettles profile card" width="240"></td>
-</tr>
-</table>
-
-### The band: NOSFERA2
-
-JET's band, and the deepest corner of the universe. NOSFERA2 [OFFICIAL] and the other band members appear in JET's friend space.
-
-<table>
-<tr>
-<td align="center" width="20%"><img src="assets/images/nosfera2.jpg" alt="NOSFERA2 [OFFICIAL]" width="130"><br><sub>NOSFERA2 [OFFICIAL]</sub></td>
-<td align="center" width="20%"><img src="assets/images/friend-1.jpg" alt="JET" width="130"><br><sub>JET</sub></td>
-<td align="center" width="20%"><img src="assets/images/dove.jpg" alt="Dove" width="130"><br><sub>Dove</sub></td>
-<td align="center" width="20%"><img src="assets/images/tyson.jpg" alt="Tyson" width="130"><br><sub>Tyson</sub></td>
-<td align="center" width="20%"><img src="assets/images/alice.jpg" alt="(mm)Alice" width="130"><br><sub>(mm)Alice</sub></td>
-</tr>
-</table>
-
 
 ## Tools and technologies
 
