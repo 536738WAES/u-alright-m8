@@ -4,6 +4,8 @@
     <img src="assets/public/logos/u-alright-m8-logo-black.svg" alt="u alright m8" width="420">
   </picture>
 </h1>
+<p align="center"><img src="docs/universe.jpg" alt="The u alright m8 universe: PT's profile on desktop, PEPPY's page on a phone, the media player with the Top 8 album, and the JET, glitter jelly princess and SakuRAWR! pages" width="900"></p>
+<p align="center"><img src="docs/mockup.jpg" alt="PT's profile shown on desktop, laptop, tablet and phone" width="620"></p>
 https://536738waes.github.io/u-alright-m8/
 
 A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+0.9% sneaky JavaScript for the media player ONLY due to there being no ActionScript/Flash widget equivalent in 2026.)
@@ -444,6 +446,8 @@ The image tools did not hold the characters steady. Nano Banana aged the whole b
 - Google Flow Studio (Nano Banana Pro): the Top 8 friend pictures
 - ElevenLabs Music: producing PT's Bach arrangements for the media player
 - Sweezy Cursors: the heart cursors
+- [Am I Responsive?](https://ui.dev/amiresponsive) (ui.dev): the device mock-up at the top of this README
+- README hero image: screenshots of the live site taken and composited by Claude (Anthropic) with Python (Pillow), 21 November 2026
 
 ### Screenshots
 
@@ -628,7 +632,7 @@ AI helped me raise the Lighthouse scores, mainly by compressing images, giving G
 
 The biggest change was how I managed the project. Claude kept a versioned build checklist that worked as my project manager, and I planned each friend's look as a style tile in Google Stitch before coding it. AI also fell short in ways I had to catch: Stitch invented placeholder names, image tools aged up my band and drifted from my references on ethnicity, and at one point I was working from an out-of-date checklist. The lesson was to give precise prompts, check every output against my own source material, and treat AI as a collaborator I direct rather than an authority I trust.
 
-## Planned future updates
+## Planned future updates Claude also took the screenshots of the live site and put together the hero image at the top of this README.
 
 Kept out of this version on purpose, so the project stays focused on HTML, CSS and Bootstrap:
 
