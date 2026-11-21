@@ -171,6 +171,7 @@ Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/proje
 
 ### Friend profile pages (friend-1.html to friend-8.html)
 
+- **Clickable profile photos:** clicking the main photo opens that person's pics. PT, JET and glitter jelly princess go to their own Pics page; friends with one photo open it in a Bootstrap pop-up (modal) showing "Displaying 1 of 1 pics", so no extra JavaScript is needed.
 - **One per Top 8 friend:** click any friend in PT's Top 8 to visit their profile.
 - **Same frame, eight colour stories:** the u alright m8 header, navigation and footer stay black and white on every page; each friend's profile area uses their own palette, set with the same five CSS variables (`--f-bg`, `--f-surface`, `--f-text`, `--f-accent`, `--f-on-accent`) on a class for that page.
 - **Their own music:** each friend's media player plays their own reimagining of the Bach piece. PT's player plays all eight as the Top 8 album.

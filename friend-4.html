@@ -70,8 +70,10 @@
                         <div class="card-body">
                             <div class="row g-3">
                                 <div class="col-6">
-                                    <img src="assets/images/friend-4.jpg" class="img-fluid w-100 border border-dark profile-square"
+                                    <a href="#photo-modal" data-bs-toggle="modal" class="d-block" aria-label="View I Don't Wanna Be Me's pics">
+                                        <img src="assets/images/friend-4.jpg" class="img-fluid w-100 border border-dark profile-square"
                                         width="200" height="200" alt="super scene emo crow">
+                                    </a>
                                 </div>
                                 <div class="col-6">
                                     <h1 class="fs-6 fw-bold mb-0"><span aria-hidden="true">𝖝𝖝_𝕴𝕯𝖚𝖓𝖂@𝖓𝕬𝖇𝖒3333_𝖝𝖝</span><span
@@ -82,7 +84,7 @@
                                     <p class="mb-0">𝖍𝖔𝖒𝖊 𝖎𝖘 𝖓𝖔𝖜𝖍𝖊𝖗𝖊</p>
                                 </div>
                             </div>
-                            <p class="mt-3 mb-0">View my: Pics | <a href="#music">Playlists</a></p>
+                            <p class="mt-3 mb-0">View my: <a href="#photo-modal" data-bs-toggle="modal">Pics</a> | <a href="#music">Playlists</a></p>
                         </div>
                     </section>
 
@@ -252,6 +254,21 @@
     </div>
 
     <!-- Send Message pop-up: private message to PT, sent through Formspree -->
+    <div class="modal fade" id="photo-modal" tabindex="-1" role="dialog" aria-labelledby="photo-modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0 border border-3 border-dark">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="photo-modal-title">I Don't Wanna Be Me's pics</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/friend-4.jpg" class="img-fluid w-100 border border-dark" width="400" height="400" alt="super scene emo crow" loading="lazy">
+                    <p class="small mt-2 mb-0">Displaying 1 of 1 pics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="message-modal-title" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content border border-3 border-dark rounded-0">
