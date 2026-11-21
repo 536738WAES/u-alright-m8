@@ -242,7 +242,7 @@ button.player-push[aria-expanded="true"] {
 .player-marquee>span {
     display: inline-block;
     padding-left: 100%;
-    animation: player-scroll 18s linear infinite;
+    animation: player-scroll 25s linear infinite;
 }
 
 @keyframes player-scroll {
@@ -258,9 +258,7 @@ button.player-push[aria-expanded="true"] {
 /* Stop the scrolling for visitors who ask for less motion */
 @media (prefers-reduced-motion: reduce) {
     .player-marquee {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        white-space: normal;
     }
 
     .player-marquee>span {
@@ -550,4 +548,12 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 @media (max-width: 575.98px) {
     .site-logo { max-height: 2.5rem; }
     .main-nav .nav-link { padding-left: 0.45rem; padding-right: 0.45rem; }
+}
+
+/* Terminal-green read-out, like the old desktop media players */
+.player-marquee, .player-time { color: #39ff14; }
+
+/* With motion reduced the title wraps instead of scrolling, so let the display grow to show all of it */
+@media (prefers-reduced-motion: reduce) {
+    .player-display { height: auto; min-height: 4.25rem; padding-top: 0.4rem; padding-bottom: 0.4rem; }
 }
