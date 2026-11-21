@@ -14,6 +14,7 @@ A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+1.5
 - [Colour and UI stories](#colour-and-ui-stories)
 - [User stories](#user-stories)
 - [Features](#features)
+- [How the code works](#how-the-code-works)
 - [Wireframes](#wireframes)
 - [Design process](#design-process)
 - [Testing](#testing)
@@ -213,6 +214,91 @@ Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/proje
 
 - **Colour and UI stories:** every page's palette, cursor and background is shown in [Colour and UI stories](#colour-and-ui-stories).
 
+## How the code works
+
+This section explains the ideas behind the code, so the site can be read and rebuilt by someone learning HTML, CSS and Bootstrap. Each part says what the code does, then why it was done that way.
+
+### 1. HTML: structure and meaning
+
+- **Semantic elements.** The page is built from elements that describe their job: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` (each comment), `<figure>` and `<figcaption>` (each photo and caption) and `<footer>`. Browsers, search engines and screen readers use these to understand the page, so the layout is meaningful even with no CSS.
+- **One `<h1>` per page, then `<h2>` and `<h3>` in order.** Screen-reader users jump between headings like a contents list, so headings never skip a level. On the profile, the site logo is the `<h1>`; each box is an `<h2>`; each comment's friend name is an `<h3>`.
+- **Description lists.** The interests box uses `<dl>`, `<dt>` (the label, such as Music) and `<dd>` (the value). Screen readers announce them as pairs.
+- **`width` and `height` on every image.** The browser reserves the right space before the picture loads, so the page doesn't jump around. Lighthouse checks for this.
+- **`loading="lazy"`.** Pictures lower down the page only load when the visitor scrolls near them, which makes the first load faster.
+- **Special characters.** `<` starts a tag in HTML, so a heart written as `<3` confuses the browser. It's written `&lt;3`, an *entity* that displays as `<` without being read as code.
+
+### 2. Bootstrap: the grid and breakpoints
+
+Bootstrap is a ready-made library of CSS and a small script. It's loaded from a CDN (a public server) in the `<head>`, before `styles.css`, so the site's own rules can override it.
+
+- **The grid.** A `row` holds columns, and each row is 12 units wide. `col-12` takes all 12 (full width); `col-lg-5` and `col-lg-7` split the page 5 to 7 on large screens.
+- **Breakpoints.** The part in the middle of a class name says from which screen width it applies: `sm` 576px, `md` 768px, `lg` 992px, `xl` 1200px. Bootstrap is *mobile first*: a class with no breakpoint applies everywhere, and a class with one applies from that width upwards. So `col-12 col-lg-5` means "one full-width column on phones and tablets, then 5 of 12 from 992px".
+- **Gutters.** `gx-3 gx-lg-5` sets the gap between columns: small on phones, wide from 992px. `gy-4` sets the gap between rows when columns stack.
+- **`container-fluid page-wrap`.** A full-width container, capped at 1200px by the site's own `.page-wrap` rule, so lines of text never get uncomfortably long on big screens.
+- **Utility classes.** Small one-job classes, such as `mb-0` (no bottom margin), `fw-bold` (bold), `fs-6` (smaller text), `text-white`, `d-block` (display as a block) and `visually-hidden` (hidden on screen, still read aloud by screen readers).
+
+### 3. Bootstrap components with no custom JavaScript
+
+Several features look interactive but have no JavaScript of their own. Bootstrap's bundled script reads `data-bs-*` attributes in the HTML and does the work.
+
+- **Cards.** Every box on the profile is a `card`, with a `card-header` and `card-body`. Borders and corners are adjusted with utilities (`border-3`, `rounded-0`).
+- **Modals (pop-ups).** A button with `data-bs-toggle="modal"` and `data-bs-target="#sign-out-modal"` opens the element with that `id`. Bootstrap also moves keyboard focus into the pop-up, closes it with Escape, and returns focus to the button afterwards. `role="dialog"` and `aria-labelledby` tell screen readers it's a dialog and what it's called.
+- **Toggle buttons (`btn-check`).** The Favourites star and the mood strip on the message form are real checkboxes and radio buttons, styled to look like buttons. Clicking the label ticks the hidden input, and CSS changes the look based on whether it's ticked. Because they're real form controls, they work with a keyboard and screen reader for free.
+- **Carousel.** The Pics pages use a Bootstrap carousel. `data-bs-slide="prev"` and `"next"` drive the arrows; each thumbnail button has `data-bs-target="#pics-carousel"` and `data-bs-slide-to="3"`, which jumps to slide 3 (counting from 0, where 0 is the profile photo). There's no `data-bs-ride` attribute, so it never moves on its own.
+
+### 4. CSS: the site's own styles
+
+- **The cascade and specificity.** When two rules style the same thing, the more *specific* one wins: an `id` beats a class, a class beats an element name, and a longer selector beats a shorter one. If they're equal, the one written later wins. This is why `styles.css` loads after Bootstrap, and why some fixes use a more specific selector rather than `!important`.
+- **CSS variables (custom properties).** Every colour is named once at the top of `styles.css`, inside `:root`, such as `--ink: #0b0b0b;`, and used with `var(--ink)`. Changing a colour in one place changes it across the whole site.
+- **Scoped variables for the friend pages.** Each friend page has `<body class="friend-page friend-3">`. The rule `.friend-3 { --f-bg: #0d140e; ... }` sets five variables only inside that page, and shared rules like `.friend-page main .card { background: var(--f-surface); }` use them. One set of rules, nine different colour schemes.
+- **Bootstrap's own variables.** Bootstrap components read variables too, such as `--bs-card-bg`. Setting those on `.friend-page main .card` recolours every card without rewriting Bootstrap.
+- **Media queries.** `@media (max-width: 991.98px) { ... }` applies its rules only below 992px, which is how the interests list gets a scrolling cap on phones and tablets. `.98` avoids a 1px overlap with Bootstrap's `lg` breakpoint at exactly 992px.
+- **`aspect-ratio` and `object-fit`.** `aspect-ratio: 1 / 1` keeps friend pictures square at any width; `object-fit: cover` fills the square by cropping the edges instead of squashing the picture. The Pics carousel uses `object-fit: contain`, which shows the whole photo with dark space around it.
+- **`max-width` on the profile photo.** `max-width: 240px` lets the photo shrink on small screens but stops it growing past 240px when the column goes full width on tablets.
+- **Backgrounds.** `background: var(--f-bg) url("../images/peppy/background.jpg") repeat;` paints a fallback colour, then repeats the tile over it in both directions. `../` means "go up one folder", from `css/` to `assets/`, then into `images/`. JET's page uses `no-repeat center center fixed` for one centred logo that stays still while the page scrolls.
+- **Custom cursors.** `cursor: url("cursor.png") 1 1, auto;` sets an image as the mouse pointer. The two numbers are the *hotspot*: the pixel that actually clicks (top left for an arrow, the middle for a pointer). `auto` is the fallback if the image fails. Browsers ignore cursor images that are too big, which is why every cursor is 32px.
+- **Transitions.** A `transition` animates a change from one style to another. Bootstrap's carousel slides because of a transition on `.carousel-item`; setting `transition: none` on it makes the photo change instantly.
+
+### 5. Accessibility
+
+- **Alt text.** Every meaningful image has `alt` text describing it. Decorative images and images inside a button that already has a label use `alt=""`, so screen readers skip them rather than reading them twice.
+- **`aria-label`.** Gives a control a spoken name when its visible content isn't enough, such as a photo link labelled "View Peppy's pics", or the carousel arrows labelled "Previous pic" and "Next pic".
+- **Fancy text.** Names like 丂ﾑズひ尺ﾑW尺! are wrapped in `aria-hidden="true"`, so screen readers skip them, with a plain-text copy in a `visually-hidden` span read out instead.
+- **Reduced motion.** `@media (prefers-reduced-motion: reduce)` switches off animations for anyone whose device is set to reduce motion. The carousel goes further and never slides for anyone.
+- **Colour contrast.** Text and background pairs were checked to meet WCAG AA: 4.5 to 1 for normal text, 3 to 1 for large text.
+
+### 6. The forms
+
+- **Formspree.** A plain HTML `<form>` has `action="https://formspree.io/f/..."` and `method="post"`. On submit, the browser sends the fields to Formspree, which emails them to PT. No server code or JavaScript is needed.
+- **`required` and `type="email"`.** The browser itself refuses to send the form until required fields are filled and the email looks valid.
+- **The search box** is a form with `action="https://www.google.com/search"` and an input named `q`, the name Google expects.
+
+### 7. The one script: `player.js`
+
+The media player is the only custom JavaScript, kept to about 80 lines.
+
+- **Finding elements.** `document.getElementById("player-audio")` and `querySelectorAll(".player-track-btn")` grab the parts of the page the script controls.
+- **Events.** `addEventListener("click", ...)` runs code when something happens. The `<audio>` element fires its own events: `play`, `pause`, `timeupdate` (several times a second while playing) and `loadedmetadata` (once the track's length is known). The script listens for these to keep the button icon, time read-out and progress bar in step.
+- **`data-src`.** Each track button stores its file path in a `data-src` attribute; the script reads it with `button.dataset.src` and loads it into the player.
+- **The progress bar** is an `<input type="range">`. Its `max` is set to the track's length in seconds, its `value` follows the playing position, and dragging it sets `audio.currentTime`.
+- **`aria-current`.** The playing track button gets `aria-current="true"`, so screen readers announce which track is selected.
+- **`readyState`.** If the browser has already read the track details before the script runs, the `loadedmetadata` event has already happened and won't fire again. Checking `audio.readyState > 0` at the end catches that case.
+- **Encoded file names.** Track files keep their original names, which contain spaces and accented letters. In the HTML, these are *URL-encoded* (a space becomes `%20`, `ü` becomes `%C3%BC`) so every browser and server reads the path the same way.
+
+### 8. Images and performance
+
+- **Right size for the job.** A picture shown 200px wide doesn't need to be 2000px wide. Images were resized to roughly the size they're displayed at, then compressed.
+- **JPG or PNG.** JPG suits photos and textures (much smaller files); PNG suits images that need see-through areas, such as cursors and logos.
+- **Background tiles** were cut from 1 to 1.6 MB PNGs down to 400px JPGs of 2 to 39 KB, which keeps the Lighthouse performance score high.
+- **Favicons.** A small icon in the browser tab. With none, the browser asks for one anyway and logs a 404 error, which Lighthouse counts against Best Practices.
+
+### 9. Git, GitHub and deployment
+
+- **Commit** saves a snapshot of the project with a message; **push** (Sync Changes in VS Code) copies the commits to GitHub.
+- **GitHub Pages** publishes the `main` branch as a website. A few minutes after each push, the live site updates.
+- **`.gitignore`** lists files and folders Git should never upload, such as `_originals/`, where full-size working files are kept.
+- **File names are case-sensitive on the live site.** Windows treats `Background.jpg` and `background.jpg` as the same file; GitHub Pages doesn't. Every file name is lower case for this reason.
+
 ## Wireframes
 
 ### Wireframe 1: initial plan
@@ -387,6 +473,25 @@ Best Practices was 96 on every page because of a missing favicon and two sticker
 | Page scrolled sideways on phones (13px) | The wide column gap (`gx-5`) was bigger than the page edge on small screens | Gap is now small on phones and wide only on laptops (`gx-3 gx-lg-5`) |
 | Tablets (768px) squeezed two columns, so the media player display was only 69px wide and the Top 8 pictures 74px | The two-column layout started at Bootstrap's `md` breakpoint | Two columns now start at `lg` (992px); tablets get one full-width column |
 | Profile page was 7,700px long on phones | The full band list showed at full height | On phones and tablets the interests list is capped and scrolls inside its box, cutting the page to 4,700px |
+| Profile photo grew too large on tablets | Below 992px the column goes full width, and the photo filled half of it (about 350px) | `max-width: 240px` on the photo, so it can shrink on phones but never grows past its desktop size |
+| Homepage tab title was long and didn't match the other pages | Written before the friend pages had a naming pattern | Every page now follows "Page name &#124; u alright m8?" |
+| One friend page came out broken after being generated | The script that copied the skeleton into each page had a search pattern that matched too much | Rebuilt that page from a working one; the broken copy is kept in `_originals` |
+| Velvet Kettles' cursor and pointer showed as the normal arrow | New cursor images were 128px, and browsers ignore oversized cursor images | Resized to 32px, like every other cursor |
+| Friend background tiles were up to 1.6 MB each | Saved as large PNGs straight from the image tool | Resized to 400px and saved as JPG (2 to 39 KB); the browser repeats the small tile to fill the page |
+| Photo carousel slid between photos, which can be jarring for visitors sensitive to motion | Bootstrap animates each change with a CSS transition on `.carousel-item` | `transition: none` on `.pics-carousel .carousel-item`: photos now change instantly, with the arrows, swipe and thumbnails still working |
+| Two Contents links went nowhere | The links pointed at headings that had since been renamed | Links updated to the real headings ("Bugs and fixes", "AI reflection") |
+
+
+### Why the fixes work
+
+- **Sideways scroll:** Bootstrap rows use negative margins to line up the column gaps. A big gap (`gx-5`) makes those margins wider than the space at the edge of a phone screen, so the page pokes out sideways. A smaller gap on phones keeps it inside.
+- **Tablet squash:** a breakpoint is the width at which a layout changes. Moving the two-column layout from `md` (768px) to `lg` (992px) means tablets get one roomy column instead of two cramped ones.
+- **Link and heading colours:** this is specificity. Bootstrap sets link colours through its own variables, and a general `h2` rule was more specific than the pop-up header colour. A more specific selector, or a Bootstrap utility such as `text-white`, wins.
+- **Oversized cursors:** browsers protect visitors by refusing cursor images over a size limit and falling back to the normal pointer. 32px is a safe size everywhere.
+- **Unsized images:** without `width` and `height`, the browser can't reserve space, so the page jumps as images load. Lighthouse flags this as layout shift.
+- **`<3` errors:** `<` starts an HTML tag. The entity `&lt;` displays the character without the browser reading it as code.
+- **The carousel:** Bootstrap's script only swaps which slide has the `active` class. The movement comes entirely from CSS, so CSS can switch it off without touching the script.
+- **Large files:** file size is about pixels and format. A tile is repeated by the browser, so it only needs to be big enough to look sharp once; JPG compresses textures far more than PNG.
 
 HTML checker before the fixes:
 
