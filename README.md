@@ -145,7 +145,7 @@ Every track is a reimagining of the same piece: ***Komm, süßer Tod*** ("Come, 
 
 ### How the tracks were made
 
-PT transformed the IMSLP edition into eight arrangements with **ElevenLabs Music**, writing a style direction for each character: the genre, the instruments, the production and the scene it belongs to. They are credited as PT Cheung's arrangements, produced with ElevenLabs Music. The source, tool and date of every file are recorded in the [asset log](#asset-log).
+PT transformed the IMSLP edition into eight arrangements with **ElevenLabs Music**, writing a style direction for each character: the genre, the instruments, the production and the scene it belongs to. Getting eight tracks that sounded right took about **130 generations**: each version was listened to, judged against the character and refined until it fit. They are credited as PT Cheung's arrangements, produced with ElevenLabs Music. The tracks were made in the Mogik Labs workspace on an ElevenLabs Grant plan, and ElevenLabs Music is credited on every track whether or not the plan requires it. The [ElevenLabs Music Terms](https://elevenlabs.io/music-terms) (last updated 9 October 2026) were read before publishing. The source, tool and date of every file are recorded in the [asset log](#asset-log).
 
 This matters beyond the project. PT works in music rights and provenance, and the same rule applies here as in her professional work: know where every sound came from, use material you have the right to use, and credit it properly.
 
