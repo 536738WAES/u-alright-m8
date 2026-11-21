@@ -527,6 +527,7 @@ Automated checkers can't see everything, so the live site was also used on a rea
 | On an iPhone 14 Pro, track titles wrapped onto three lines and were cut off in the player display | With the phone's Reduce Motion setting on, the scrolling title is switched off and the text was allowed to wrap inside a fixed-height display | A one-line ellipsis (…) was tried first, but it hid most of the title. Final fix: with motion reduced, the title wraps and the display grows to fit it (`height: auto`), so the full title shows with no movement. For everyone else the title still scrolls, slowed from 18 to 25 seconds per loop. The read-out text is now terminal green (`#39ff14`), like the old desktop media players |
 | The playlist button disappeared on PT's page on phones | A media query hid all the player's square buttons below 400px wide, including the real playlist toggle (an iPhone 14 Pro is 393px) | Only the two decorative buttons are hidden on narrow phones; the playlist toggle stays |
 | On phones the header looked oversized and Sign Out dropped onto a second line | The logo and menu spacing were sized for desktop | Below 576px the logo is smaller and the menu links are closer together, so all five fit on one line |
+| The player showed `+` and music-note buttons that did nothing | They were decorative copies of the original 2000s player's add-to-playlist and music buttons, but adding to a playlist would need more JavaScript than the project's limit allowed | Removed them: a control that looks clickable but does nothing is confusing. The playlist button, which works, stays on PT's page. Add-to-playlist is listed in Planned future updates |
 
 
 ### Why the fixes work
@@ -581,10 +582,9 @@ The biggest change was how I managed the project. Claude kept a versioned build 
 
 Kept out of this version on purpose, so the project stays focused on HTML, CSS and Bootstrap:
 
-- **Friend profile pages:** a page for each of the Top 8, each with its own arrangement of the Bach piece in the media player. Templates are already drafted.
 - **Real comments:** letting visitors post to the friends comments wall, which would need a server or database.
 - **Staying on the page after sending a message:** would need more JavaScript or a paid Formspree plan.
-- **Add to playlist:** the media player's **+** button would open an "add to playlist" menu, so visitors could build their own playlists while browsing profiles, like the original site's 2010 music player ([reference](https://www.jblogg.com/2010how-to-make-playlists-on-myspace-music/)). This needs more JavaScript than this project allows, so the **+** button is cosmetic for now.
+- **Add to playlist:** a **+** button on the media player would open an "add to playlist" menu, so visitors could build their own playlists while browsing profiles, like the original site's 2010 music player ([reference](https://www.jblogg.com/2010how-to-make-playlists-on-myspace-music/)). This needs more JavaScript than this project allows, so the **+** button was removed from this version rather than left as a button that does nothing.
 
 ## Credits
 
