@@ -505,3 +505,26 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 
 /* Profile photo: stop it growing too large on tablets, where the column goes full width */
 .profile-main, main #profile .profile-square { max-width: 240px; }
+
+/* Friend page backgrounds and cursors (tiles 400px JPG, cursors 32px PNG) */
+.friend-page.friend-2 { background: var(--f-bg) url("../images/glitter-jelly-princess/background.jpg") repeat; background-size: 400px 400px; }
+.friend-2, .friend-2 * { cursor: url("../images/glitter-jelly-princess/cursor.png") 1 1, auto; }
+.friend-2 a, .friend-2 button, .friend-2 label, .friend-2 .btn, .friend-2 .player-seek { cursor: url("../images/glitter-jelly-princess/pointer.png") 16 16, pointer; }
+.friend-page.friend-3 { background: var(--f-bg) url("../images/peppy/background.jpg") repeat; background-size: 400px 400px; }
+.friend-3, .friend-3 * { cursor: url("../images/peppy/cursor.png") 1 1, auto; }
+.friend-3 a, .friend-3 button, .friend-3 label, .friend-3 .btn, .friend-3 .player-seek { cursor: url("../images/peppy/pointer.png") 16 16, pointer; }
+.friend-page.friend-4 { background: var(--f-bg) url("../images/i-dont-wanna-be-me/background.jpg") repeat; background-size: 400px 400px; }
+.friend-4, .friend-4 * { cursor: url("../images/i-dont-wanna-be-me/cursor.png") 1 1, auto; }
+.friend-4 a, .friend-4 button, .friend-4 label, .friend-4 .btn, .friend-4 .player-seek { cursor: url("../images/i-dont-wanna-be-me/pointer.png") 16 16, pointer; }
+.friend-page.friend-5 { background: var(--f-bg) url("../images/dj-meowmixx/background.jpg") repeat; background-size: 400px 400px; }
+.friend-5, .friend-5 * { cursor: url("../images/dj-meowmixx/cursor.png") 1 1, auto; }
+.friend-5 a, .friend-5 button, .friend-5 label, .friend-5 .btn, .friend-5 .player-seek { cursor: url("../images/dj-meowmixx/pointer.png") 16 16, pointer; }
+.friend-page.friend-6 { background: var(--f-bg) url("../images/im-just-a-girl-x-unicorn/background.jpg") repeat; background-size: 400px 400px; }
+.friend-6, .friend-6 * { cursor: url("../images/im-just-a-girl-x-unicorn/cursor.png") 1 1, auto; }
+.friend-6 a, .friend-6 button, .friend-6 label, .friend-6 .btn, .friend-6 .player-seek { cursor: url("../images/im-just-a-girl-x-unicorn/pointer.png") 16 16, pointer; }
+.friend-page.friend-7 { background: var(--f-bg) url("../images/sakurawr/background.jpg") repeat; background-size: 400px 400px; }
+.friend-7, .friend-7 * { cursor: url("../images/sakurawr/cursor.png") 1 1, auto; }
+.friend-7 a, .friend-7 button, .friend-7 label, .friend-7 .btn, .friend-7 .player-seek { cursor: url("../images/sakurawr/pointer.png") 16 16, pointer; }
+.friend-page.friend-8 { background: var(--f-bg) url("../images/the-velvet-kettles/background.jpg") repeat; background-size: 400px 400px; }
+.friend-8, .friend-8 * { cursor: url("../images/the-velvet-kettles/cursor.png") 1 1, auto; }
+.friend-8 a, .friend-8 button, .friend-8 label, .friend-8 .btn, .friend-8 .player-seek { cursor: url("../images/the-velvet-kettles/pointer.png") 16 16, pointer; }
