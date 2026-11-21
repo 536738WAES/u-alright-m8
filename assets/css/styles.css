@@ -502,3 +502,6 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 .friend-1, .friend-1 * { cursor: url("../images/jet/cursor.png") 1 1, auto; }
 .friend-1 a, .friend-1 button, .friend-1 label, .friend-1 .btn, .friend-1 .player-seek { cursor: url("../images/jet/pointer.png") 16 16, pointer; }
 .friend-1 input[type="text"], .friend-1 input[type="email"], .friend-1 input[type="search"], .friend-1 textarea { cursor: text; }
+
+/* Profile photo: stop it growing too large on tablets, where the column goes full width */
+.profile-main, main #profile .profile-square { max-width: 240px; }
