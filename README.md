@@ -462,6 +462,21 @@ Best Practices was 96 on every page because of a missing favicon and two sticker
 
 ![Lighthouse scores for mail.html on mobile](docs/lighthouse-mail-mobile.png)
 
+
+### Final checks, 21 November
+
+After the last features were added (clickable photos, the Pics carousel, friend backgrounds and cursors), the changed pages were re-checked on the live site.
+
+| Check | Page | Result |
+|---|---|---|
+| W3C HTML | index.html | No errors or warnings |
+| W3C HTML | pics.html, jet-pics.html | 1 error each (carousel label), fixed, see Bugs and fixes |
+| W3C HTML | friend pages | 1 warning each (two `h1` headings), fixed |
+| Jigsaw CSS | styles.css | No errors |
+| WAVE | friend-3.html | 0 errors, 6 contrast errors (comment names), fixed; AIM score 7.7 |
+
+<p><img src="docs/test-html-index-final.jpg" alt="HTML checker: no errors or warnings on index.html" width="200"> <img src="docs/test-css-final.jpg" alt="CSS validator: no error found" width="200"> <img src="docs/test-html-pics-before.jpg" alt="HTML checker error on the Pics page before the fix" width="200"> <img src="docs/test-wave-friend-before.jpg" alt="WAVE summary for a friend page before the contrast fix" width="200"></p>
+
 ### Messenger
 ![Formspree email showing a test message with the mood, name, email and message fields](docs/test-formspree.png)
 
@@ -490,6 +505,9 @@ Best Practices was 96 on every page because of a missing favicon and two sticker
 | Friend background tiles were up to 1.6 MB each | Saved as large PNGs straight from the image tool | Resized to 400px and saved as JPG (2 to 39 KB); the browser repeats the small tile to fill the page |
 | Photo carousel slid between photos, which can be jarring for visitors sensitive to motion | Bootstrap animates each change with a CSS transition on `.carousel-item` | `transition: none` on `.pics-carousel .carousel-item`: photos now change instantly, with the arrows, swipe and thumbnails still working |
 | Two Contents links went nowhere | The links pointed at headings that had since been renamed | Links updated to the real headings ("Bugs and fixes", "AI reflection") |
+| Pics pages failed the HTML checker after the carousel was added: `aria-label` not allowed on a `div` | A plain `div` has no role, so the checker doesn't allow a label on it | Added `role="region"`, which marks the carousel as a named area of the page, so the label is valid and still read out |
+| Friend pages showed a checker warning: two `h1` headings | The site logo and the friend's name were both `h1`, and screen readers treat every `h1` as the page title | The friend's name is now a paragraph styled the same way, leaving the logo as the only `h1` |
+| WAVE found 6 contrast errors on friend pages | Friends' names in the comments used the general text colour on a cell that didn't match the page palette, so they were almost invisible | Comment name cells now use each friend's own surface and text colours, the same pair already proven readable in their cards |
 
 
 ### Why the fixes work
