@@ -483,6 +483,14 @@ After the last features were added (clickable photos, the Pics carousel, friend 
 
 **Mobile performance on friend pages (76).** Lighthouse tests mobile on a simulated slow 4G connection. The friend pages load more than the main pages: a background tile, two cursors, the Top 8 pictures and the profile photo, and the largest image takes 6.6 seconds to appear on that connection (7.3 seconds on JET's page, which has the most images). Desktop scores 98 to 100. Planned fix: serve smaller, modern-format images (WebP) to phones and give the profile photo loading priority.
 
+### Real-device testing (iPhone 14 Pro)
+
+Automated checkers can't see everything, so the live site was also used on a real phone: every profile page scrolled top to bottom, tracks played, photos tapped and the carousel swiped. This found three problems that no validator flagged, all now fixed (details in [Bugs and fixes](#bugs-and-fixes)):
+
+- Track titles wrapped and were cut off in the player when the phone's Reduce Motion setting was on.
+- The playlist button disappeared on PT's page, because a rule for screens under 400px wide hid it.
+- The header looked oversized and the menu wrapped onto two lines.
+
 ### Messenger
 ![Formspree email showing a test message with the mood, name, email and message fields](docs/test-formspree.png)
 
