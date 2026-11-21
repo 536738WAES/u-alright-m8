@@ -151,6 +151,8 @@ This matters beyond the project. PT works in music rights and provenance, and th
 
 ### The Top 8 album
 
+The artists named below are PT's influences, not prompt text. Each prompt was workshopped from those influences into a description of the sound itself (genre, tempo, instruments, tone and production), and no artist, song or album names were ever entered into ElevenLabs Music, in line with section 2.1 of its Music Terms. ElevenLabs Music now blocks such names anyway.
+
 | Profile | Version | Length | The sound, and why it fits |
 |---|---|---|---|
 | JET | 1959 Holy Grail | 0:30 | Soaring, melodic guitar solos with varied arpeggios and a clean, dry, bluesy tone, in the line of Slash, Keith Richards, Adrian Smith and Jimmy Page. JET is the character closest to PT, and his guitar heroes are hers. The name is the 1959 Les Paul Standard, the "holy grail" of electric guitars; PT plays a Les Paul Standard almost identical to JET's, minus the widow headstock. |
@@ -161,6 +163,16 @@ This matters beyond the project. PT works in music rights and provenance, and th
 | I'm Just A Girl x Unicorn | Ska Lovers | 0:30 | Ska punk from PT's skater years, around age 12 to 13: No Doubt, Less Than Jake, Goldfinger, Reel Big Fish and The Mighty Mighty Bosstones, plus Blink-182, a band she later worked on. |
 | SakuRAWR! | heyhey | 0:30 | 2000s Japanese rock of the kind found on anime soundtracks such as *NANA*: Western rock and punk with real bite, sincere rather than performative. |
 | The Velvet Kettles | Hawley Arms | 3:30 | Mid-2000s British indie, the NME era when Camden's Hawley Arms was the place to be: The Libertines, Babyshambles, Razorlight and The Ting Tings. Affectionately tongue in cheek, from PT's college and early uni years. |
+
+### Evidence
+
+Screenshots from the ElevenLabs Music project, and the terms PT worked under:
+
+<p><img src="docs/music/elevenlabs-prompt-jet.jpg" alt="ElevenLabs Music project for Komm, süßer Tod, BWV 478, with section-by-section style tags and the written prompt history" width="440"> <img src="docs/music/elevenlabs-prompt-2.jpg" alt="Prompt history for JET's track, including the 1959 Les Paul Standard direction, with no artist names" width="440"> <img src="docs/music/elevenlabs-history.jpg" alt="ElevenLabs Music generation history from 19 November, showing SakuRAWR! variations" width="440"></p>
+
+- **Prompts describe the sound, not artists.** The project is built on the IMSLP *Komm, süßer Tod*, BWV 478, with each section tagged by tempo, instruments and production (for example "jangly indie rock guitar arpeggios", "tight four-on-the-floor kick pattern"). JET's direction asked for "heavy metal guitars, played on a custom 1959 Les Paul Standard ... bluesy-heavy metal sound": a guitar, not a guitarist.
+- **Iteration.** Each prompt returned four variations, which PT listened to, compared and refined; that is how about 130 generations became eight tracks.
+- **The terms:** [ElevenLabs Music Terms, saved 21 November 2026 (PDF)](docs/music/elevenlabs-music-terms.pdf).
 
 ### How it plays
 
