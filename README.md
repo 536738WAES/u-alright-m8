@@ -191,7 +191,7 @@ Screenshots from the ElevenLabs Music project, and the terms PT worked under:
 Each friend's player plays their own track; PT's player holds the whole album, with a playlist button to switch between tracks. The players were rebuilt because the original 2000s players ran on Adobe Flash, which no browser supports any more. See [The one script: player.js](#7-the-one-script-playerjs) for why a small custom script was needed and how it works.
 
 ## User stories
-Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/projects/), prioritised with MoSCoW (must-have, should-have, could-have, won't-have).
+Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/projects/10), prioritised with MoSCoW (must-have, should-have, could-have, won't-have).
 
 | # | User story | Priority | Status |
 |---|---|---|---|
@@ -679,6 +679,13 @@ Every image, sound and logo file in the site.
 | jet/cursor.png, jet/pointer.png | JET's page only: sword cursor and skull link pointer (resized to 32px) | Sweezy Cursors | 20 Nov 2026 | ? |
 | glitter-jelly-princess/pic-1.jpg | The photo on glitter jelly princess's pics page (friend-2-pics.html) | PT Cheung, AI-generated character artwork | 20 Nov 2026 | Partly |
 | cursor.png, cursor-pointer.png | Custom 2000s-style cursor and link pointer | [Cute Y2K Heart, Sweezy Cursors](https://sweezy-cursors.com/cursor/cute-y2k-heart/) | 17 Nov 2026 | ? |
+| background.jpg in each friend's folder (glitter jelly princess, PEPPY, I Don't Wanna Be Me, DJ Meowmixx, I'm Just A Girl x Unicorn, SakuRAWR!) | Repeating background tile for each friend page | Made by PT Cheung with Google Stitch and ChatGPT; resized to 400px JPG by Claude | 21 Nov 2026 | Yes |
+| the-velvet-kettles/background.jpg | Vinyl-record background tile for The Velvet Kettles | Drawn with Python (Pillow) by Claude (Anthropic) | 21 Nov 2026 | n/a |
+| cursor.png and pointer.png in each friend's folder | Custom cursor and link pointer for each friend page | Sweezy Cursors; resized to 32px by Claude | 21 Nov 2026 | Yes |
+| docs/mockup.jpg | Responsive mock-up at the top of the README | [Am I Responsive?](https://ui.dev/amiresponsive) (ui.dev) | 21 Nov 2026 | Yes |
+| docs/tagline-black.png, docs/tagline-white.png | README tagline in Poppins Bold | Rendered by Claude (Anthropic) with Python (Pillow) | 21 Nov 2026 | Poppins: SIL Open Font License |
+| docs/top8/*.jpg | Square thumbnails for the README Top 8 grid | Cropped from the site's own profile pictures by Claude | 21 Nov 2026 | n/a |
+| docs/music/*.jpg, docs/music/elevenlabs-music-terms.pdf | ElevenLabs Music screenshots and the saved Music Terms | Screenshots by PT Cheung | 21 Nov 2026 | Yes |
 
 Friend pictures being generated in Google Flow Studio, 15 November 2026:
 
