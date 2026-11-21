@@ -171,7 +171,7 @@ Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/proje
 
 ### Friend profile pages (friend-1.html to friend-8.html)
 
-- **Photo carousel on the Pics pages:** PT's and JET's Pics pages open with a Bootstrap carousel, starting with the profile photo, with previous and next arrows, swipe on phones and each caption under its photo. It never auto-plays. The grid of thumbnails below jumps the carousel to that photo. All of this uses Bootstrap's own script, so no extra JavaScript.
+- **Photo carousel on the Pics pages:** PT's and JET's Pics pages open with a Bootstrap carousel, starting with the profile photo, with previous and next arrows, swipe on phones and each caption under its photo. It never auto-plays, and the sliding animation is switched off in the CSS so photos change instantly, which is easier on visitors who find motion jarring. The grid of thumbnails below jumps the carousel to that photo. All of this uses Bootstrap's own script, so no extra JavaScript.
 - **Clickable profile photos:** clicking the main photo opens that person's pics. PT, JET and glitter jelly princess go to their own Pics page; friends with one photo open it in a Bootstrap pop-up (modal) showing "Displaying 1 of 1 pics", so no extra JavaScript is needed.
 - **One per Top 8 friend:** click any friend in PT's Top 8 to visit their profile.
 - **Same frame, eight colour stories:** the u alright m8 header, navigation and footer stay black and white on every page; each friend's profile area uses their own palette, set with the same five CSS variables (`--f-bg`, `--f-surface`, `--f-text`, `--f-accent`, `--f-on-accent`) on a class for that page.

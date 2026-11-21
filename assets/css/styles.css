@@ -532,3 +532,5 @@ input[type="text"], input[type="email"], input[type="search"], textarea { cursor
 /* Pics pages: Bootstrap carousel, whole photo shown on a dark stage */
 .pics-carousel img { height: min(70vh, 520px); object-fit: contain; background-color: var(--ink); }
 .pics-carousel .carousel-control-prev, .pics-carousel .carousel-control-next { width: 12%; }
+/* No sliding: photos change instantly, for visitors who find motion jarring */
+.pics-carousel .carousel-item { transition: none; }
