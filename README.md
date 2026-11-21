@@ -5,6 +5,9 @@
   </picture>
 </h1>
 <p align="center"><img src="docs/mockup.jpg" alt="PT's profile shown on desktop, laptop, tablet and phone" width="620"></p>
+<h3 align="center"><i>Remember how you found great music on someone's profile page?</i></h3>
+<table align="center"><tr><td align="center" width="11%"><img src="assets/images/profile.jpg" alt="PT" width="80" height="80"><br><sub>PT</sub></td><td align="center" width="11%"><img src="assets/images/friend-1.jpg" alt="JET" width="80" height="80"><br><sub>JET</sub></td><td align="center" width="11%"><img src="assets/images/friend-2.jpg" alt="glitter jelly princess" width="80" height="80"><br><sub>glitter jelly princess</sub></td><td align="center" width="11%"><img src="assets/images/friend-3.jpg" alt="PEPPY" width="80" height="80"><br><sub>PEPPY</sub></td><td align="center" width="11%"><img src="assets/images/friend-4.jpg" alt="I Don't Wanna Be Me" width="80" height="80"><br><sub>I Don't Wanna Be Me</sub></td><td align="center" width="11%"><img src="assets/images/friend-5.jpg" alt="DJ Meowmixx" width="80" height="80"><br><sub>DJ Meowmixx</sub></td><td align="center" width="11%"><img src="assets/images/friend-6.jpg" alt="I'm Just A Girl x Unicorn" width="80" height="80"><br><sub>I'm Just A Girl x Unicorn</sub></td><td align="center" width="11%"><img src="assets/images/friend-7.jpg" alt="SakuRAWR!" width="80" height="80"><br><sub>SakuRAWR!</sub></td><td align="center" width="11%"><img src="assets/images/friend-8.jpg" alt="The Velvet Kettles" width="80" height="80"><br><sub>The Velvet Kettles</sub></td></tr></table>
+<p align="center"><img src="docs/music/media-player.jpg" alt="The u alright m8 media player with the Top 8 album playlist" width="380"></p>
 https://536738waes.github.io/u-alright-m8/
 
 A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+0.9% sneaky JavaScript for the media player ONLY due to there being no ActionScript/Flash widget equivalent in 2026.)
