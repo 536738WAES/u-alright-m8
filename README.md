@@ -14,6 +14,7 @@ A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap (+1.5
 - [User stories](#user-stories)
 - [Features](#features)
 - [Wireframes](#wireframes)
+- [Top 8 colour stories](#top-8-colour-stories)
 - [Testing](#testing)
 - [Bugs](#bugs)
 - [Deployment](#deployment)
@@ -102,7 +103,7 @@ Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/proje
   - **A fixed band-logo background:** a plain black page with the NOSFERA2 logo pinned in the centre while the page scrolls over it (`background: ... no-repeat center center fixed`).
   - **His bandmates in his friend space:** the NOSFERA2 logo plus Dove, Tyson and (mm)Alice.
   - **His own cursors:** a sword, with a skull over links and buttons, set only for his page through the `.friend-1` class.
-  - **Real versus engineered:** PT's photos are real, taken 2019 to 2023; JET's world is fully AI-generated. The contrast is deliberate.
+  - **Real versus engineered:** PT's photos are real, taken 2002 to 2008; JET's world is fully AI-generated. The contrast is deliberate.
 - **Fictional URLs:** friend profile URLs (for example ualrightm8.com/JET) are fictional vanity addresses for the homage and are plain text, not links.
 
 ### Messenger (pop-up on index.html, full page on mail.html)
@@ -151,6 +152,43 @@ Redrawn by PT to match the finished site, one sketch per page. Green boxes are s
 <img src="docs/wireframe2-index-1.jpg" width="300" alt="Wireframe 2, profile page part 1: header, navigation, profile box, contact links, URL, extended network, blurbs and Top 8"> <img src="docs/wireframe2-index-2.jpg" width="300" alt="Wireframe 2, profile page part 2: media player, interests and friends comments">
 
 <img src="docs/wireframe2-pics.jpg" width="250" alt="Wireframe 2, pics page: header, four photos, back to profile link"> <img src="docs/wireframe2-mail.jpg" width="250" alt="Wireframe 2, mail page: message centre with mood strip and form, plus how it works box">
+
+## Top 8 colour stories
+
+Each friend in PT's Top 8 has their own palette, background, cursor and track. These cards set out the look of each page before it was built. PT sits in the middle, with her real photos from 2002 to 2008; her friends are fictional, with AI-assisted artwork. Full-size cards are in `docs/cards/`.
+
+<table>
+<tr>
+<td align="center" width="33%"><img src="docs/cards/web/jet.jpg" alt="JET profile card" width="240"></td>
+<td align="center" width="33%"><img src="docs/cards/web/glitter-jelly-princess.jpg" alt="glitter jelly princess profile card" width="240"></td>
+<td align="center" width="33%"><img src="docs/cards/web/peppy.jpg" alt="PEPPY profile card" width="240"></td>
+</tr>
+<tr>
+<td align="center" width="33%"><img src="docs/cards/web/i-dont-wanna-be-me.jpg" alt="I Don't Wanna Be Me profile card" width="240"></td>
+<td align="center" width="33%"><img src="docs/cards/web/pt.jpg" alt="PT profile card" width="240"></td>
+<td align="center" width="33%"><img src="docs/cards/web/dj-meowmixx.jpg" alt="DJ Meowmixx profile card" width="240"></td>
+</tr>
+<tr>
+<td align="center" width="33%"><img src="docs/cards/web/im-just-a-girl-x-unicorn.jpg" alt="I'm Just A Girl x Unicorn profile card" width="240"></td>
+<td align="center" width="33%"><img src="docs/cards/web/sakurawr.jpg" alt="SakuRAWR! profile card" width="240"></td>
+<td align="center" width="33%"><img src="docs/cards/web/the-velvet-kettles.jpg" alt="The Velvet Kettles profile card" width="240"></td>
+</tr>
+</table>
+
+### The band: NOSFERA2
+
+JET's band, and the deepest corner of the universe. NOSFERA2 [OFFICIAL] and the other band members appear in JET's friend space.
+
+<table>
+<tr>
+<td align="center" width="20%"><img src="assets/images/nosfera2.jpg" alt="NOSFERA2 [OFFICIAL]" width="130"><br><sub>NOSFERA2 [OFFICIAL]</sub></td>
+<td align="center" width="20%"><img src="assets/images/friend-1.jpg" alt="JET" width="130"><br><sub>JET</sub></td>
+<td align="center" width="20%"><img src="assets/images/dove.jpg" alt="Dove" width="130"><br><sub>Dove</sub></td>
+<td align="center" width="20%"><img src="assets/images/tyson.jpg" alt="Tyson" width="130"><br><sub>Tyson</sub></td>
+<td align="center" width="20%"><img src="assets/images/alice.jpg" alt="(mm)Alice" width="130"><br><sub>(mm)Alice</sub></td>
+</tr>
+</table>
+
 
 ## Tools and technologies
 
@@ -316,8 +354,8 @@ Every image, sound and logo file in the site.
 
 | File | What it is | Tool used or source | Date made | Terms checked |
 |---|---|---|---|---|
-| profile.jpg | PT's profile photo | Own photo | 2019 to 2023 | n/a |
-| pic-3.jpeg to pic-6.jpeg | Four portraits on the Pics page | Own photo | 2019 to 2023 | n/a |
+| profile.jpg | PT's profile photo | Own photo | 2002 to 2008 | n/a |
+| pic-3.jpeg to pic-6.jpeg | Four portraits on the Pics page | Own photo | 2002 to 2008 | n/a |
 | friend-1.jpg to friend-8.jpg | Top 8 friend pictures (compressed 16 Nov 2026) | Prompts written with Claude Opus 5.5, images generated in Google Flow Studio (Nano Banana Pro), see screenshot below | 15 Nov 2026 | Partly |
 | heart.gif | Sticker in the friends comments | Sourced from [Pinterest](https://in.pinterest.com/pin/993606736530510096/) | Nov 2026 | No: third-party Pinterest pin, original creator unknown |
 | skull.gif | Sticker in the friends comments | Sourced from [Pinterest](https://uk.pinterest.com/ideas/gothic-myspace-layouts/893841263308/) | Nov 2026 | No: third-party Pinterest pin, original creator unknown |
