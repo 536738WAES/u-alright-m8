@@ -275,7 +275,17 @@ Several features look interactive but have no JavaScript of their own. Bootstrap
 
 ### 7. The one script: `player.js`
 
-The media player is the only custom JavaScript, kept to about 80 lines.
+**Why there is a script at all.** The original 2000s profile players were built in Adobe Flash, programmed in ActionScript, with the playlist loaded from an XML file. Adobe ended Flash on 31 December 2020 and browsers have since removed it, so no modern browser can run one. An old profile screenshot used in the design references still shows the leftover error, "Error Loading XML Document". A faithful copy of the original player is no longer possible; it has to be rebuilt with today's web standards.
+
+**The first plan: the browser's own player.** The first version used HTML's built-in `<audio controls>`: four tracks in a Bootstrap fold-out list, each with the browser's standard controls, and no JavaScript. It worked, but fell short in three ways:
+
+- **It can't be styled.** Each browser draws its own controls (Chrome, Firefox and Safari all look different), and CSS can barely change them, so they could never match the Y2K player design.
+- **No shared display.** There was no single read-out showing the track name and time, which the design (based on a Google Stitch player and a period reference) needed.
+- **Switching tracks didn't stop the last one.** Opening another track left the previous one playing, and only a script can stop it.
+
+User story 5, a must-have, asks to play, pause, skip through and switch tracks from one player. Meeting that, in the intended design, needed a small custom script. To keep the project an HTML, CSS and Bootstrap build, the script was capped at about 80 lines and limited to the player. Every other interactive feature uses Bootstrap.
+
+**How it works.** The script does not replace the browser's audio engine. It keeps one `<audio>` element on the page with no `controls` attribute, so the browser draws nothing, and wires the custom buttons to it:
 
 - **Finding elements.** `document.getElementById("player-audio")` and `querySelectorAll(".player-track-btn")` grab the parts of the page the script controls.
 - **Events.** `addEventListener("click", ...)` runs code when something happens. The `<audio>` element fires its own events: `play`, `pause`, `timeupdate` (several times a second while playing) and `loadedmetadata` (once the track's length is known). The script listens for these to keep the button icon, time read-out and progress bar in step.
