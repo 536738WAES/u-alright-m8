@@ -8,7 +8,7 @@
 
 <p align="center">A one-page, Y2K-era social profile page built with HTML, CSS and Bootstrap<br>(+0.9% sneaky JavaScript for the media player ONLY due to there being no ActionScript/Flash widget equivalent in 2026.)</p>
 
-<p align="center"><img src="docs/mockup.jpg" alt="PT's profile shown on desktop, laptop, tablet and phone" width="620"></p>
+<p align="center"><img src="docs/mockup.jpg" alt="PT's profile shown on a desktop monitor and a phone" width="760"></p>
 
 <br>
 
@@ -454,7 +454,7 @@ The image tools did not hold the characters steady. Nano Banana aged the whole b
 - Google Flow Studio (Nano Banana Pro): the Top 8 friend pictures
 - ElevenLabs Music: producing PT's Bach arrangements for the media player
 - Sweezy Cursors: the heart cursors
-- [Am I Responsive?](https://ui.dev/amiresponsive) (ui.dev): the device mock-up at the top of this README
+- README device mock-up: live-site screenshots by PT Cheung and Claude, framed by Claude (Anthropic) with Python (Pillow)
 
 ### Screenshots
 
@@ -682,7 +682,7 @@ Every image, sound and logo file in the site.
 | background.jpg in each friend's folder (glitter jelly princess, PEPPY, I Don't Wanna Be Me, DJ Meowmixx, I'm Just A Girl x Unicorn, SakuRAWR!) | Repeating background tile for each friend page | Made by PT Cheung with Google Stitch and ChatGPT; resized to 400px JPG by Claude | 21 Nov 2026 | Yes |
 | the-velvet-kettles/background.jpg | Vinyl-record background tile for The Velvet Kettles | Drawn with Python (Pillow) by Claude (Anthropic) | 21 Nov 2026 | n/a |
 | cursor.png and pointer.png in each friend's folder | Custom cursor and link pointer for each friend page | Sweezy Cursors; resized to 32px by Claude | 21 Nov 2026 | Yes |
-| docs/mockup.jpg | Responsive mock-up at the top of the README | [Am I Responsive?](https://ui.dev/amiresponsive) (ui.dev) | 21 Nov 2026 | Yes |
+| docs/mockup.jpg | Device mock-up at the top of the README | Live-site screenshots, framed by Claude (Anthropic) with Python (Pillow) | 21 Nov 2026 | n/a |
 | docs/tagline-black.png, docs/tagline-white.png | README tagline in Poppins Bold | Rendered by Claude (Anthropic) with Python (Pillow) | 21 Nov 2026 | Poppins: SIL Open Font License |
 | docs/top8/*.jpg | Square thumbnails for the README Top 8 grid | Cropped from the site's own profile pictures by Claude | 21 Nov 2026 | n/a |
 | docs/music/*.jpg, docs/music/elevenlabs-music-terms.pdf | ElevenLabs Music screenshots and the saved Music Terms | Screenshots by PT Cheung | 21 Nov 2026 | Yes |
