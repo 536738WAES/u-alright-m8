@@ -276,6 +276,19 @@ Tracked on the [GitHub Projects board](https://github.com/users/536738WAES/proje
 
 ## How the code works
 
+### At a glance: architecture
+
+One page template, one stylesheet, one script. GitHub measures the code as HTML 93.3%, CSS 5.8%, JavaScript 0.9%.
+
+```mermaid
+flowchart LR
+    T["13 HTML pages<br>(one shared template)"] --> C["styles.css<br>one shared look;<br>body class picks the palette"]
+    T --> B["Bootstrap 5.3.8<br>grid, cards, pop-ups,<br>carousel (no custom JS)"]
+    T --> J["player.js<br>media player controls only"]
+    T --> F["Formspree<br>message form to email"]
+    G["GitHub Pages<br>push to main = live"] --> T
+```
+
 This section explains the ideas behind the code, so the site can be read and rebuilt by someone learning HTML, CSS and Bootstrap. Each part says what the code does, then why it was done that way.
 
 ### 1. HTML: structure and meaning
