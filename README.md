@@ -462,12 +462,13 @@ The image tools did not hold the characters steady. Nano Banana aged the whole b
 
 ### Build and design tools
 - Visual Studio Code with Live Server: writing and previewing the code
-- Google Stitch: generated the media player prototype
+- Google Stitch: generated the media player prototype and the friend background tiles
 - Claude Opus 5.5: build partner for code, debugging, prompt writing and the logo
 - Google Flow Studio (Nano Banana Pro): the Top 8 friend pictures
+- ChatGPT: JET's logo, the NOSFERA2 band portraits and the friend background tiles
 - ElevenLabs Music: producing PT's Bach arrangements for the media player
-- Sweezy Cursors: the heart cursors
-- README device mock-up: live-site screenshots by PT Cheung and Claude, framed by Claude (Anthropic) with Python (Pillow)
+- Sweezy Cursors: the custom cursors and link pointers on all 13 pages (the Cute Y2K Heart by default, and a different cursor for each of the 8 friend pages)
+- Python (Pillow), an image-editing library, used by Claude (Anthropic): framed the README device mock-up (live-site screenshots by PT Cheung and Claude), rendered the tagline images, drew The Velvet Kettles background and resized the cursors and background tiles
 
 ### Screenshots
 
@@ -695,7 +696,7 @@ Every image, sound and logo file in the site.
 | background.jpg in each friend's folder (glitter jelly princess, PEPPY, I Don't Wanna Be Me, DJ Meowmixx, I'm Just A Girl x Unicorn, SakuRAWR!) | Repeating background tile for each friend page | Made by PT Cheung with Google Stitch and ChatGPT; resized to 400px JPG by Claude | 21 Nov 2026 | Yes |
 | the-velvet-kettles/background.jpg | Vinyl-record background tile for The Velvet Kettles | Drawn with Python (Pillow) by Claude (Anthropic) | 21 Nov 2026 | n/a |
 | cursor.png and pointer.png in each friend's folder | Custom cursor and link pointer for each friend page | Sweezy Cursors; resized to 32px by Claude | 21 Nov 2026 | Yes |
-| docs/mockup.jpg | Device mock-up at the top of the README | Live-site screenshots, framed by Claude (Anthropic) with Python (Pillow) | 21 Nov 2026 | n/a |
+| docs/mockup.jpg | Device mock-up at the top of the README | Live-site screenshots by PT Cheung and Claude, framed by Claude (Anthropic) with Python (Pillow) | 21 Nov 2026 | n/a |
 | docs/tagline-black.png, docs/tagline-white.png | README tagline in Poppins Bold | Rendered by Claude (Anthropic) with Python (Pillow) | 21 Nov 2026 | Poppins: SIL Open Font License |
 | docs/top8/*.jpg | Square thumbnails for the README Top 8 grid | Cropped from the site's own profile pictures by Claude | 21 Nov 2026 | n/a |
 | docs/music/*.jpg, docs/music/elevenlabs-music-terms.pdf | ElevenLabs Music screenshots and the saved Music Terms | Screenshots by PT Cheung | 21 Nov 2026 | Yes |
